@@ -1,2 +1,4 @@
 kali-undercover ---> comando usado para tener la apariencia de Windows
 ++ Recordar tener instlado el paquete: sudo apt-get install kali-undercover
+
+kali-undercover --off ---> comando usado para desactivar el modo undercover
