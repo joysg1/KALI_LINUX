@@ -1,4 +1,7 @@
-kali-undercover ---> comando usado para tener la apariencia de Windows
-++ Recordar tener instlado el paquete: sudo apt-get install kali-undercover
+++ kali-undercover ---> comando usado para tener la apariencia de Windows
+--- Recordar tener instlado el paquete: sudo apt-get install kali-undercover
 
-kali-undercover --off ---> comando usado para desactivar el modo undercover
+++ kali-undercover --off ---> comando usado para desactivar el modo undercover
+
+++ hydra -l <usuario> -P <lista_de_contraseñas> <ip direccion> ---> comando basico hydra
+
