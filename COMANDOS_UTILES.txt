@@ -6,3 +6,5 @@
 ++ hydra -l <usuario> -P <lista_de_contraseñas> <ip direccion> ---> comando basico hydra
 
 ++ nmap -sP <192.168.1.0/24> ---> muestra los dispositivos conectados a una red 
+
+++ nmap -A <dirección> ---> Realiza un escaneo agresivo, detectando servicios, versiones y sistema operativo 
