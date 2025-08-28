@@ -9,4 +9,4 @@
 
 ++ nmap -A <dirección> ---> Realiza un escaneo agresivo, detectando servicios, versiones y sistema operativo 
 
-++ gpc -c <file> ---> Encriptar archivos 
+++ gpg -c <file> ---> Cifrar archivos 
