@@ -21,3 +21,6 @@
 
 ++ Herramienta útil para phishing: blackeye
 --- Enlace: https://github.com/majordmg/Blackeye-V3
+
+++ Herramienta útil para phishing: zphisher
+--- Enlace: https://github.com/htr-tech/zphisher
