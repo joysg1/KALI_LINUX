@@ -96,3 +96,25 @@
 --- El usuario debe proceder a ingresar sus credenciales
 --- En la interfaz web de beef se procederán a ver las credenciales del usuario
 
+++ Crear un punto de red wifi
+--- Instalar los siguientes paquetes: apt install dnsmasq hostapd
+--- Ejecutar el comando: airmon -ng check kill (Este comando para los procesos que puedan intervenir con el modo monitor)
+--- Ejecutar el comando: mousepad /etc/apache2/sites-enabled/000-default.conf (Este comando nos permite editar el portal web de autenticacion)
+--- Pegar los siguientes comandos en el archivo:
+<Directory "/var/www/html">
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ / [L,QSA]
+</Directory>
+--- Guardar el archivo
+--- Ejecutar el siguiente comando: a2enmod rewrite && service apache2 start
+(Permite habilitar los modulos de apache y reiniciar el servicio)
+
+
+
+
