@@ -70,3 +70,29 @@
 --- Compartir un enlace generado 
 --- Esperar a que el enlace generado sea abierto para obtener la información
 
+++ Beefproject
+--- URL del proyecto: https://github.com/beefproject/beef
+--- Instalar el paquete
+--- Una vez instalado ir a la ruta del programa
+--- Ejecutar el comando: mousepad config.yaml
+--- Verificar el apartado de credenciales
+--- Quitar el # en el area de public
+--- En esta misma area colocar en la seccion https la opcion true
+--- Ejecutar el comando: ssh -R 80:localhost:3000 serveo.net
+--- Copiar el url publico generado
+--- Ejecutar el comando: mousepad config.yaml
+--- Pegar el url publico generado en la seccion public, host
+--- Remover del url la parte de https y guardar el archivo
+--- Correr nuevamente beef desde el apartado raiz con el comando: ./beef
+--- Abrir el url generado por el programa
+--- Colocar las credenciales generadas
+--- Dar clic en la seccion avanzada
+--- En la seccion del url cambiar la ip por la ip copiada en el archivo mousepad config.yaml y dar enter
+--- Ir al portal web de beef 
+--- Ir a la seccion de commands
+--- Ir a la seccion social eng.
+--- Ir a la seccion google phishing
+--- Dar clic en execute
+--- El usuario debe proceder a ingresar sus credenciales
+--- En la interfaz web de beef se procederán a ver las credenciales del usuario
+
