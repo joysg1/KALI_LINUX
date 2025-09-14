@@ -43,4 +43,4 @@
 ++ sherlock
 --- Enlace del proyecto: https://github.com/sherlock-project/sherlock
 --- sherlock --help (Muestra la información de ayuda referente a la utilidad)
---- Sintaxis de uso general: sherlock <usuario_1, usuario2>
+--- Sintaxis de uso general: sherlock <usuario_1 usuario_2>
