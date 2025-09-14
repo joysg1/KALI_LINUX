@@ -35,3 +35,7 @@
 --- theHarvester -d <nombre_del_dominio> -b <nombre_del_buscador_ejemplo_bing>
 --- theHarvester -d <nombre_del_dominio> -b <nombre_del_buscador> -f <nombre_reporte.html>
 --- xdg-open <nombre_reporte.xml>
+
+++ whois
+--- whois <nombre_dominio>
+--- utilidad web: https://www.whois.com/
