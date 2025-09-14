@@ -47,3 +47,18 @@
 --- sherlock <usuario_1 usuario_2> --output results.txt (Guarda la información de salida en un archivo de texto)
 --- cat results.txt (Ver la información de salida)
 
+++ setoolkit
+--- Escoger opcion <1-6>
+--- Opcion 1: Social-Engineering-Attacks
+--- Escoger opcion <1-10>
+--- Opcion 2: Website Attack Vectors
+--- Escoger opcion <1-7>
+--- Opcion 3: Credential Harvester Attack Method
+--- Escoger opcion <1-3>
+--- Opcion 1: Web Templates
+--- Presionar enter (dejar la ip por default)
+--- Escoger opcion <1-3>
+--- Opcion 2: Google
+--- Abrir el navegador web e ir a la ip generada por el programa
+--- Una vez ingresadas las credenciales las mismas estarán disponibles en el programa
+
