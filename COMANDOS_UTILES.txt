@@ -62,3 +62,11 @@
 --- Abrir el navegador web e ir a la ip generada por el programa
 --- Una vez ingresadas las credenciales las mismas estarán disponibles en el programa
 
+++ Storm-Breaker
+--- URL del proyecto: https://github.com/ultrasecurity/Storm-Breaker
+--- ssh -R 80:localhost:2525 serveo.net (Para exponer nuestro servidor local al internet usando ssl tunneling)
+--- Acceder al url generado
+--- Acceder usando las credenciales <admin, admin>
+--- Compartir un enlace generado 
+--- Esperar a que el enlace generado sea abierto para obtener la información
+
