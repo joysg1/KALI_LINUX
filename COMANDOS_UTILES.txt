@@ -44,3 +44,6 @@
 --- Enlace del proyecto: https://github.com/sherlock-project/sherlock
 --- sherlock --help (Muestra la información de ayuda referente a la utilidad)
 --- Sintaxis de uso general: sherlock <usuario_1 usuario_2>
+--- sherlock <usuario_1 usuario_2> --output results.txt (Guarda la información de salida en un archivo de texto)
+--- cat results.txt (Ver la información de salida)
+
