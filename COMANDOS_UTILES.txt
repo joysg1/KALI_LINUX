@@ -209,6 +209,30 @@ dir (Ver directorios)
 mkdir <nombre directorio>  (Crear directorio)
 rmdir <nombre directorio> (Borrar directorio)
 
+++ Rabbit
+--- URL: https://github.com/Rabbit-xd/AhMyth
+--- Ejecutar los siguientes comandos tras clonado del repositorio
+--- autoinstall_linux
+--- Abrir otra terminal
+--- Ejecutar ./ngrok tcp 8484 (Recordar estar en el directorio de ngrok)
+--- Copiar el enlace generado (sección forwarding)
+--- Ejecutar en terminal: ahmyth
+--- En la interfaz gráfica que se nos muestra ir a la seccion apk builder
+--- Estando alli, pegar el enlace generado en la sección server ip
+--- Dejar toda la sección de permisos activa
+--- Dar clic en el boton build
+--- El programa procederá a generar un apk
+--- Una vez la aplicación ha sido instalada se procederá a actualizar el apartado de victimas en la interfaz del programa
+
+
+
+
+
+
+
+
+
+
 
 
 
