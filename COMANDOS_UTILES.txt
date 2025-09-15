@@ -134,6 +134,9 @@ tshark -i wlan0 -w capture.cap
 --- Ejecutar el siguiente comando: wireshark capture.cap
 --- Verificar la seccion protocolo (HTTP) y luego la seccion HTML, estando allí ubicar las credenciales
 
+++ Página útil para verificar campañas de phishing:
+-- URL: https://phishtank.org/index.php
+
 
 
 
