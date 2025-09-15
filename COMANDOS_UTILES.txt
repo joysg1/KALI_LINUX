@@ -238,6 +238,12 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Copiar uno de los enlaces generados
 --- Una vez abierto dicho enlace nos será visible toda la información referente (S.O. - ubicación - IP y más)
 
+++ IPDRONE
+--- URL: https://github.com/iamambarish/ipdrone
+--- Navegar al directorio
+--- python3 ipdrone.py -v <ip>
+--- Una vez ejecutado tendremos visible la información referente a dicha ip
+
 
 
 
