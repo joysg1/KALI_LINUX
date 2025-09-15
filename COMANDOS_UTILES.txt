@@ -159,6 +159,14 @@ tshark -i wlan0 -w capture.cap
 ++ Metasploitable
 --- URL: https://sourceforge.net/projects/metasploitable/
 
+++ Brute-Force
+--- URL: https://github.com/ElliotAlderson51/Brute-Force
+--- Navegar a ruta del programa
+--- Ejecutar el siguiente comando: python3 ZipCracker.py
+--- Ingresar el nombre o la direccion del archivo
+--- Ingresar el nombre del archivo de lista (diccionario)
+
+
 
 
 
