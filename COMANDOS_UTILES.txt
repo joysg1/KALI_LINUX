@@ -209,7 +209,7 @@ dir (Ver directorios)
 mkdir <nombre directorio>  (Crear directorio)
 rmdir <nombre directorio> (Borrar directorio)
 
-++ Rabbit
+++ AhMyth
 --- URL: https://github.com/Rabbit-xd/AhMyth
 --- Ejecutar los siguientes comandos tras clonado del repositorio
 --- autoinstall_linux
@@ -223,6 +223,24 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Dar clic en el boton build
 --- El programa procederá a generar un apk
 --- Una vez la aplicación ha sido instalada se procederá a actualizar el apartado de victimas en la interfaz del programa
+
+++ Storm-Breaker (para fines de geolocalizacion)
+--- URL: https://github.com/ultrasecurity/Storm-Breaker
+--- Navegar al directorio 
+--- Ejecutar los siguientes comandos:
+--- bash install.sh
+--- pip3 install -r requirements.txt
+--- python3 st.py
+--- Navegar al directorio de ngrok y ejecutar: ./ngrok http 2525
+--- Copiar el enlace generado de la sección de forwarding
+--- Acceder a dicho enlace
+--- Colocar las credenciales: admin/admin
+--- Copiar uno de los enlaces generados
+--- Una vez abierto dicho enlace nos será visible toda la información referente (S.O. - ubicación - IP y más)
+
+
+
+
 
 
 
