@@ -167,6 +167,18 @@ tshark -i wlan0 -w capture.cap
 --- Ingresar el nombre del archivo de lista (diccionario)
 
 
+++ StegHide
+--- Comando para instalar: sudo apt-get install steghide
+--- steghide --help (Brinda los comandos relacionados al programa)
+--- steghide --embed -ef <archivo_texto> -cf <archivo_imagen> (Permite incrustar un texto oculto en una imagen)
+--- Igresar una contraseña
+--- steghide --extract -sf <archivo_imagen> -xf <archivo_texto> (Permite extraer la data de la imagen)
+--- Ingresar la contraseña previamente establecida
+--- Abrir el archivo generado para comprobar la información extraída
+
+
+
+
 
 
 
