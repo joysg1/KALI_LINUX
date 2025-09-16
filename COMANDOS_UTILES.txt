@@ -325,6 +325,13 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Habilitar todas las opciones (1-9)
 --- kali-whoami --stop (Parar la aplicación)
 
+++ Keylogger
+--- URL: https://github.com/GiacomoLaw/Keylogger
+--- Entrar en el repositorio
+--- pip install -r requirements. txt
+--- python3 keylogger.py
+--- En el directorio del programa se van a capturar todas las entradas por teclado en un archivo .log
+
 
 
 
