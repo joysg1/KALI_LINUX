@@ -300,6 +300,17 @@ rmdir <nombre directorio> (Borrar directorio)
 --- exiftool -Copyright=<nombre_archivo>
 --- Se eliminará el copyright
 
+++ CamHacker
+--- URL: https://github.com/KasRoudra2/CamHacker
+--- Entrar en el directorio del programa
+--- ls
+--- bash ch.sh
+--- Seleccionar la opción 1
+--- Se generarán 2 urls, copiar la primera
+--- Al abrise ese link enviado se nos mostrará la información referente al equipo
+--- Verificar el directorio del programa para ver las imágenes
+
+
 
 
 
