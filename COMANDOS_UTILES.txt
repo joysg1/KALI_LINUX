@@ -244,7 +244,9 @@ rmdir <nombre directorio> (Borrar directorio)
 --- python3 ipdrone.py -v <ip>
 --- Una vez ejecutado tendremos visible la información referente a dicha ip
 
-
+++ Crunch 
+--- crunch 2 6 123456 -o worldlist.txt (2= longitud mínima - 6 = longitud máxima - 123456 = conjunto de caracteres que comprenden la lista)
+--- leafpad <nombre_de_la_lista> (Para abrir la lista generada)
 
 
 
