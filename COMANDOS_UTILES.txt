@@ -332,6 +332,17 @@ rmdir <nombre directorio> (Borrar directorio)
 --- python3 keylogger.py
 --- En el directorio del programa se van a capturar todas las entradas por teclado en un archivo .log
 
+++ Homograph attack (sitio web)
+--- URL: https://www.irongeek.com/homoglyph-attack-generator.php
+--- Introducir el texto que deseemos, ejemplo: google
+--- Cambiar una letra del texto por una similar
+--- Dar clic en submit
+
+++ Punycode converter (sitio web)
+--- URL: https://www.punycoder.com/
+--- Introducir el texto generado anteriormente por homoglyph
+--- Un punnycode distinto al texto original nos indica que estamos viendo un homógrafo
+
 
 
 
