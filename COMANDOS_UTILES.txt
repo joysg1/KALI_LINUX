@@ -276,6 +276,18 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Al acceder a la ip se verá el mensaje falso colocado
 --- En la terminal veremos la ip de quien ha entrado a la ip (En este caso somos nosotros mismos, pero en un escenario real nos mostraría a la ip vinculada al usuario o dispositivo)
 
+++ Tools (Dark Web)
+--- Torch
+--- ahmia
+--- darksearchio
+--- Onionland
+--- notevil
+--- phobos
+--- torgle
+--- tor66
+--- haystack
+--- tormax
+
 
 
 
