@@ -288,6 +288,21 @@ rmdir <nombre directorio> (Borrar directorio)
 --- haystack
 --- tormax
 
+++ Exiftool
+--- man exiftool (Muestra la información de los comandos asociados al programa)
+--- q (Nos permite salir del anterior menú)
+--- exiftool <nombre_archivo>
+--- Se nos mostrará la información relacionada al archivo
+--- exiftool -GPSLatitude=74.2331 -GPSLongitude=75.3321 <nombre_archivo>
+--- Se actualizará la información de geolocalización
+--- exiftool -Copyright="este es mi archivo" <nombre_archivo>
+--- Se actualizará la información de copyright
+--- exiftool -Copyright=<nombre_archivo>
+--- Se eliminará el copyright
+
+
+
+
 
 
 
