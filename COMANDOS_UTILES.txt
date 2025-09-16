@@ -255,7 +255,12 @@ rmdir <nombre directorio> (Borrar directorio)
 --- ifconfig eth0 up
 --- ifconfig
 
-++ 
+++ Macof 
+--- macof --help 
+--- macof -i <interfaz_red> -s <ip_router>
+--- Se enviarán una serie de solicitudes al router que pueden ocasionar su apagado
+
+
 
 
 
