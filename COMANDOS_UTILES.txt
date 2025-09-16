@@ -317,6 +317,14 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Dar clic en lookup
 --- Se nos mostrará información referente al correo
 
+++ Whoami-project 
+--- URL: https://github.com/owerdogan/whoami-project
+--- Entrar al directorio
+--- sudo make install 
+--- kali-whoami --start (Iniciar la aplicación)
+--- Habilitar todas las opciones (1-9)
+--- kali-whoami --stop (Parar la aplicación)
+
 
 
 
