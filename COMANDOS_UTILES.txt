@@ -248,6 +248,15 @@ rmdir <nombre directorio> (Borrar directorio)
 --- crunch 2 6 123456 -o worldlist.txt (2= longitud mínima - 6 = longitud máxima - 123456 = conjunto de caracteres que comprenden la lista)
 --- leafpad <nombre_de_la_lista> (Para abrir la lista generada)
 
+++ Spoof del MAC address
+--- ifconfig
+--- ifconfig eth0 down (eth0 puede ser otra interfaz de red)
+--- ifconfig eth0 ether <dirección_mac_distinta>
+--- ifconfig eth0 up
+--- ifconfig
+
+
+
 
 
 
