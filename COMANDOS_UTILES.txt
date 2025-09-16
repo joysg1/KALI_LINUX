@@ -343,6 +343,21 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Introducir el texto generado anteriormente por homoglyph
 --- Un punnycode distinto al texto original nos indica que estamos viendo un homógrafo
 
+++ Ghost tool
+--- URL: https://github.com/joysg1/KALI_LINUX/edit/main/COMANDOS_UTILES.txt
+--- Entrar al directorio
+--- ghost
+--- Seleccionar la opción 3 (Conectar a dispositivo)
+--- Dar un ip de un dispositivo, podemos obtener una desde: https://www.shodan.io/search?query=android+debug+bridge
+--- Seleccionar la opción 14 (Listar apps del dispositivo)
+--- Seleccionar la opción 4 (Shell de equipo)
+--- ls
+--- Navegar por los directorios según deseemos
+
+
+
+
+
 
 
 
