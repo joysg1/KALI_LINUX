@@ -310,6 +310,12 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Al abrise ese link enviado se nos mostrará la información referente al equipo
 --- Verificar el directorio del programa para ver las imágenes
 
+++ IP2LOCATION (Sitio web)
+--- Ir al correo recibido y dar clic en la sección show original y copiar 
+--- Acceder al siguiente URL: https://www.ip2location.com/free/email-tracer
+--- Pegar la información en el sitio web
+--- Dar clic en lookup
+--- Se nos mostrará información referente al correo
 
 
 
