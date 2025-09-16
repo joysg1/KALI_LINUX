@@ -153,6 +153,26 @@ tshark -i wlan0 -w capture.cap
 --- Ejecutar el siguiente comando: wireshark capture.cap
 --- Verificar la seccion protocolo (HTTP) y luego la seccion HTML, estando allí ubicar las credenciales
 
+++ Rough Wifi 
+--- URL: https://github.com/s0meguy1/RougeWifi
+--- Entrar al directorio
+--- Ejecutar los siguientes comandos:
+--- rm -rf wifi.sh 
+--- cp -r * /var/www/html
+--- Reiniciar el equipo
+--- Ejecutar los siguientes comandos:
+--- service apache2 start
+--- dnsmasq -C /root/dnsmasq.conf
+--- hostapd /root/hostapd.conf -B
+--- ifconfig wlan0 192.168.1.1/24
+--- Aparecerá el nuevo wifi 
+--- Para comenzar la captura ejecutamos lo siguiente:
+--- tshark -i wlan0 -w capture.cap
+--- wireshark capture.cap
+--- Una vez en wireshark buscamos en la sección protocol (HTTP) las 
+credenciales asociadas
+
+
 ++ Página útil para verificar campañas de phishing:
 -- URL: https://phishtank.org/index.php
 
@@ -353,6 +373,9 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Seleccionar la opción 4 (Shell de equipo)
 --- ls
 --- Navegar por los directorios según deseemos
+
+
+
 
 
 
