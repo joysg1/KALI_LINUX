@@ -260,6 +260,26 @@ rmdir <nombre directorio> (Borrar directorio)
 --- macof -i <interfaz_red> -s <ip_router>
 --- Se enviarán una serie de solicitudes al router que pueden ocasionar su apagado
 
+++ Honeypot
+--- URL: https://github.com/technicaldada/pentbox
+--- Acceder al directorio del proyecto
+--- ruby pentbox.rb 
+--- Escoger la opción (2- Network tools)
+--- Escoger la opción (3- Honeypot)
+--- Escoger la opción (2- Manual Configuration)
+--- Indiciar un puerto abierto (ejemplo: 80)
+--- Indicar un mensaje (ejemplo: I got your ip address)
+--- Save a log with intrusion = n
+--- Activate beep sound when intrusion = y
+--- Verificar nuestra ip con ifconfig
+--- Acceder a la ip desde un navegador web usando el puerto (ejemplo 192.168.1.120:80)
+--- Al acceder a la ip se verá el mensaje falso colocado
+--- En la terminal veremos la ip de quien ha entrado a la ip (En este caso somos nosotros mismos, pero en un escenario real nos mostraría a la ip vinculada al usuario o dispositivo)
+
+
+
+
+
 
 
 
