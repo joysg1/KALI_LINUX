@@ -255,6 +255,7 @@ rmdir <nombre directorio> (Borrar directorio)
 --- ifconfig eth0 up
 --- ifconfig
 
+++ 
 
 
 
