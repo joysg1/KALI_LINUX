@@ -686,7 +686,7 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Volver a la pc con kali, a la terminal de listener, se nos mostrará un mensaje indicando que existe 1 sesion abierta
 --- En este punto se tiene control total de la pc de la víctima
 
-++ Seetoolkit (uso fuera de la red local)
+++ Social Engineer Toolkit (uso fuera de la red local)
 --- ngrok http 80
 --- Enter
 --- Copiar la direccion de ngrok desde la seccion de forwarding, ejemplo: b2360e16.ngrok.io
@@ -700,7 +700,8 @@ rmdir <nombre directorio> (Borrar directorio)
 --- set:webattack> Enter the url to clone:<ingresar_la_url_que_deseemos>
 --- Ir a la pc con windows (procurar que se encuentre en una red distinta)
 --- Acceder al link de ngrok
---- Regresar al kali, a la terminal de ngrok, en ella se verán las credenciales del usuario, si el mismo las ingresó al visitar el sitio web
+--- Regresar al kali, a la terminal de set, en ella se verán las credenciales del usuario, si el mismo las ingresó al visitar el sitio web
+
 
 
 
