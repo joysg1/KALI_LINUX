@@ -568,6 +568,19 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Se nos mostrará la página clonada 
 --- Volver al kali, el tráfico del usuario será visible, incluyendo credenciales
 
+++ Blackeye
+--- URL: https://github.com/EricksonAtHome/blackeye
+--- Navegar al directorio
+--- bash blackeye.sh
+--- Escojer el sitio web que se desea imitar ejemplo: opción 4 (Twitter)
+--- Presionar enter para usuar nuestra IP local
+--- Enmascara nuestra ip con un servicio de acortador de enlaces tal como: https://bitly.com/pages/products/url-shortener
+--- Enviar el enlace generado a la víctima
+--- Ir a la pc de la víctima y acceder al enlace
+--- Volver al kali, las credenciales asociadas estarán visibles
+
+
+
 
 
 
