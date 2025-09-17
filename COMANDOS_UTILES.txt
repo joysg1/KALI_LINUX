@@ -431,6 +431,8 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Ejecutar el programa
 --- Volver al kali
 --- Se nos mostrará un mensaje que indica que una sesión ha sido abierta
+--- En estos momentos se tiene control total en la máquina con windows desde kali
+
 
 
 
