@@ -494,6 +494,13 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Aparecerá un mensaje de sesión abierta
 --- En estos momentos se tiene control total del equipo con windows
 
+++ Meterpreter (comandos ha usar cuando ya se ha abierto una sesión)
+--- upload <nombre_archivo> (Se usa para cargar el archivo a la máquina windows)
+--- execute -f <nombre_archivo> (Se usa para ejecutar el archivo)
+--- execute -f <nombre_archivo> -H (Se usa para ejecutar el archivo sin que se abra algún cmd que levante sospechas)
+--- keyscan_start (Permite la captura de las entradas por teclado)
+
+
 
 
 
