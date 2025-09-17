@@ -744,6 +744,18 @@ second-app:
 --- Enviar el correo
 --- Una vez la víctima acceda al correo e ingrese las credenciales las mismas serán capturadas en la terminal (SET)
 
+++ Como detectar meterpreter en nuestra pc
+--- URL: https://github.com/DamonMohammadbagher/Meterpreter_Payload_Detection
+--- Descargar el programa
+--- Navegar al directorio donde se encuentre
+--- Abrir cmd
+--- cd <ubicacion> <nombre_del_archivo_de_meterpreter>
+--- Enter
+--- El análisis comenzará
+--- De encontrar algún resultado se nos mostrará el nombre del archivo y el id
+--- Debemos proceder a detener el proceso
+--- Abrir el administrador de tareas, buscar el proceso y detenerlo
+
 
 
 
