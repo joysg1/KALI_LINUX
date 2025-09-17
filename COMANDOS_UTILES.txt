@@ -556,6 +556,21 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Ir a la pc de la víctima y navegar al dominio ejemplo: tutorial.com
 --- Si todo está bien se debe mostrar el texto indicado en el .html
 
+++ Crear página de login falsa
+--- setoolkit
+--- Seleccionar la opción 1 (Social-Engineering-Attack)
+--- Seleccionar la opción 2 (Website Attack Vectors)
+--- Seleccionar la opción 3 (Credential Harvester Attack Method)
+--- Seleccionar la opción 2 (Site Cloner)
+--- Presionar enter para usar la ip local
+--- Ingresar la url del sitio web a clonar
+--- Ir a la pc de la víctima y navegar a la ip del kali
+--- Se nos mostrará la página clonada 
+--- Volver al kali, el tráfico del usuario será visible, incluyendo credenciales
+
+
+
+
 
 
 
