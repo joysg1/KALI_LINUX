@@ -783,6 +783,10 @@ second-app:
 --- Si el hash del icono no se encuentra en la base de datos de owasp podemos buscar el mismo en google siguiendo la siguiente sintaxis: <"hash">
 --- HTTPS Headers: en la terminal ejecutar lo siguiente: 
 --- curl <url> -v (Nos permite saber el header de una página web para así conocer las tecnologías con las cuales está diseñado
+--- Nos aparecerá todo el código de la página
+--- Nos dirigimos a la parte de arriba para ver el header y datos sobre la tecnología empleada
+
+
 
 
 
