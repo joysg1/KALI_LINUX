@@ -774,7 +774,13 @@ second-app:
 ++ OSINT
 --- <url/robots.txt>
 --- <url/favicon.ico>
---- 
+--- Verificar información de un icono encontrado (hash): https://owasp.org/www-community/favicons_database
+--- Verificar el hash de un icono descargado, abir la terminal y ejecutar el siguiente comando: md5sum <nombre_archivo_icono>
+--- Nos aparecerá en la terminal el hash asociado al archivo del icono, este puede ser verificado en el sitio web descrito anteriormente para así poder tener información como la tecnología empleada en el servidor
+--- El hash también puede calcularse usando extensiones del navegador:
+----- Firefox: https://addons.mozilla.org/en-US/firefox/addon/calculate-md5-sha1-hash-che-1/
+----- Chrome: https://chromewebstore.google.com/detail/md5sum/aljmmecjkheogmcmbffbpmhbgnkijhlk
+
 
 
 
