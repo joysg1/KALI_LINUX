@@ -499,6 +499,7 @@ rmdir <nombre directorio> (Borrar directorio)
 --- execute -f <nombre_archivo> (Se usa para ejecutar el archivo)
 --- execute -f <nombre_archivo> -H (Se usa para ejecutar el archivo sin que se abra algún cmd que levante sospechas)
 --- keyscan_start (Permite la captura de las entradas por teclado)
+--- keyscan_dump (Permite visualizar las entradas capturadas)
 
 
 
