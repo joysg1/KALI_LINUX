@@ -732,6 +732,17 @@ second-app:
 --- Ir a la máquina de la víctima y acceder a dicho link
 --- Volver a la interfaz web de beef y allí nos aparecerá el acceso en la sección de hooked browsers
 
+++ Phising email attack (SET)
+--- Copiar la url que deseemos en la terminal
+--- set:webattack> Enter the url to clone:<url_deseada>
+--- Usar un servicio de email tal como: https://www.5ymail.com/
+--- Colocar el email de la víctima
+--- Colocar el cuerpo del correo
+--- Regresar a la terminal de ngrok
+--- Copiar el último enlace de forwarding
+--- Pegarlo como url incrustado en el cuerpo del correo
+--- Enviar el correo
+--- Una vez la víctima acceda al correo e ingrese las credenciales las mismas serán capturadas en la terminal (SET)
 
 
 
