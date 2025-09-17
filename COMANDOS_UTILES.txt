@@ -780,6 +780,8 @@ second-app:
 --- El hash también puede calcularse usando extensiones del navegador:
 ----- Firefox: https://addons.mozilla.org/en-US/firefox/addon/calculate-md5-sha1-hash-che-1/
 ----- Chrome: https://chromewebstore.google.com/detail/md5sum/aljmmecjkheogmcmbffbpmhbgnkijhlk
+--- Si el hash del icono no se encuentra en la base de datos de owasp podemos buscar el mismo en google siguiendo la siguiente sintaxis: <"hash">
+
 
 
 
