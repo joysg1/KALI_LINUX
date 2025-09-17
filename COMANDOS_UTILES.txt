@@ -757,6 +757,12 @@ second-app:
 --- Abrir el administrador de tareas, buscar el proceso y detenerlo
 
 
+++ Como protegerse de beef 
+--- URL: https://addons.mozilla.org/en-US/firefox/addon/javascript-toggler/
+--- URL: https://addons.opera.com/en/extensions/details/javascript-toggle-on-and-off/
+--- Nota: esta extensión nos permite activar y desactivar javascript. El desactivar javascript impide los ataques de beef
+
+
 
 
 
