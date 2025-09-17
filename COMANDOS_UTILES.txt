@@ -771,6 +771,11 @@ second-app:
 --- Pegar en ella cualquier enlace sospechoso de un correo y escanearlo
 
 
+++ OSINT
+--- <url/robots.txt>
+--- <url/favicon.ico>
+--- 
+
 
 
 
