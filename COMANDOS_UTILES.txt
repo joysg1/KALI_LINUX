@@ -544,7 +544,7 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Ir a la pc de la victima y probar la navegación web
 --- Volver a la máquina con kali, es la terminal se el tráfico de la víctima será visible, incluyendo credenciales
 
-++ Spoofing atack
+++ Spoofing attack
 --- nano /etc/mitmf/mitmf.conf
 --- Ir a la sección A y colocar debajo algun dominio siguiendo la siguiente sintaxis: *.<dominio=ip_deseada_a_dirigirse> (ejemplo: *.tutorial.com=192.168.0.17
 --- Ctrl + G para guardar y Ctrl + X para salir
