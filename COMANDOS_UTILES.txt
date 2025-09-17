@@ -763,6 +763,19 @@ second-app:
 --- Nota: esta extensión nos permite activar y desactivar javascript. El desactivar javascript impide los ataques de beef
 
 
+++ Como prevenir el phishing
+--- Verificar las siguientes secciones de un correo:
+--- mailed-by y signed-by
+--- Proceder a buscar ese dominio en la web para comprobar su legitimidad
+--- Utilizar la herramienta virustotal: www.virustotal.com/gui/home/url
+--- Pegar en ella cualquier enlace sospechoso de un correo y escanearlo
+
+
+
+
+
+
+
 
 
 
