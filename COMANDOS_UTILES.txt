@@ -500,6 +500,12 @@ rmdir <nombre directorio> (Borrar directorio)
 --- execute -f <nombre_archivo> -H (Se usa para ejecutar el archivo sin que se abra algún cmd que levante sospechas)
 --- keyscan_start (Permite la captura de las entradas por teclado)
 --- keyscan_dump (Permite visualizar las entradas capturadas)
+--- shell (Permite ejecutar los comandos de Windows)
+---- Ejemplo de comando a ejecutar: start firefox bing.com (Permite abrir el navegador firefox y dirigirnos al sitio web bing)
+---- Ejemplo de comando a ejecutar: shutdown -s -t 100 (Permite apagar el equipo en 1 minuto)
+
+
+
 
 
 
