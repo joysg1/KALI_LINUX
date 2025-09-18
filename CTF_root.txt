@@ -12,6 +12,9 @@
 ++ PC1 msfconsole 
 ++ PC1 search <Version, ejemplo: ProFTPD 1.3.3c>
 ++ PC1 Nos aparecerá un cuadro con los módulos compatibles, siempre que se pueda utilizar aquellos que están en rank = excellent, esto aumenta las posibilidades de tener éxito en el ataque
+++ PC1 use <nombre_exploit> 
+++ PC1 Se cambiará el contexto al vinculado con el exploit (Ejemplo: msf5 exploit(unix/ftp/proftpd_133c_backdoor) > )
+++ PC1 show options
 ++ 
 
 
