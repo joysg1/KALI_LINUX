@@ -39,6 +39,8 @@
 ++ PC1 hydra -l <nombre_usuario> -e nsr <ip_PC2> ssh
 ++ PC1 Enter
 ++ PC1 Se nos mostrarán los resultados tras el ataque indicando el password correspondiente al usuario
+++ PC1 ssh <nombre_usuario>@<contraseña_encontrada>
+++ PC1 En estos momentos se tiene control total sobre PC2
 
 
 
