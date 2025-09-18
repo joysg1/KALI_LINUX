@@ -23,6 +23,9 @@
 ++ PC1 nos aparecerá el nombre de la PC2
 ++ PC1 whoami
 ++ PC1 Nos aparecerá que estamos como root
+++ PC1 id
+++ PC1 Nos aparecerá que tenemos los privilegios de root
+
 
 
 
