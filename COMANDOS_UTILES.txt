@@ -14,6 +14,7 @@
 --- touch <nombre_archivo> (Permite crear un archivo vacío)
 --- rm <nombre_archivo> (Permite borrar un archivo)
 --- cat <nombre_archivo> (Permite ver el contenido de un archivo)
+--- cp <ruta_actual_archivo> <ruta_destino_archivo> (Permite copiar un archivo)
 --- leafpad <nombre_archivo> (Permite abrir el archivo usando leafpad)
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
 --- su (Acceder como root)
