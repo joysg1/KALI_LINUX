@@ -1,1 +1,5 @@
+++ PROTOCOLO: Normas de transmisión de datos entre pcs. Ejemplo: TCP/IP
 
+++ PUERTO: Dirección física o lógica de una computadora
+
+++ SERVICIO: Brinda seguridad y permite la operación de recursos entre computadoras
