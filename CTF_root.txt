@@ -42,7 +42,12 @@
 ++ PC1 ssh <nombre_usuario>@<ip_PC2>
 ++ PC1 Ingresar la contraseña encontrada
 ++ PC1 En caso de que nos aparezca un mensaje sobre un certificado, presionar y (dos veces de ser necesario)
-++ PC1 En estos momentos se tiene control total sobre PC2
+++ PC1 whoami
+++ PC1 Nos mostrará bajo que usuario estamos en PC2
+++ PC1 hostname && id (Se nos mostrará el nombre del equipo y la información vinculante al usuario)
+++ PC1 Si encontramos que el usuario tiene privilegio sudo podemos ejecutar lo siguiente:
+---- sudo su <contraseña_encontrada>
+++ PC1 En estos momentos ya tenemos permisos de root por ende se tiene control total sobre PC2
 
 
 
