@@ -5,6 +5,14 @@
 ++ PC1 ifconfig
 ++ PC1 nmap -sP -n <ip_red, ejemplo: 192.168.0.0/24> (Nota el colocar el -n hace que el escaneo sea mas rápido ya que se evita la resolución de nombres)
 ++ PC1 nmap -p- -sV <ip_PC2> (Nota: escaneo de los 65k puertos y sus versiones, esto solo es recomendable en ambientes controlados, no en empresas para no generar ruido)
+++ PC1 Se mostrarán los puertos abiertos y sus versiones
+++ PC1 seachsploit <Version, ejemplo: ProFTPD 1.3.3c> 
+++ PC1 Se nos mostrarán las vulnerabilidades asociadas a la versión específica
+++ PC1 msfdb init (Inicializar base de datos de metasploit, esto para tener disponibilidad de almacenamiento en caso de requerir guardar alguna información)
+++ PC1 msfconsole 
+++ PC1 search <Version, ejemplo: ProFTPD 1.3.3c>
+++ PC1 Nos aparecerá un cuadro con los módulos compatibles, siempre que se pueda utilizar aquellos que están en rank = excellent, esto aumenta las posibilidades de tener éxito en el ataque
 ++ 
+
 
 
