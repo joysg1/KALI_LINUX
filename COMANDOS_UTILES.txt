@@ -795,6 +795,14 @@ second-app:
 --- URL2: https://builtwith.com/ (Uso gratuito completo)
 
 
+++ Google dorking
+--- Ejemplo de uso #1 = site:bbc.co.uk (Mostrará todas las webs que contengan el sitio bbc.co.uk
+--- Ejemplo de uso #2 = site:bbc.co.uk filetype:pdf (Permite lo anterior más encontrar archivos pdf)
+
+
+
+
+
 
 
 
