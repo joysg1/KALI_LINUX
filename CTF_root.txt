@@ -3,6 +3,6 @@
 
 
 ++ PC1 ifconfig
-++ PC1 nmap -sP
+++ PC1 nmap -sP -n <ip_red, ejemplo: 192.168.0.0/24> (Nota el colocar el -n hace que el escaneo sea mas rápido ya que se evita la resolución de nombres)
 
 
