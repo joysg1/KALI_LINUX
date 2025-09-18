@@ -1,5 +1,5 @@
 ++ PROTOCOLO: Normas de transmisión de datos entre pcs. Ejemplo: TCP/IP
 
-++ PUERTO: Dirección física o lógica de una computadora
+++ PUERTO: Dirección física o lógica de una computadora. Ejemplo: 8080
 
-++ SERVICIO: Brinda seguridad y permite la operación de recursos entre computadoras
+++ SERVICIO: Brinda seguridad y permite la operación de recursos entre computadoras. Ejemplo: FTP
