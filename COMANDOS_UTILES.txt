@@ -9,6 +9,7 @@
 --- cd <nombre_directorio> (Permite entrar a un directorio)
 --- cd .. (Permite ir al directorio superior)
 --- mkdir <nombre_directorio> (Permite crear directorios)
+--- nano <nombre_archivo> (Permite crear un archivo)
 --- rmdir <nombre_directorio> (Permite borrar un directorio vacío)
 --- touch <nombre_archivo> (Permite crear un archivo vacío)
 --- rm <nombre_archivo> (Permite borrar un archivo)
