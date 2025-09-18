@@ -40,6 +40,7 @@
 ++ PC1 Enter
 ++ PC1 Se nos mostrarán los resultados tras el ataque indicando el password correspondiente al usuario
 ++ PC1 ssh <nombre_usuario>@<ip_PC2>
+++ PC1 Ingresar la contraseña encontrada
 ++ PC1 En estos momentos se tiene control total sobre PC2
 
 
