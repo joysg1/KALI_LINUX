@@ -802,14 +802,37 @@ second-app:
 --- Ejemplo de uso #4 = site:bbc.co.uk inurl:hack (Permite mostrar las webs de bbc.co.uk que tengan en su url hack)
 --- Nota: estas combinaciones también son compatibles con otros buscadores como duckduckgo, yandex, bing, etc
 
+
 ++ Wayback Machine 
 --- URL: https://archive.org/web/
 --- Ingresar cualquier sitio web para explorarlo a través del tiempo
 
 
+++ Github Exposure
+--- Se puede probar la búsqueda de información relacionada a un sitio web
+
+++ Automated Discovery (gobuster)
+--- Abrir el explorador de archivos de kali y navegar al siguiente directorio:
+--- /usr/share/worldlists/ (En este directorio de encuentran worldlists útiles
+--- Para usar alguno de estos worldlists y encontrar contenido de forma automática procedemos a usar los siguientes comandos:
+--- gobuster
+--- y (Si no está instalado aún)
+--- gobuster dir --url <sitio_web_a_escanear> -w /usr/share/worldlists/dirb/commom.txt (Nota: se puede probar con otros worldlists)
+--- Enter
+--- El programa probará todas las cadenas del worldlist en contra del sitio web
 
 
+++ Automated Discovery (dirb)
+--- dirb <sitio_web_a_escanear> /usr/share/worldlists/dirb/commom.txt (Nota: se puede probar con otros worldlists)
+--- Enter
+--- El programa probará todas las cadenas del worldlist en contra del sitio web
 
+
+++ Automated Discovery (ffuf)
+--- ffuf -w /usr/share/worldlists/dirb/commom.txt -u  <sitio_web_a_escanear> FUZZ
+(Nota: se puede probar con otros worldlists)
+--- Enter
+--- El programa probará todas las cadenas del worldlist en contra del sitio web
 
 
 
