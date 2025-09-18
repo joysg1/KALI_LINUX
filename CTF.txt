@@ -1,1 +1,4 @@
+++ PC1 = kali
+++ PC2 = ubuntu
+
 
