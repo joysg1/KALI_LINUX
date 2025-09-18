@@ -800,6 +800,7 @@ second-app:
 --- Ejemplo de uso #2 = site:bbc.co.uk filetype:pdf (Permite lo anterior más encontrar archivos pdf)
 --- Ejemplo de uso #3 = site:bbc.co.uk intitle:hack (Permite mostrar las webs de bbc.co.uk con el titulo hack)
 --- Ejemplo de uso #4 = site:bbc.co.uk inurl:hack (Permite mostrar las webs de bbc.co.uk que tengan en su url hack)
+--- Nota: estas combinaciones también son compatibles con otros buscadores como duckduckgo, yandex, bing, etc
 
 
 
