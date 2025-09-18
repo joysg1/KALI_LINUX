@@ -15,6 +15,9 @@
 --- cat <nombre_archivo> (Permite ver el contenido de un archivo)
 --- leafpad <nombre_archivo> (Permite abrir el archivo usando leafpad)
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
+--- su (Acceder como root)
+--- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
+--- 
 
 
 ++ kali-undercover ---> comando usado para tener la apariencia de Windows
