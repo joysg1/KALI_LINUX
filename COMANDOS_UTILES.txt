@@ -790,6 +790,11 @@ second-app:
 ----- Tools ---> Browser Tools ---> Web Developer Tools ---> Network ---> Refrescar la página web ---> En la parte inferior del navegador buscar la sección file / y dar clic allí ---> A la derecha dar clic en Headers ---> Ubicar la información relacionada a las tecnologías
 
 
+++ Identificar las tecnologías de un sitio web
+--- URL1: https://www.wappalyzer.com/
+--- URL2: https://builtwith.com/
+
+
 
 
 
