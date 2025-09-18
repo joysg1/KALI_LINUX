@@ -1,8 +1,10 @@
 ++ PC1 = kali (atacante)
-++ PC2 = ubuntu (víctima)
+++ PC2 = ubuntu 16.04 (víctima)
 
 
 ++ PC1 ifconfig
 ++ PC1 nmap -sP -n <ip_red, ejemplo: 192.168.0.0/24> (Nota el colocar el -n hace que el escaneo sea mas rápido ya que se evita la resolución de nombres)
+++ PC1 nmap -p- -sV <ip_PC2> (Nota: escaneo de los 65k puertos y sus versiones, esto solo es recomendable en ambientes controlados, no en empresas para no generar ruido)
+++ 
 
 
