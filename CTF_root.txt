@@ -26,7 +26,7 @@
 ++ PC1 id
 ++ PC1 Nos aparecerá que tenemos los privilegios de root
 ++ PC1 ls
-++ Nos aparecerán los directorios del PC2, confirmando así que tenemos control total sobre este
+++ Nos aparecerán los directorios del PC2, confirmando así que tenemos visibilidad total de los archivos del PC2
 
 
 
