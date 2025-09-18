@@ -21,6 +21,9 @@
 ++ PC1 Nos aparecerán una serie de mensajes hasta el punto que nos debe salir uno que diga: Command shell session 1 opened (<ip_PC1>:<puerto_PC1> ---> <ip_PC2>:<puerto_PC2> )
 ++ PC1 hostname
 ++ PC1 nos aparecerá el nombre de la PC2
+++ PC1 whoami
+++ PC1 Nos aparecerá que estamos como root
+
 
 
 
