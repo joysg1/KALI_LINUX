@@ -798,6 +798,9 @@ second-app:
 ++ Google dorking
 --- Ejemplo de uso #1 = site:bbc.co.uk (Mostrará todas las webs que contengan el sitio bbc.co.uk
 --- Ejemplo de uso #2 = site:bbc.co.uk filetype:pdf (Permite lo anterior más encontrar archivos pdf)
+--- Ejemplo de uso #3 = site:bbc.co.uk intitle:hack (Permite mostrar las webs de bbc.co.uk con el titulo hack)
+--- Ejemplo de uso #4 = site:bbc.co.uk inurl:hack (Permite mostrar las webs de bbc.co.uk que tengan en su url hack)
+
 
 
 
