@@ -1,1 +1,2 @@
 ++ URL: http://www.dot.tk/en/index.html?lang=en
+--- Nota: si en un análisis de malware observamos que un programa o aplicativo se conecta a un dominio de este tipo, muy seguramente se trate de un programa malicioso ya que está haciendo uso de un dominio gratuito usado con regularidad por cibercriminales
