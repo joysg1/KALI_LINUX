@@ -802,6 +802,10 @@ second-app:
 --- Ejemplo de uso #4 = site:bbc.co.uk inurl:hack (Permite mostrar las webs de bbc.co.uk que tengan en su url hack)
 --- Nota: estas combinaciones también son compatibles con otros buscadores como duckduckgo, yandex, bing, etc
 
+++ Wayback Machine 
+--- URL: https://archive.org/web/
+--- Ingresar cualquier sitio web para explorarlo a través del tiempo
+
 
 
 
