@@ -26,7 +26,10 @@
 ++ PC1 id
 ++ PC1 Nos aparecerá que tenemos los privilegios de root
 ++ PC1 ls
-++ Nos aparecerán los directorios del PC2, confirmando así que tenemos visibilidad total de los archivos del PC2
+++ PC1 Nos aparecerán los directorios del PC2, confirmando así que tenemos visibilidad total de los archivos del PC2
+++ PC1 cat /etc/passwd (Para ver los usuarios de PC2)
+---- Nota: Los usuarios con un numero >=1000 son usuarios creados manualmente
+---- Nota: Los usuarios con un número <1000 son usuarios creados por el sistema 
 
 
 
