@@ -32,6 +32,12 @@
 ---- Nota: Dentro de esos usuarios (>=1000) aquellos que tienen al final /bin/bash son aquellos que tienen habilitado el servicio de ssh)
 ---- Nota: Los usuarios con un número <1000 son usuarios creados por el sistema, generalmente servicios 
 ---- Nota: Dentro de esos usuarios (<1000) aquellos que tienen al final /bin/false indican que efectivamente son servicios ya que tienen desactivado el ssh
+++ PC1 cat /etc/passwd || grep bash (Para mostrar solo los usuarios que se encuentran con bash
+++ PC1 Ctrl + C (salir del archivo)
+++ PC1 exit (salir de metaexploit)
+++ PC1 man hydra (Ver informacion del programa hydra. Usaremos hydra para realizar un ataque de fuerza bruta y tener controlar por ssh el PC2)
+
+
 
 
 
