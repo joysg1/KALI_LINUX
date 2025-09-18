@@ -19,8 +19,9 @@
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
 --- su (Acceder como root)
 --- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
+--- chmod <cod_permisos> <archivo> (Cambiar los permisos de un archivo)
+----- Código de permisos (explicación): https://johndecember.com/unix/ref/chmod.html
 --- 
-
 
 ++ kali-undercover ---> comando usado para tener la apariencia de Windows
 --- Recordar tener instlado el paquete: sudo apt-get install kali-undercover
