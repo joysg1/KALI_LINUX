@@ -1,6 +1,8 @@
-++ PC1 = kali
-++ PC2 = ubuntu
+++ PC1 = kali (atacante)
+++ PC2 = ubuntu (víctima)
 
 
+++ PC1 ifconfig
+++ PC1 nmap -sP
 
 
