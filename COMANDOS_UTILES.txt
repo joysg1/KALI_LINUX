@@ -791,8 +791,8 @@ second-app:
 
 
 ++ Identificar las tecnologías de un sitio web
---- URL1: https://www.wappalyzer.com/
---- URL2: https://builtwith.com/
+--- URL1: https://www.wappalyzer.com/ (De pago después de 1 uso)
+--- URL2: https://builtwith.com/ (Uso gratuito completo)
 
 
 
