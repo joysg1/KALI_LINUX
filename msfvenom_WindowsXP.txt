@@ -15,6 +15,7 @@
 ++ PC1 Aparecerá un mensaje de 1 sesion abierta
 ++ PC1 screenshot (Tomar captura del escritorio de PC2>
 ++ PC1 screenshare (Ver en tiempo real el escritorio de PC2>
+++ PC1 ps (Muestra el listado de los comandos que están corriendo actualmente)
 ++ PC1 help (Ver todos los comandos que podemos ejecutar para obtener mas información o control)
 
 
