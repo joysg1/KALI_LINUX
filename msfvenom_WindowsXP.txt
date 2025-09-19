@@ -17,7 +17,12 @@
 ++ PC1 screenshare (Ver en tiempo real el escritorio de PC2>
 ++ PC1 ps (Muestra el listado de los procesos que están corriendo actualmente en PC2)
 ++ PC1 pskill <nombre_proceso> (Detener algún proceso de PC2)
+++ PC1 upload <nombre_archivo> (Sube un archivo a PC2)
+++ PC1 download <nombre_archivo> (Baja un archivo de PC2)
+---- Nota: En este caso la carga o descarga de un archivo se hace en el directorio kali (home) 
 ++ PC1 help (Ver todos los comandos que podemos ejecutar para obtener mas información o control)
+
+
 
 
 
