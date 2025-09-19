@@ -880,6 +880,7 @@ second-app:
 --- Crear un .txt en el escritorio de kali y copiar en el todos los hashes
 --- Ejecutar los siguientes comandos:
 --- john --format=NT --rules -w=<archivo_wordlist.txt> <archivo_hash.txt>
+--- A continuación aparecerán las contraseñas encontradas, si no aparecen todas se puede usar otro worldlist o seguir usando crackstation.net
 
 
 
