@@ -883,6 +883,16 @@ second-app:
 --- A continuación aparecerán las contraseñas encontradas, si no aparecen todas se puede usar otro worldlist o seguir usando crackstation.net
 
 
+++ Data integrity (Hash verification)
+--- Crear un archivo en el escritorio
+--- Calcular su hash ejecutando el siguiente comando:
+--- md5sum <nombre_archivo>
+--- Modificar el archivo y guardarlo
+--- Caluclar nuevamente el hash
+--- md5sum <nombre_archivo>
+--- Se evidenciará que tras la modificación los hashs son distintos, indicando que la integridad de la data ha cambiado
+
+
 
 
 
