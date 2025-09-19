@@ -12,4 +12,10 @@
 ++ PC1 python3 -m http.server (Servidor para compartir el archivo generado) 
 ++ PC2 http://<ip_PC1>:8000
 ++ PC2 Descargar y ejecutar el archivo 
+++ PC1 Aparecerá un mensaje de 1 sesion abierta
+++ PC1 screenshot (Tomar captura del escritorio de PC2>
+++ PC1 screenshare (Ver en tiempo real el escritorio de PC2>
+++ PC1 help (Ver todos los comandos que podemos ejecutar para obtener mas información o control)
+
+
 
