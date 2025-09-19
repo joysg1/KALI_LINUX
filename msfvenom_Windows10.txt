@@ -1,2 +1,4 @@
 ++ PC1: Kali
 ++ PC2: Windows 10 
+
+++ PC2 Firewall y Defender desactivado
