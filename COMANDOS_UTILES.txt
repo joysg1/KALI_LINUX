@@ -891,6 +891,9 @@ second-app:
 --- Caluclar nuevamente el hash
 --- md5sum <nombre_archivo>
 --- Se evidenciará que tras la modificación los hashs son distintos, indicando que la integridad de la data ha cambiado
+--- Podemos usar otros algoritmos hash para hacer la comparativa, ejemplo: sha256
+--- sha256sum <nombre_archivo>
+
 
 
 
