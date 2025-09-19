@@ -865,6 +865,28 @@ second-app:
 --- john hashtocrack.txt --show
 --- Se mostrarán los usuarios y las contraseñas asociadas
 
+++ Crack Windows hash (Mimikatz)
+--- Windows usa el algoritmo NTLM
+--- URL: https://github.com/ParrotSec/mimikatz
+--- Ejecutar el .exe
+--- Se abrirá un cmd, ejecutar los siguientes comandos:
+--- priviledge::debug
+--- token::elevate
+--- lsadump::sam
+--- Aparecerá un listado de usuarios y sus hashs
+--- Guardar este listado en un .txt para proceder a crackearlos en kali linux. Podemos usar un servicio online como: https://pastebin.com/
+--- Para intentar crackear los hash podemos usar crackstation: https://crackstation.net/
+--- Para hacerlo en kali usando john the ripper seguir los siguientes pasos:
+--- Crear un .txt en el escritorio de kali y copiar en el todos los hashes
+--- Ejecutar los siguientes comandos:
+--- john --format=NT --rules -w=<archivo_wordlist.txt> <archivo_hash.txt>
+
+
+
+
+
+
+
 
 
 
