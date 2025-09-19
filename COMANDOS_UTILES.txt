@@ -5,7 +5,7 @@
 --- uname (Brinda el nombre del equipo)
 --- uname -r (Brinda la version del kernel)
 --- uname -a (Brinda información más detallada del sistema)
---- sudo add user (Agregar usuario al sistema)
+--- sudo adduser (Agregar usuario al sistema)
 --- ls (Lista los archivos que hay en un directorio)
 --- cd <nombre_directorio> (Permite entrar a un directorio)
 --- cd .. (Permite ir al directorio superior)
