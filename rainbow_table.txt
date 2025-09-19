@@ -1,1 +1,3 @@
+Técnica que permite obtener contraseñas de tablas hash
+
 ++ URL1: https://crackstation.net/
