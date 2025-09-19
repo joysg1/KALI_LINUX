@@ -861,9 +861,12 @@ second-app:
 --- Extraer el archivo
 --- head -n 50 rockyou.txt (Muestra las primeras 50 líneas del archivo)
 --- cat rockyou.txt | wc -l (Muestra el número de líneas que tiene el archivo)
+--- john --format=crypt --worldlist=rockyou.txt hashtocrack.txt
+--- john hashtocrack.txt --show
+--- Se mostrarán los usuarios y las contraseñas asociadas
 
 
---- 
+
 
 
 
