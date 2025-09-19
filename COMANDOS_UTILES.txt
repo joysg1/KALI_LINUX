@@ -2,6 +2,7 @@
 --- pwd (Muestra el directorio en dónde estamos)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
+--- ip addr show (Conocer la ip)
 --- uname (Brinda el nombre del equipo)
 --- uname -r (Brinda la version del kernel)
 --- uname -a (Brinda información más detallada del sistema)
