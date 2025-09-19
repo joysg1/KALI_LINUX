@@ -6,6 +6,8 @@
 --- uname -r (Brinda la version del kernel)
 --- uname -a (Brinda información más detallada del sistema)
 --- sudo adduser (Agregar usuario al sistema)
+--- cat /etc/passwd (Permite ver los usuarios registrados en el sistema)
+--- sudo cat /etc/shadow (Permite ver los hashs de los usuarios del sistema)
 --- ls (Lista los archivos que hay en un directorio)
 --- cd <nombre_directorio> (Permite entrar a un directorio)
 --- cd .. (Permite ir al directorio superior)
