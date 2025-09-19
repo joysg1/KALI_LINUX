@@ -1,2 +1,3 @@
 ++ URL1: https://hashingservice.com/
 ++ URL2: https://www.onlinewebtoolkit.com/hash-generator
+++ URL3: https://md5calc.com/hash
