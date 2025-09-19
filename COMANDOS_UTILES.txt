@@ -898,7 +898,7 @@ second-app:
 ++ Cifrar (Tool online)
 --- URL: https://encrypt.toolpie.com/
 
-++ Hashing <> Cifrar
+++ Hashing <> Cifrar (No son iguales)
 --- Hashing es usado para comprobar la integridad de la data
 --- El cifrado es usado para que la data la enviarse o compartirse solo pueda leerse por el receptor de confianza al compartirse una clave secreta
 
