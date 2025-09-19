@@ -854,7 +854,16 @@ second-app:
 --- sudo cat /etc/shadow (Muestra los hash de las contraseñas de los usuarios)
 --- cd Desktop
 --- cat /etc/passwd > ~/Desktop/passwd.txt (Copiar archivo passwd al escritorio)
---- cat /etc/shadow > ~/Desktop/shadow.txt (Copiar archivo shadow al escritorio)
+--- sudo cat /etc/shadow > ~/Desktop/shadow.txt (Copiar archivo shadow al escritorio)
+--- unshadow passwd.txt shadow.txt > hashtocrack.txt (Combinar ambos archivos)
+--- john (Accede al programa John the Ripper)
+--- Ir a la ruta /usr/share/worldlists y copiar el archivo rockyou.txt.gz al escritorio (Ese archivo es un worldlist, necesario para crackear los hashes usando john)
+--- Extraer el archivo
+--- head -n 50 rockyou.txt (Muestra las primeras 50 líneas del archivo)
+--- cat rockyou.txt | wc -l (Muestra el número de líneas que tiene el archivo)
+
+
+--- 
 
 
 
