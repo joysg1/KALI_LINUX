@@ -23,5 +23,8 @@
 ++ Para ingresar formalmente como root podemos ejecutar:
 --- sudo /bin/bash
 ++ Ya tenemos acceso de root
+++ Comprobar con:
+--- whoami
+--- groups
 
 
