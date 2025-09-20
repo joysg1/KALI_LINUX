@@ -20,5 +20,8 @@
 ++ Mediante el comando groups podemos identificar si el usuario ubuntu es parte de sudo, de ser este el caso podemos ejecutar acciones como root
 ++ En este caso el usuario ubuntu forma parte del grupo sudo, procedemos a comprobar que comandos podemos ejecutar mediante:
 ++ sudo -l (Nos muestra información sobre que comandos podemos ejecutar, en este caso nos muestra que podemos ejecutar todos)
+++ Para ingresar formalmente como root podemos ejecutar:
+--- sudo /bin/bash
+++ Ya tenemos acceso de root
 
 
