@@ -2,5 +2,6 @@
 ++ cat /etc/shadow (Permite ver los hashs de las contraseñas de los usuarios)
 ++ Copiar el hash de la contraseña del usuario root y pegarla en un archivo nuevo, guardar el mismo (Recordar copiar el hash hasta el primer :)
 ++ Volver a la terminal, usar la herramienta john the ripper para crackear el hash
+++ sudo apt-get install john
 ++ john <archivo_hash> --format=crypt 
-
+++ La contraseña será mostrada
