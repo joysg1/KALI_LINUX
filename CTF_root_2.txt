@@ -2,4 +2,5 @@
 ++ Copiar dicho archivo al escritorio y extraerlo
 ++ nmap <ip_server> 
 ++ Aparece el puerto 22 (ssh) abierto
+++ Instalar seclists: sudo apt install seclists ó hacer uso del siguiente archivo: https://github.com/danielmiessler/SecLists
 ++ 
