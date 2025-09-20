@@ -21,4 +21,7 @@
 ++ cd /usr/share/linux-exploit-suggester
 ++ ./linux-exploit-suggester.sh -k <version_kernel>
 ++ En esta ocasión no nos aparecen exploits, probaremos con otro método
+++ Volvemos a la terminal con la sesion ssh abierta
+++ cat .ash_history (Nos permite ver el historial de comandos ejecutados)
+
 
