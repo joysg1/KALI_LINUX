@@ -16,4 +16,9 @@
 --- groups
 ++ uname -r (Nos muestra información sobre la versión de linux)
 ++ uname -a (Nos muestra información más detallada sobre el sistema)
-++ 
+++ Abrir otra terminal, procederemos a tratar de encontrar un exploit vinculado a la version de linux
+++ sudo apt install linux-exploit-suggester
+++ cd /usr/share/linux-exploit-suggester
+++ ./linux-exploit-suggester.sh -k <version_kernel>
+++ En esta ocasión no nos aparecen exploits, probaremos con otro método
+
