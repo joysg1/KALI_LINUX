@@ -2,6 +2,7 @@
 --- pwd (Muestra el directorio en dónde estamos)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
+--- history (Permite ver el historial de los comandos)
 --- whoami (Conocer el nombre del usuario activo en la terminal)
 --- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
 --- sudo /bin/bash (Acceder como root)
