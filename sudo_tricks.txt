@@ -1,1 +1,1 @@
-
+++ sudo -l (Permite ver los permisos asociados)
