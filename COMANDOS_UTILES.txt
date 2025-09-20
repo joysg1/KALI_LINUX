@@ -2,6 +2,8 @@
 --- pwd (Muestra el directorio en dónde estamos)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
+--- whoami (Conocer el nombre del usuario activo en la terminal)
+--- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
 --- ip addr show (Conocer la ip)
 --- ip a (Muestra los dispositivos de red)
 --- uname (Brinda el nombre del equipo)
