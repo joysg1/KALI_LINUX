@@ -1,1 +1,12 @@
-
+++ nmap <ip_servidor>
+++ Nos aparece el puerto 22 (ssh) abierto
+++ Accedemos a la ip del servidor mediante un navegador web, haciendo uso de webtools vemos que el mismo emplea ubuntu como S.O.
+--- Acceder a webtools en firefox:
+---- Menú superior tools
+---- Browser tools
+---- Web Development Tools 
+---- Network
+---- Refrescar la página
+---- /
+---- A la derecha ubicar información de relevancia
+++ Mediante hydra hydra -l ubuntu 
