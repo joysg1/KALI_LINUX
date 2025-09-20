@@ -1,3 +1,3 @@
-++ sudo -l (Permite ver los permisos asociados)
+++ sudo -l (Permite ver los comandos que podemos ejecutar siendo root)
 ++ URL: https://gtfobins.github.io/#+sudo
 --- Nota: el url permite ver un listado de los comandos que pueden abusarse para tener acceso root 
