@@ -8,3 +8,4 @@
 --- Nota: La L mayúscula significa que no se conoce el usuario y se usará el archivo names.txt para intentar encontrarlo
 ++ hydra -l <nombre_usuario> -P rockyou.txt ssh://<ip_servidor>
 --- Nota: La l minúscula significa que se conoce el usuario
+++ Aparecerán las credenciales asociadas al servidor 
