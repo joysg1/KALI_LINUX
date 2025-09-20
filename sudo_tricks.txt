@@ -3,3 +3,5 @@
 --- Nota: el url permite ver un listado de los comandos que pueden abusarse para tener acceso root 
 --- Por ejemplo si mediante sudo -l nos aparece que tenemos permisos para ejecutar time, visitando el url vemos que existe un comando vinculado que nos permite tener acceso como root, el cual es: 
 ---- sudo /usr/bin/time /bin/sh
+--- Se da el mismo caso con el comando man, a continuación tenemos el equivalente:
+---- sudo man man
