@@ -8,6 +8,7 @@
 --- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
 --- sudo /bin/bash (Acceder como root)
 --- su (Acceder como root)
+--- sudo -l (Nos permite verificar que comandos podemos ejecutar siendo root)
 --- ip addr show (Conocer la ip)
 --- ip a (Muestra los dispositivos de red)
 --- uname (Brinda el nombre del equipo)
