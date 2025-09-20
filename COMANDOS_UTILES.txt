@@ -7,6 +7,8 @@
 --- uname (Brinda el nombre del equipo)
 --- uname -r (Brinda la version del kernel)
 --- uname -a (Brinda información más detallada del sistema)
+--- curl <enlace> (Descargar archivo)
+--- wget <enlace> (Descargar archivo)
 --- sudo adduser (Agregar usuario al sistema)
 --- cat /etc/passwd (Permite ver los usuarios registrados en el sistema)
 --- sudo cat /etc/shadow (Permite ver los hashs de los usuarios del sistema)
