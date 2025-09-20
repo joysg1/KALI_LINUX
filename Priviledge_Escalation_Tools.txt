@@ -1,0 +1,13 @@
+I) LINPEAS (Herramienta para Linux)
+++ URL: https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS
+++ Esta herramienta permite un escaneo total del equipo brindando información como:
+--- Hash de los usuarios
+--- Archivos con información útil
+
+II) LINEMU (Herramienta para Linux)
+++ URL: https://github.com/rebootuser/LinEnum
+
+III) WINPEAS (Herramienta para Windows)
+++ URL: https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
+
+
