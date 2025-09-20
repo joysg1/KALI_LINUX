@@ -5,3 +5,4 @@
 ---- sudo /usr/bin/time /bin/sh
 --- Se da el mismo caso con el comando man, a continuación tenemos el equivalente:
 ---- sudo man man
+---- !/bin/sh
