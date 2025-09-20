@@ -1,1 +1,5 @@
-
+++ Ubicar archivo de worldlist en /usr/share/worldlist
+++ Copiar dicho archivo al escritorio y extraerlo
+++ nmap <ip_server> 
+++ Aparece el puerto 22 (ssh) abierto
+++ 
