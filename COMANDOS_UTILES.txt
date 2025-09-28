@@ -2,6 +2,7 @@
 --- pwd (Muestra el directorio en dónde estamos)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
+--- <comando> > <nombre_archivo> (Permite guardar la salida de un comando en un archivo)
 --- history (Permite ver el historial de los comandos)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
 --- whoami (Conocer el nombre del usuario activo en la terminal)
