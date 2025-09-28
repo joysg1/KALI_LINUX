@@ -5,6 +5,7 @@
 --- history (Permite ver el historial de los comandos)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
 --- whoami (Conocer el nombre del usuario activo en la terminal)
+--- whoami;date;pwd (Muestra el usuario activo, fecha y directorio. Nota: se usa el ; para combinar comandos)
 --- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
 --- sudo /bin/bash (Acceder como root)
 --- su (Acceder como root)
