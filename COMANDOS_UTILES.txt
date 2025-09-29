@@ -5,7 +5,7 @@
 --- <comando> > <nombre_archivo> (Permite guardar la salida de un comando en un archivo)
 --- history (Permite ver el historial de los comandos)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
---- cat /etc/issue (Permite conocer la versión de la distribución GNU/Linux)
+--- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
 --- whoami (Conocer el nombre del usuario activo en la terminal)
 --- whoami;date;pwd (Muestra el usuario activo, fecha y directorio. Nota: se usa el ; para combinar comandos)
 --- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
