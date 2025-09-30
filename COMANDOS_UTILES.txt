@@ -11,7 +11,7 @@
 --- groups (Conocer la correspondencia de grupos del usuario activo en la terminal)
 --- sudo /bin/bash (Acceder como root)
 --- su (Acceder como root)
---- sudo -l (Nos permite verificar que comandos podemos ejecutar siendo root)
+--- sudo -l (Nos permite verificar que comandos podemos ejecutar)
 --- ip addr show (Conocer la ip)
 --- ip a (Muestra los dispositivos de red)
 --- ifconfig -a (Muestra los dispositivos de red)
