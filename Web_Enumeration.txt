@@ -2,3 +2,4 @@
 --- Probar acceso a directorios de un servidor web, ejemplo: <url_servidor>/<nombre_carpeta>
 --- Acceder a las developer tools de firefox para examinar el contenido del sitio web. Acceso mediante: Ctrl + Shift + I 
 ----- Nota: el acceso también es posible mediante la barra superior en Tools ---> Browser tools ---> Web Developer Tools
+----- Nota: En la sección headers, parte inferior derecha podemos ver información relacionada al tipo de servidor. ESta sección se habilita al ubicar algún directorio, por ejemplo / 
