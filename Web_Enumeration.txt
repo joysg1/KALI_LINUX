@@ -20,6 +20,7 @@ directorios asociados
 ++ Esaneo de sitios webs basados en Wordpress
 --- wpscan
 --- Si no está instalado, hacerlo con: sudo apt-get install wpscan
+--- wpscan --update (Actualiza la base de datos de wpscan)
 
 
 
