@@ -13,4 +13,5 @@ ejecutar comandos, tales como:
 ---- cat /etc/group (Permite ver información referente a los grupos)
 ---- cat /etc/passwd (Permite ver el listado de los usuarios del sistema)
 ---- sudo cat /etc/shadow (Permite ver los hashes de las contraseñas de los usuarios del sistema. Nota: el hash es aquel que se encuentra entre los :)
-
+---- cd /var/mail/ (De ser un servidor web permite ver información relacionada al 
+sistema y los usuarios)
