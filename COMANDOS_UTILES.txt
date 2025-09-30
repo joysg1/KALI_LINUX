@@ -54,6 +54,12 @@
 --- cat archivo_parte_* > archivo_reunido.ext (Para reunir las partes)
 ----- Código de permisos (explicación): https://johndecember.com/unix/ref/chmod.html
 
+++ Ruta de los worldlists por defecto
+usr/share/worldlists
+
+++ Worldlists adicionales
+sudo apt-get install seclists
+
 
 ++ kali-undercover ---> comando usado para tener la apariencia de Windows
 --- Recordar tener instlado el paquete: sudo apt-get install kali-undercover
