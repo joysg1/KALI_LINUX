@@ -17,6 +17,13 @@ directorios asociados
 ----- gobuster dns -d <url_sitio_web> -w </usr/share/worldlists/dirb/<nombre_worldlist> (Permite escanear los subdominios asociados al sitio web)
 
 
+++ Esaneo de sitios webs basados en Wordpress
+--- wpscan
+--- Si no está instalado, hacerlo con: sudo apt-get install wpscan
+
+
+
+
 
 
 
