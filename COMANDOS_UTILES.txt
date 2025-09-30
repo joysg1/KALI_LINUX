@@ -28,6 +28,7 @@
 --- sudo adduser (Agregar usuario al sistema)
 --- cat /etc/passwd (Permite ver los usuarios registrados en el sistema)
 --- sudo netstat -plt (Permite ver los procesos que tienen conexión de red)
+--- sudo netstat -atupn (Permite ver las conexiones activas en el sistema y los puertos asociados)
 --- nc -lnp <puerto> (Inicia la escucha a un puerto) 
 --- sudo cat /etc/shadow (Permite ver los hashs de las contraseñas de los usuarios del sistema)
 --- ls (Lista los archivos que hay en un directorio)
