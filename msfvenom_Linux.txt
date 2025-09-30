@@ -25,5 +25,7 @@ sistema y los usuarios)
 ++ PC1: get shadow
 ++ PC1: Ir al directorio home u otro para ubicar ambos archivos 
 ++ PC1: unshadow passwd shadow > <nombre_archivo_combinado>
-++ 
+++ PC1: john --worldlist=<nombre_diccionario>  <nombre_archivo_combinado> --format=crypt 
+--- Nota: El la ruta usr/share/worldlists se encuentra un worldlist comprimido 
+++ PC1: Aparecerán las contraseñas asociadas a los usuarios
 
