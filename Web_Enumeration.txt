@@ -23,6 +23,8 @@ directorios asociados
 --- wpscan --update (Actualiza la base de datos de wpscan)
 --- wpscan --url <url> --enumerate t (Realiza el escaneo a un sitio web basado en wordpress)
 --- wpscan --url <url> --enumerate p (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con los plugins)
+--- wpscan --url <url> --enumerate u (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con los usuarios)
+--- wpscan --url <url> --enumerate v (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con las vulnerabilidades)
 
 
 
