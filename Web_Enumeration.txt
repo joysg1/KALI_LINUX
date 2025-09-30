@@ -6,5 +6,6 @@
 
 ++ Escaneo automatizado (usando worldlists)
 --- Ruta de las worldlists por defecto: usr/share/worldlists
+--- Instalar worldlists adicionales: sudo apt-get install seclists
 
 
