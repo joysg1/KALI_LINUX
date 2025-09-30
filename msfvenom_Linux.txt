@@ -15,3 +15,4 @@ ejecutar comandos, tales como:
 ---- sudo cat /etc/shadow (Permite ver los hashes de las contraseñas de los usuarios del sistema. Nota: el hash es aquel que se encuentra entre los :)
 ---- cd /var/mail/ (De ser un servidor web permite ver información relacionada al 
 sistema y los usuarios)
+---- dpkg -l (En distribuciones basadas en Debian permite ver el listado de los paquetes instalados)
