@@ -957,6 +957,10 @@ second-app:
 --- help (Ver todos los demás comandos útiles)
 
 
+++ WPSCAN
+--- sudo apt-get install wpscan
+
+
 
 
 
