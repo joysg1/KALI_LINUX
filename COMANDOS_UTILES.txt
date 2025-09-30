@@ -14,6 +14,7 @@
 --- sudo -l (Nos permite verificar que comandos podemos ejecutar siendo root)
 --- ip addr show (Conocer la ip)
 --- ip a (Muestra los dispositivos de red)
+--- ifconfig -a (Muestra los dispositivos de red)
 --- uname (Brinda el nombre del equipo)
 --- uname -r (Brinda la version del kernel)
 --- uname -a (Brinda información más detallada del sistema)
