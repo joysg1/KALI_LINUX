@@ -22,6 +22,8 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ----- cd (Permite navegar entre los directorios)
 ----- arp -a (Permite ver los otros dispositivos que están en la red)
 ----- ipconfig (Nos permite ver la información de red del equipo)
+----- netstat (Nos permite ver que programas tienen conexión a internet)
+
 
 
 
