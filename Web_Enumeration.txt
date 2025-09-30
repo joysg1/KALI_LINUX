@@ -1,1 +1,2 @@
-
+++ Escaneo manual
+--- Probar acceso a directorios de un servidor web, ejemplo: <url_servidor>/<nombre_carpeta>
