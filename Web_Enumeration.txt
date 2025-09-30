@@ -14,7 +14,7 @@ A continuación algunos ejemplos de comandos con gobuster:
 directorios asociados
 ----- gobuster dir -u <url_sitio_web/<directorio>> -w </usr/share/worldlists/dirbuster/<nombre_worldlist> -x.conf,.txt,.pdf,.doc,.html,.docx,.xls,.mp3,.mp4,.js -k
 (Usa un diccionario para verificar la presencia de archivos en la estructura de un sitio web)
------ gobuster dns -d <url_sitio_web> -w </usr/share/worldlists/dirb/<nombre_worldlist> (Permite escanear los dominios asociados al sitio web)
+----- gobuster dns -d <url_sitio_web> -w </usr/share/worldlists/dirb/<nombre_worldlist> (Permite escanear los subdominios asociados al sitio web)
 
 
 
