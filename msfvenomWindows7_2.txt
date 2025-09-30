@@ -44,7 +44,10 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ---- download <nombre_archivo> (Descargar un archivo del PC2)
 ---- upload <nombre_archivo> (Subir un archivo al PC2)
 ---- hashdump (permite ver los detalles de las contraseñas, nota: solo 
-funciona si el programa es ejecutado como administrador)
+funciona si el programa es ejecutado como administrador. Es importante señalar
+que el útimo fragmento del hash es la contraseña, hasta el primer :)
+
+
 
 
 
