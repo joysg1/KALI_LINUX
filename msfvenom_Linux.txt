@@ -7,4 +7,6 @@
 --- chmod +x <nombre_archivo.sh>
 --- ./<nombre_archivo.sh>
 ++ PC1: En estos momentos se ha establecido el reverse shell, lo que nos permite
-ejecutar comandos
+ejecutar comandos, tales como:
+---- cat /etc/os-release (Permite ver la version de distribución GNU/Linux instalada)
+---- 
