@@ -4,8 +4,13 @@
 ----- Nota: el acceso también es posible mediante la barra superior en Tools ---> Browser tools ---> Web Developer Tools
 ----- Nota: En la sección headers, parte inferior derecha podemos ver información relacionada al tipo de servidor. ESta sección se habilita al ubicar algún directorio, por ejemplo / 
 
-++ Escaneo automatizado (usando worldlists)
+++ Escaneo automatizado (usando worldlists y gobuster)
 --- Ruta de las worldlists por defecto: usr/share/worldlists
 --- Instalar worldlists adicionales: sudo apt-get install seclists
+--- gobuster (para ejecutarlo en terminal o instalarlo si no está instalado)
+A continuación algunos ejemplos de comandos con gobuster:
+----- gobuster dir -u <url_sitio_web> -w /usr/share/worldlists/dirbuster/<nombre_worldlist> (Usa un diccionario para verificar la estructura de un sitio web)
+
+
 
 
