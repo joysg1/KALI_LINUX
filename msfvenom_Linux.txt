@@ -16,6 +16,12 @@ ejecutar comandos, tales como:
 ---- cd /var/mail/ (De ser un servidor web permite ver información relacionada al 
 sistema y los usuarios)
 ---- dpkg -l (En distribuciones basadas en Debian permite ver el listado de los paquetes instalados)
+---- who (Permite ver los usuarios conectados al sistema)
+---- w (Similar a who pero también permite ver que está haciendo cada usuario)
+---- whoami (Permite ver el usuario que está ejecutando el comando)
+---- id (Permite ver la información relacionada a la identidad del usuario que ejecuta el comando)
+---- last (Permite ver el listado de los usuarios que han iniciado sesión en el sistema)
+
 
 
 ++ Descargar archivos passwd y shadow del PC2
