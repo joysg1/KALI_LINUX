@@ -17,7 +17,7 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ----- wmic qfe get Caption, Description (Nos permite ver las actualizaciones que están instaladas en el S.O.)
 ----- whoami (Permite ver el usuario activo)
 ----- whoami /priv (Permite ver los privilegios del usuario activo)
------ whoami /groups (Permite ver la correspondencia del usuario con un grupo)
+----- whoami /groups (Permite ver la correspondencia del usuario con los grupos)
 ----- dir (Permite ver la estructura de los directorios)
 ----- cd (Permite navegar entre los directorios)
 
