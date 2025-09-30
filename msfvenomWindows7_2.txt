@@ -14,3 +14,5 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ----- systeminfo (Nos permite ver información del S.O.)
 ----- net start (Nos permite ver los comandos que se están ejecutando)
 ----- wmic product get name,version,vendor (Nos permite ver que programas están instalados en el S.O.)
+----- wmic qfe get Caption, Description (Nos permite ver las actualizaciones que están instaladas en el S.O.)
+
