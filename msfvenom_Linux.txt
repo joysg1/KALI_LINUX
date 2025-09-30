@@ -12,5 +12,5 @@ ejecutar comandos, tales como:
 ---- hostname (Permite ver el nombre del equipo)
 ---- cat /etc/group (Permite ver información referente a los grupos)
 ---- cat /etc/passwd (Permite ver el listado de los usuarios del sistema)
----- cat /etc/shadow (Permite ver los hashes de las contraseñas de los usuarios del sistema)
+---- sudo cat /etc/shadow (Permite ver los hashes de las contraseñas de los usuarios del sistema)
 
