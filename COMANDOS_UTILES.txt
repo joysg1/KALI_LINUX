@@ -1,6 +1,6 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
---- ps -e (Muestra los procesos que se están ejecutando actualmente)
+--- ps -el (Muestra los procesos que se están ejecutando actualmente)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
 --- <comando> > <nombre_archivo> (Permite guardar la salida de un comando en un archivo)
