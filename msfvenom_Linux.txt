@@ -9,4 +9,8 @@
 ++ PC1: En estos momentos se ha establecido el reverse shell, lo que nos permite
 ejecutar comandos, tales como:
 ---- cat /etc/os-release (Permite ver la version de distribución GNU/Linux instalada)
----- 
+---- hostname (Permite ver el nombre del equipo)
+---- cat /etc/group (Permite ver información referente a los grupos)
+---- cat /etc/passwd (Permite ver el listado de los usuarios del sistema)
+---- cat /etc/shadow (Permite ver los hashes de las contraseñas de los usuarios del sistema)
+
