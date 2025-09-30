@@ -36,6 +36,7 @@ al url de wordpress)
 --- nikto -h <url_del_sitio_web> -p <puerto1,puerto2,puerto3> (Permite encontrar vulnerabilidades asociadas a un url y a uno o varios puertos en especifico)
 ----- nmap <url> (Podemos apoyarnos usando nmap para verificar los puertos abiertos)
 --- nikto -h <url_del_sitio_web> -o <nombre_reporte.html> (Permite guardar los hallazgos en un reporte)
+--- niktop -h <url_del_sitio_web> -Tuning 0 (Permite hacer una búsqueda de vulnerabilidades)
 
 
 
