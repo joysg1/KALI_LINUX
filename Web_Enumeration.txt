@@ -25,6 +25,8 @@ directorios asociados
 --- wpscan --url <url> --enumerate p (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con los plugins)
 --- wpscan --url <url> --enumerate u (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con los usuarios)
 --- wpscan --url <url> --enumerate v (Realiza el escaneo a un sitio web basado en wordpress, en especifico busca información relacionada con las vulnerabilidades)
+--- wpscan --url <url> --passwords <worldlist> --username <usuario> (Realiza un ataque basado en diccionario para encontrar la contraseña de un usuario asociado
+al url de wordpress)
 
 
 
