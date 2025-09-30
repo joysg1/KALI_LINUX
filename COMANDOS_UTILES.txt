@@ -59,6 +59,7 @@ usr/share/worldlists
 
 ++ Worldlists adicionales
 sudo apt-get install seclists
+--- Se instalan en la siguiente ruta: usr/share/seclists
 
 
 ++ kali-undercover ---> comando usado para tener la apariencia de Windows
