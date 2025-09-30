@@ -15,4 +15,9 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ----- net start (Nos permite ver los comandos que se están ejecutando)
 ----- wmic product get name,version,vendor (Nos permite ver que programas están instalados en el S.O.)
 ----- wmic qfe get Caption, Description (Nos permite ver las actualizaciones que están instaladas en el S.O.)
+----- whoami (Permite ver el usuario activo)
+----- whoami /priv (Permite ver los privilegios del usuario activo)
+----- dir (Permite ver la estructura de los directorios)
+----- cd (Permite navegar entre los directorios)
+
 
