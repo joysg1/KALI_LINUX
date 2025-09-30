@@ -33,6 +33,8 @@ al url de wordpress)
 ++ Escaneo de uso general (Nikto)
 --- nikto
 --- nikto -h <url_del_sitio_web> (Permite encontrar vulnerabilidades asociadas a url)
+--- nikto -h <url_del_sitio_web> -p <puerto1,puerto2,puerto3> (Permite encontrar vulnerabilidades asociadas a un url y a uno o varios puertos en especifico)
+
 
 
 
