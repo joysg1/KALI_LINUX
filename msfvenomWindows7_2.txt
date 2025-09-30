@@ -41,6 +41,8 @@ de salida. Este es el caso del reverse shell: el equipo con windows se conecta a
 ---- screenshot (Tomar una captura de la pantalla del usuario)
 ---- keyscan_start (Iniciar la captura del teclado)
 ---- keyscan_stop (Parar la captura del teclado)
+---- download <nombre_archivo> (Descargar un archivo del PC2)
+---- upload <nombre_archivo> (Subir un archivo al PC2)
 
 
 
