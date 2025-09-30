@@ -2,6 +2,7 @@
 --- pwd (Muestra el directorio en dónde estamos)
 --- ps -ef (Muestra los procesos que se están ejecutando actualmente)
 --- ps -ef | grep <nombre_usuario> (Muestra los procesos que están bajo cierto usuario)
+--- kill -9 <id_proceso> (Permite detener un proceso)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
 --- <comando> > <nombre_archivo> (Permite guardar la salida de un comando en un archivo)
