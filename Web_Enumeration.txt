@@ -30,6 +30,12 @@ la v puede ir acompañada de t p ó u)
 al url de wordpress)
 
 
+++ Escaneo de uso general (Nikto)
+--- nikto
+--- nikto -h <url_del_sitio_web> (Permite encontrar vulnerabilidades asociadas a url)
+
+
+
 
 
 
