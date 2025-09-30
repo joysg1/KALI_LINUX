@@ -21,6 +21,7 @@ directorios asociados
 --- wpscan
 --- Si no está instalado, hacerlo con: sudo apt-get install wpscan
 --- wpscan --update (Actualiza la base de datos de wpscan)
+--- wpscan --url <url> --enumerate t (Realiza el escaneo a un sitio web basado en wordpress)
 
 
 
