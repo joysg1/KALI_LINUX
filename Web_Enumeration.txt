@@ -10,7 +10,7 @@
 --- gobuster (para ejecutarlo en terminal o instalarlo si no está instalado)
 A continuación algunos ejemplos de comandos con gobuster:
 ----- gobuster dir -u <url_sitio_web> -w /usr/share/worldlists/dirbuster/<nombre_worldlist> (Usa un diccionario para verificar la estructura de un sitio web)
------ gobuster dir -u <url_sitio_web/<directorio>> -w /usr/share/worldlists/dirbuster/<nombre_worldlist> -x.conf,.txt,.pdf,.doc,.html,.docx,.xls
+----- gobuster dir -u <url_sitio_web/<directorio>> -w /usr/share/worldlists/dirbuster/<nombre_worldlist> -x.conf,.txt,.pdf,.doc,.html,.docx,.xls,.mp3,.mp4,.js
 (Usa un diccionario para verificar la presencia de archivos en la estructura de un sitio web)
 ----- Tras el escaneo de haber coincidencias con el worldlist aparecerán los 
 directorios asociados
