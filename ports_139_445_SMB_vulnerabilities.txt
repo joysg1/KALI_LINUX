@@ -1,0 +1,6 @@
+++ PC1: Kali
+++ PC2: metasploitable 
+
+++ PC1: nmap -sV <ip_PC2>
+++ PC1: Verificar si el puertos 139 y 445 (Asociados a SMB) están abiertos. 
+

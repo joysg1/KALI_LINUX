@@ -1,5 +1,0 @@
-++ PC1: Kali
-++ PC2: metasploitable 
-
-++ PC1: nmap -sV <ip_PC2>
-++ PC1: Verificar si el puerto 80 (asociado a HTTP) se encuentra abierto o no
