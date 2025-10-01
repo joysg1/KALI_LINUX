@@ -10,17 +10,17 @@
 --- Definir las funciones de la macro
 ---- Ejemplo de la estructura de una macro creada en un documento de Word:
 
-Sub BAD()
- MsgBox("Hacked")
-End Sub
-
-Sub Document_Open()
- BAD
-End Sub 
-
-Sub AutoOpen()
- BAD
-End Sub
+    Sub Document_Open()
+      CODE
+    End Sub
+     
+    Sub AutoOpen()
+      CODE
+    End Sub
+     
+    Sub CODE()
+       MsgBox ("Hello World!")
+    End Sub
 
 ---- Nota: este macro hace que al momento de abrirse el documento aparezca el mensaje en un MsgBox
 
