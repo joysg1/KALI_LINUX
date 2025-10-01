@@ -22,6 +22,7 @@ Sub AutoOpen()
  BAD
 End Sub
 
+---- Nota: este macro hace que al momento de abrirse el documento aparezca el mensaje en un MsgBox
 
 
 
