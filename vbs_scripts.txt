@@ -1,1 +1,2 @@
-
+++ Método #1 (abrir desde cmd)
+--- cscript.exe <nombre_archivo.vbs>
