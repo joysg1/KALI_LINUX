@@ -8,26 +8,18 @@
 --- Ir a la sección vista
 --- Colocar el nombre de la macro ---> Crear
 --- Definir las funciones de la macro
----- Ejemplo de la estructura de una macro:
+---- Ejemplo de la estructura de una macro creada en un documento:
 
 Sub BAD()
-
-MsgBox("Hacked")
-
-
+ MsgBox("Hacked")
 End Sub
 
 Sub Document_Open()
-
  BAD
-
 End Sub 
 
-
 Sub AutoOpen()
-
  BAD
-
 End Sub
 
 
