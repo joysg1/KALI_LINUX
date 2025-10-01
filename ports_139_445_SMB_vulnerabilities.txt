@@ -17,7 +17,7 @@
 ++ PC1: En este punto ya tenemos acceso a PC2 y podemos ejecutar comandos tales como:
 --- mkdir <nombre_directorio> (Permite crear un directorio)
 --- rmdir <nombre_directorio> (Permite borrar un directorio)
---- touch <nombre_archivo> (Permite crear un archivo)
+--- nano <nombre_archivo> (Permite crear un archivo)
 
 
 
