@@ -1,0 +1,11 @@
+++ PC1: Kali
+++ PC2: Windows 7 x86
+
+
+++ PC1: Generar un template de html básico, ejemplo:
+<html>
+<body>
+<h1> title </h1>
+<p> text </p>
+</body>
+</html>
