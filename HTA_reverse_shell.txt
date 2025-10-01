@@ -7,4 +7,10 @@
 ++ PC1: python3 -m http.server 8080
 ++ PC2: Usar un navegador y colocar la ip del PC1 <ip_PC1:8080> 
 ++ PC2: Descargar y ejecutar el archivo 
+++ PC1: Se tiene acceso a PC2, lo que nos permite ejecutar comandos tales como:
+--- cd
+--- dir
+--- Nota: recordemos que este es un shell básico, el cual solo nos permitira realizar operaciones
+de navegación entre directorios mas no funciones avanzadas como tomar capturas, etc. 
+
 
