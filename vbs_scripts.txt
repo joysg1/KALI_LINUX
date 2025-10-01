@@ -3,3 +3,35 @@
 ----- cscript.exe (command line scripts) 
 ----- wscript.exe (UI scripts)
 
+++ Método #2 (Crear en un documento de word existente)
+--- Abrir word
+--- Ir a la sección vista
+--- Colocar el nombre de la macro ---> Crear
+--- Definir las funciones de la macro
+---- Ejemplo de la estructura de una macro:
+
+Sub BAD()
+
+MsgBox("Hacked")
+
+
+End Sub
+
+Sub Document_Open()
+
+ BAD
+
+End Sub 
+
+
+Sub AutoOpen()
+
+ BAD
+
+End Sub
+
+
+
+
+
+
