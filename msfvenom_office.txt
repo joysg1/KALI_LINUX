@@ -23,6 +23,7 @@
 --- webcam_snap (Toma una captura del webcam especificado)
 --- webcam_stream (Permite ver el contenido de la webcam)
 --- screenshot (Permite tomar captura del escritorio)
+--- screenshare (Permite ver en tiempo real el escritorio del equipo)
 --- reboot (Permite reiniciar el equipo)
 --- shutdown (Permite apagar el equipo)
 --- pwd (Ver directorio actual)
@@ -31,4 +32,5 @@
 --- upload <nombre_archivo> (Permite subir un archivo)
 --- mkdir <nombre_directorio> (Permite crear un directorio)
 --- cd <directorio> (Permite navegar a un directorio)
+
 
