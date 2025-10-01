@@ -19,6 +19,7 @@ ejecutar comandos más avanzados como:
 --- screenshot (Para tomar una captura del escritorio)
 --- download <nombre_archivo> (Descargar un arhivo)
 --- upload <nombre_archivo> (Subir un archivo)
+--- cd <nombre_directorio> (Navegar a un directorio del equipo>
 
 
 
