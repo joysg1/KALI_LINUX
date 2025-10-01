@@ -6,3 +6,4 @@
 ++ PC1: python3 -m http.server 8080 (Inicia un servidor para subir el archivo generado)
 ++ PC2: Ir a un navegador web y escribir la ip del PC1
 ++ PC2: Descargar el archivo 
+++ PC2: 
