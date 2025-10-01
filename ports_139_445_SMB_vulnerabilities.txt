@@ -15,7 +15,9 @@
 ++ PC1: sessions -u 1
 ++ PC1: sessions 2
 ++ PC1: En este punto ya tenemos acceso a PC2 y podemos ejecutar comandos tales como:
---- mkdir, rmdir, ls, cd, etc
+--- mkdir <nombre_directorio> (Permite crear un directorio)
+--- rmdir <nombre_directorio> (Permite borrar un directorio)
+--- touch <nombre_archivo> (Permite crear un archivo)
 
 
 
