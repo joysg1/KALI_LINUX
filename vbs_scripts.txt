@@ -1,3 +1,5 @@
 ++ Método #1 (abrir desde cmd)
 --- cscript.exe <nombre_archivo.vbs> ó wscript.exe <nombre_archivo.vbs>
+----- cscript.exe (command line scripts) 
+----- wscript.exe (UI scripts)
 
