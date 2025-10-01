@@ -17,6 +17,8 @@ hta-psh -o <nombre_archivo.hta>
 ejecutar comandos más avanzados como:
 --- help (Para ver todos los comandos disponibles)
 --- screenshot (Para tomar una captura del escritorio)
+--- download <nombre_archivo> (Descargar un arhivo)
+--- upload <nombre_archivo> (Subir un archivo)
 
 
 
