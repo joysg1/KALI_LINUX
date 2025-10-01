@@ -8,7 +8,7 @@
 --- Ir a la sección vista
 --- Colocar el nombre de la macro ---> Crear
 --- Definir las funciones de la macro
----- Ejemplo de la estructura de una macro creada en un documento:
+---- Ejemplo de la estructura de una macro creada en un documento de Word:
 
 Sub BAD()
  MsgBox("Hacked")
