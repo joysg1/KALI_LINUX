@@ -17,5 +17,18 @@
 ++ PC1: exploit
 ++ PC2: Abrir el documento
 ++ PC1: En estos momentos tenemos control sobre PC1, lo que nos da la posibilidad de ejecutar los siguientes comandos:
---- 
+--- help (Nos muestra todos los comandos disponibles)
+--- record_mic (Permite grabar el micrófono)
+--- webcam_list (Lista las webcams disponibles)
+--- webcam_snap (Toma una captura del webcam especificado)
+--- webcam_stream (Permite ver el contenido de la webcam)
+--- screenshot (Permite tomar captura del escritorio)
+--- reboot (Permite reiniciar el equipo)
+--- shutdown (Permite apagar el equipo)
+--- pwd (Ver directorio actual)
+--- dir (Ver la estructura de los directorios)
+--- download <nombre_archivo> (Permite descargar un archivo)
+--- upload <nombre_archivo> (Permite subir un archivo)
+--- mkdir <nombre_directorio> (Permite crear un directorio)
+--- cd <directorio> (Permite navegar a un directorio)
 
