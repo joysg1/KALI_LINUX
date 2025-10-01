@@ -10,7 +10,7 @@
 ++ PC1: Se tiene acceso a PC2, lo que nos permite ejecutar comandos tales como:
 --- cd
 --- dir
---- Nota: recordemos que este es un shell básico, el cual solo nos permitira realizar operaciones
+--- Nota: recordemos que este es un shell básico, el cual solo nos permitirá realizar operaciones
 de navegación entre directorios mas no funciones avanzadas como tomar capturas, etc. 
 
 
