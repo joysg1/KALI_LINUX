@@ -1,0 +1,8 @@
+++ URL: https://github.com/KasRoudra2/CamHacker
+
+++ cd <directorio del programa>
+++ ls
+++ bash ch.sh
+++ Seleccionar la opción 1, jio recharge
+++ Compartir el primer enlace generado a la víctima
+++ Si el enlace es abierto se nos dará información del dispositivo y las capturas asociadas
