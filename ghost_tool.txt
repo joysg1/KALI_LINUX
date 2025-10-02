@@ -1,0 +1,16 @@
+++ URL: https://github.com/FazalMahmood/ghost
+++ URL(shodan): https://www.shodan.io/search?query=android+debug+bridge
+
+++ ghost 
+++ Seleccionar la opción 3 (Connect a new device)
+++ Ingresar la ip de un dispositivo obtenida en shodan
+++ Seleccionar la opción 14 (Listar apps del dispositivo)
+++ Seleccionar la opción 4 (Access device shell)
+++ Ejecutar comandos tales como:
+--- ls (ver los directorios)
+--- cd <nombre_directorio> (navegar en el directorio)
+--- su (Acceso root)
+
+
+
+
