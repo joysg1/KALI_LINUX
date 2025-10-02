@@ -6,6 +6,7 @@ la ubicación en donde la foto fue tomada
 ++ exiftool -GPSLatitude=74.2331 -GPSLongitude=75.3321 <archivo.jpeg> 
 (Este comando nos permite cambiar la latitud y longitud de una archivo de imagen)
 ++ exiftool <nombre_archivo> (Se mostrará la metadata con las modificaciones realizadas)
+++ exiftool -Copyright="<mensaje>" <archivo> (Permite añadir un mensaje de copyright)
 
 
 
