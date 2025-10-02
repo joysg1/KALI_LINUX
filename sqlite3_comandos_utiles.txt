@@ -1,0 +1,4 @@
+++ sqlite3 <nombre_base_de_datos>
+++ .help
+++ .tables
+++ select * from <nombre_tabla>;
