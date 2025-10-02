@@ -1,0 +1,2 @@
+++ URL1 (generador): https://www.irongeek.com/homoglyph-attack-generator.php
+++ URL2 (verificador): https://www.punycoder.com/
