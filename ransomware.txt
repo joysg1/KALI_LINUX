@@ -1,0 +1,9 @@
+++ URL: https://github.com/HugoLB0/Ransom0
+
+++ Navegar al directorio del programa
+++ ls
+++ pip3 install -r requirements.txt 
+++ leafpad server.py (ubicar la sección de token ngrok, como en este caso se está haciendo en una red
+local no hay necesidad de un token)
+++ pyhton3 ransom0.py 
+++ La data asociada al directorio en estos momentos se encontrará encriptada
