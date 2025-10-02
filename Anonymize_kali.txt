@@ -1,0 +1,10 @@
+++ URL: https://github.com/owerdogan/whoami-project
+
+++ khali-whoami --help
+++ khali-whoami --start
+++ Seleccionar la opción 1 anti mitm, se vuelve a seleccionar para desactivarla
+++ Seleccionar todas las demás opciones (2-9)
+++ Reiniciar el equipo 
+
+
+
