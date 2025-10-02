@@ -1,0 +1,2 @@
+++ macof -i <interfaz_ejemplo_wlan0> -s <ip_puerta_enlace>
+++ Se empezarán a realizar solicitudes al router con la finalidad de agotarlo
