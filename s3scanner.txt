@@ -1,0 +1,6 @@
+++ URL: https://github.com/sa7mon/S3Scanner
+
+++ Ir al directorio del programa
+++ ls
+++ s3scanner -bucket-file buckets.txt -enumerate 
+++ Se nos mostrará un listado de los buckets y los permisos asociados
