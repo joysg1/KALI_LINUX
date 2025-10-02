@@ -10,6 +10,7 @@
 ++ Activate beep sound when instrusion: y
 ++ En este punto el honeypot ya está activo
 ++ El honeypot es accesible mediante <nuestra_ip:80>
+--- De alguien accesar su ip será visible en nuestra terminal
 
 
   
