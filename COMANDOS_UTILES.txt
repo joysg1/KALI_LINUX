@@ -9,6 +9,7 @@
 --- <comando> > <nombre_archivo> (Permite guardar la salida de un comando en un archivo)
 --- arp-scan -l (Muestra los dispositivos conectados en la red)
 --- ping <ip_o_sitio_web> -c <numero_de_pings> (Permite realizar un ping limitado)
+--- traceroute <ip> (Permite saber la ruta hacia una ip)
 --- history (Permite ver el historial de los comandos)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
 --- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
