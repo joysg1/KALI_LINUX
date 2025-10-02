@@ -1,0 +1,11 @@
+++ URL: https://github.com/GiacomoLaw/Keylogger
+
+++ Navegar al directorio del programa
+++ ls
+++ pip3 install -r requirements.txt
+++ python3 keylogger.py
+++ En este punto se está capturando todas las entradas por teclado del sistema y se 
+están guardando en un archivo .log ubicado en <usuario/keylogger/>
+
+
+
