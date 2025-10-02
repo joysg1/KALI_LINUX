@@ -1,0 +1,6 @@
+++ De ser un correo de google seguir los siguientes pasos:
+--- Tres puntos ---> Show original ---> Copy to clipboard
+--- Acceder al siguiente URL: https://www.ip2location.com/free/email-tracer
+--- Pegar el texto
+--- Lookup
+--- Se nos mostrará datos como la ip, el país y el proveedor de internet
