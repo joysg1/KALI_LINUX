@@ -1,0 +1,4 @@
+++ ifconfig
+++ ifconfig <nombre_interfaz> down
+++ ifconfig <nombre_interfaz> <nueva_direccion_mac>
+++ ifconfig <nombre_interfaz> up
