@@ -2,3 +2,6 @@
 ++ q
 ++ exiftool <nombre_archivo>
 ++ Se mostrará la metadata del archivo en cuestión
+++ exiftool -GPSLatitude=74.2331 -GPSLongitude=78.3321 <archivo.jpeg> 
+(Este comando nos permite cambiar la latitud y longitud de una archivo de imagen)
+
