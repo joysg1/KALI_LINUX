@@ -1,0 +1,4 @@
+++ man exiftool 
+++ q
+++ exiftool <nombre_archivo>
+++ Se mostrará la metadata del archivo en cuestión
