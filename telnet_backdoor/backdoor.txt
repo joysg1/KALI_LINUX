@@ -1,7 +1,9 @@
 ++ PC1: Kali
 ++ PC2: Ubuntu
 
-
+++ PC2: cat backdoor.sh
+++ PC2: chmod +x backdoor.sh
+++ PC2: ./backdoor.sh
 ++ PC1: nmap <ip_PC2> -p-
 ++ PC1: telnet
 ++ PC1: toggle binary
@@ -10,6 +12,9 @@
 ++ PC1: <ip_PC2> <puerto>
 ++ PC1: pkill -9 -f <nombre_programa> (Permite cerrar un programa en específico>
 ++ PC1: <nombre_programa> (Permite abrir un programa en específico)
+
+
+
 
 
 
