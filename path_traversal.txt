@@ -1,3 +1,4 @@
 ++ URL original: http://<url.php?file=archivo.pdf>
 ++ URL (intento de path traversal): http://<url.php?file=../../../../../etc/passwd> ---> 
 los caracteres ../ permiten subir en la estructura de los directorios
+--- File system hierarchy: https://ugursogukpinar.com/blog/backend-series/basit-terminal-kullanimi/
