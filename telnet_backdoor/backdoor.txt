@@ -9,6 +9,7 @@
 ++ PC1: Enter
 ++ PC1: <ip_PC2> <puerto>
 ++ PC1: pkill -9 -f <nombre_programa> (Permite cerrar un programa en específico>
+++ PC1: <nombre_programa> (Permite abrir un programa en específico)
 
 
 
