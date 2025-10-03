@@ -2,4 +2,13 @@
 ++ PC2: Ubuntu
 
 
-++ 
+++ PC1: nmap <ip_PC2> -p-
+++ PC1: telnet
+++ PC1: toggle binary
+++ PC1: o
+++ PC1: Enter
+++ PC1: <ip_PC2> <puerto>
+++ PC1: pkill -9 -f <nombre_programa> (Permite cerrar un programa en específico>
+
+
+
