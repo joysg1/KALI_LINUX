@@ -1,3 +1,6 @@
 ++ PC1: Kali
 ++ PC2: Ubuntu
 
+++ PC2: ifconfig
+++ PC1: nmap <ip_PC2>
+
