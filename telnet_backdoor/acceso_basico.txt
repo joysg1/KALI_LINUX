@@ -1,0 +1,11 @@
+++ PC1: Kali
+++ PC2: Ubuntu
+
+++ PC2: sudo apt-get install socat
+++ PC2: socat TCP4-LISTEN:2000,fork EXEC:cat
+++ PC1: nmap <ip_PC2> -p-
+++ PC1: telnet 
+++ PC1: o
+++ PC1: Enter
+++ PC1: <ip_PC2> <puerto>
+++ PC1: En este punto ya podemos ejecutar comandos y los mismos serán devueltos
