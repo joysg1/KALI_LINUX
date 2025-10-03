@@ -10,6 +10,7 @@
 --- arp-scan -l (Muestra los dispositivos conectados en la red)
 --- ping <ip_o_sitio_web> -c <numero_de_pings> (Permite realizar un ping limitado)
 --- traceroute <ip> (Permite saber la ruta hacia una ip)
+--- ssh <usuario>@<ip_equipo> (Permite realizar una conexión ssh)
 --- dig <dominio> @<dns> (Permite consultar a un servidor dns cual es la ip asociada a un dominio)
 ----- Ejemplo: google.com @1.1.1.1 
 --- history (Permite ver el historial de los comandos)
