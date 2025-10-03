@@ -1,3 +1,3 @@
 ++ URL original: http://<url.php?file=archivo.pdf>
-++ URL (intento de path traversal): http://<url.php?file=../../../> ---> los caracteres ../ permiten subir en la estructura
-de los directorios
+++ URL (intento de path traversal): http://<url.php?file=../../../../../etc/issue> ---> 
+los caracteres ../ permiten subir en la estructura de los directorios
