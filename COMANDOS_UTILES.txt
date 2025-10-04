@@ -8,6 +8,7 @@
 --- wc -l <archivo> (Permite conocer el número de líneas en un archivo)
 --- head -n <numero_lineas> <archivo> (Muestra las primeras n líneas de un archivo)
 --- tail -n <numero_lineas> <archivo> (Muestra las últimas n líneas de un archivo)
+--- less <nombre_archivo> (Permite ver un archivo grande como uno de logs línea por línea
 --- ps -e (Muestra los procesos que se están ejecutando actualmente)
 --- ps -ef (Muestra los procesos que se están ejecutando actualmente en formato ampliado)
 --- ps -ef | grep <nombre_usuario> (Muestra los procesos que están bajo cierto usuario)
