@@ -74,6 +74,9 @@ con mayor detalle)
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
 --- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
 --- chmod <cod_permisos> <archivo> (Cambiar los permisos de un archivo)
+--- zip <archivo.zip> <archivo_original> (Permite comprimir a .zip)
+---- Ejemplo: zip sample2.zip sample2.txt
+--- gzip <archivo> (Permite comprimir un archivo a la extensión .gz)
 --- split -b 9M <archivo_grande.ext> <archivo_parte_> (Para partir un archivo grande en partes de 9 mb)
 --- cat archivo_parte_* > archivo_reunido.ext (Para reunir las partes)
 ----- Código de permisos (explicación): https://johndecember.com/unix/ref/chmod.html
