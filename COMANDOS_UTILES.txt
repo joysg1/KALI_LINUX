@@ -1,10 +1,12 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
 --- head -n <numero_lineas> <archivo> (Muestra las primeras n líneas de un archivo)
----- tail -n <numero_lineas> <archivo> (Muestra las últimas n líneas de un archivo)
+--- tail -n <numero_lineas> <archivo> (Muestra las últimas n líneas de un archivo)
 --- ps -e (Muestra los procesos que se están ejecutando actualmente)
 --- ps -ef (Muestra los procesos que se están ejecutando actualmente en formato ampliado)
 --- ps -ef | grep <nombre_usuario> (Muestra los procesos que están bajo cierto usuario)
+--- man <comando> (Muestra información referente a un comando)
+---- Ejemplo: man -f mkdir 
 --- kill -9 <id_proceso> (Permite detener un proceso)
 --- apt update (Actualiza la lista de paquetes)
 --- apt upgrade (Actualiza los paquetes)
