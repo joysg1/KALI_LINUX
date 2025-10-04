@@ -50,6 +50,7 @@
 --- nc -lnp <puerto> (Inicia la escucha a un puerto) 
 --- sudo cat /etc/shadow (Permite ver los hashs de las contraseñas de los usuarios del sistema)
 --- ls (Lista los archivos que hay en un directorio)
+--- ls -ltr (Lista todos los archivos que hay en un directorio de forma más amplia)
 --- cd <nombre_directorio> (Permite entrar a un directorio)
 --- cd .. (Permite ir al directorio superior)
 --- mkdir <nombre_directorio> (Permite crear directorios)
