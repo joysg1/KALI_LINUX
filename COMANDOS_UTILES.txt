@@ -71,7 +71,7 @@ con mayor detalle)
 --- cp <ruta_actual_archivo> <ruta_destino_archivo> (Permite copiar un archivo)
 --- leafpad <nombre_archivo> (Permite abrir el archivo usando leafpad)
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
---- 
+--- cp <nombre_archivo> <nombre_archivo_copia> (Permite copiar un archivo en el mismo directorio)
 --- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
 --- chmod <cod_permisos> <archivo> (Cambiar los permisos de un archivo)
 --- split -b 9M <archivo_grande.ext> <archivo_parte_> (Para partir un archivo grande en partes de 9 mb)
