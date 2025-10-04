@@ -1,5 +1,7 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
+--- whereis <nombre_programa> (Muestra todas las ubicaciones donde se encuentra un programa
+---- Ejemplo: whereis java
 --- head -n <numero_lineas> <archivo> (Muestra las primeras n líneas de un archivo)
 --- tail -n <numero_lineas> <archivo> (Muestra las últimas n líneas de un archivo)
 --- ps -e (Muestra los procesos que se están ejecutando actualmente)
