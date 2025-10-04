@@ -1,5 +1,6 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
+--- date (Permite mostrar la fecha del sistema)
 --- whereis <nombre_programa> (Muestra todas las ubicaciones donde se encuentra un programa
 ---- Ejemplo: whereis java
 --- wc <archivo> (Permite conecer la longitud en un archivo>
