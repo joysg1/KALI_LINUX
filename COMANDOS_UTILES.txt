@@ -5,6 +5,7 @@
 --- wc <archivo> (Permite conecer la longitud en un archivo>
 ---- Ejemplo wc <sample.txt>
 ----- Salida 24 (Número de líneas) - 37 (palabras) - 117 (Caracteres)
+--- wc -l <archivo> (Permite conocer el número de líneas en un archivo)
 --- head -n <numero_lineas> <archivo> (Muestra las primeras n líneas de un archivo)
 --- tail -n <numero_lineas> <archivo> (Muestra las últimas n líneas de un archivo)
 --- ps -e (Muestra los procesos que se están ejecutando actualmente)
