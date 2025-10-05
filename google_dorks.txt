@@ -1,0 +1,7 @@
+++ site:<sitio> ---> Busca resultados en específico en dónde este dicho sitio
+
+++ site:<sitio> filetype:pdf ---> Busca resultados en específico en dónde este dicho sitio y archivos pdf
+
+++ site:<sitio> inurl:login ---> Busca resultados en específico en dónde este dicho sitio y sitios de login
+
+++ Google Hacking database: https://www.exploit-db.com/google-hacking-database
