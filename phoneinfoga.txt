@@ -1,1 +1,9 @@
 ++ URL: https://github.com/sundowndev/phoneinfoga
+
+++ phoneinfoga scan -n <numero_de_telefono>
+--- Ejemplo: phoneinfoga scan -n "+1 555 123 4567"
+
+++ phoneinfoga serve (http://localhost:5000)
+
+++ Más información: https://deepwiki.com/sundowndev/phoneinfoga/3-usage-guide
+
