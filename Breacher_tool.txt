@@ -1,0 +1,5 @@
+++ URL: https://github.com/s0md3v/Breacher
+++ cd <ruta_breacher>
+++ ls
+++ python3 breacher.py -u <url>
+++ Esperar a que concluya el análisis, se mostrará un resultado de los enlaces que se encuentren
