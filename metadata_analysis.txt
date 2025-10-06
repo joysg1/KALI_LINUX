@@ -1,0 +1,7 @@
+++ man exiftool
+
+++ exiftool --help
+
+++ exiftool <archivo_imagen>
+--- Los datos como latitud y longitud nos sirven para ubicar dónde fue tomada la foto 
+
