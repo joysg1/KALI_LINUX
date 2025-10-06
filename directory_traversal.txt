@@ -1,0 +1,4 @@
+++ dirb <url> <worldlist> -X .db ---> Realiza la búsqueda de archivos con la extensión .db
+++ dirb <url> <worldlist> -X .zip ---> Realiza la búsqueda de archivos con la extensión .zip
+++ Al terminar los comandos se mostrarán los resultados asociados
+  
