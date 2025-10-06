@@ -1,2 +1,15 @@
 ++ GHunt tool 
 --- URL: https://github.com/PawanKumarPandit/GHunt 
+--- pip install ghunt
+--- Instalar addon: https://addons.mozilla.org/en-US/firefox/addon/ghunt-companion/
+--- Sincronizar
+--- Escojer método #2
+--- Volver a la terminal
+--- ghunt login 
+--- Escoger la opción 2
+--- Pegar lo copiado del método #2
+--- ghunt --help
+--- ghunt email <correo_gmail>
+--- Enter
+--- Se mostrará la información relacionada al correo de gmail
+
