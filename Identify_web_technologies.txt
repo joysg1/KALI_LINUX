@@ -1,0 +1,2 @@
+++ Chrome addon (Wappalyzer):
+-- URL: https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?pli=1
