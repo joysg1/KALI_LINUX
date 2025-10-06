@@ -4,4 +4,5 @@
 ++ subfinder -d <url>
 ++ Se nos mostrará un listado de los subdominios asociados 
 ++ assetfinder <url> ---> Muestra más subdominios
+++ amass enum -d <url> ---> Muestra información con mayor detalle
 
