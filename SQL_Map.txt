@@ -1,0 +1,9 @@
+++ URL: https://github.com/eystsen/pentestlab
+--- cd <directorio>
+--- apt install docker.io
+--- bash pentestlab.sh 
+--- bash pentestlab.sh list 
+--- bash pentestlab.sh start dvwa
+--- Acceder a la url con las credenciales por defecto (admin/password)
+--- Clear / Reset All (en la interfaz web)
+
