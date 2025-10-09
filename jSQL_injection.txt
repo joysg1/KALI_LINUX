@@ -1,0 +1,2 @@
+++ Pegar el url en el cuadro y ejecutar
+++ Url de prueba: http://testphp.vulnweb.com/artists.php?artist=-1
