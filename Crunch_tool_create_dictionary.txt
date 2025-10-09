@@ -1,1 +1,1 @@
-
+++ crunch 8 12 abcdefghijklmnopqrstuvwxyz0123456789 -o diccionario.txt ---> (Crea combinaciones posibles de mínimo 8 carácteres y máximo 12 carácteres) 
