@@ -73,6 +73,7 @@
 ++ Ejercicio_8 (Mobile option)
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --mobile
 --- Seleccionar el dispositivo móvil que deseamos imitar, ejemplo: opción 3 (google nexus 7)
+--- Abrir wireshark para comprobar 
 
 
 
