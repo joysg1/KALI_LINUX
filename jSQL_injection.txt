@@ -1,2 +1,4 @@
 ++ Pegar el url en el cuadro y ejecutar
+
 ++ Url de prueba: http://testphp.vulnweb.com/artists.php?artist=-1
+--- Si el escaneo es satisfactorio se nos mostrarán las bases de datos asociadas con sus respectivas tablas
