@@ -11,6 +11,9 @@
 --- sqlmap -u <url> -D <nombre_base_de_datos> --tables
 --- Se mostrará un listado de las tablas que conforman la base de datos
 
+++ Ejercicio_3 Obtener el número de columnas de una tabla
+--- sqlmap -u <url> -D <nombre_base_de_datos> -T <nombre_tabla> --columns
+
 
 
 
