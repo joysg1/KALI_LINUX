@@ -17,6 +17,8 @@
 ++ Ejercicio_4 Obtener la información de una columna
 --- sqlmap -u <url> -D <nombre_base_de_datos> -T <nombre_tabla> -C <nombre_columna> --dump 
 
+++ Nota: Es importante destacar que tras cada consulta esta información se guarda en un arhcivo .csv dentro de la carpeta .sqlmap (carpeta oculta)
+
 
 
 
