@@ -2,6 +2,8 @@
 
 ++ Ejercicio_1 Obtener el nombre de la base de datos
 --- sqlmap -u <url> --dbs
+--- y
+--- Enter 
 
 
 
