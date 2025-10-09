@@ -4,6 +4,11 @@
 --- bash pentestlab.sh 
 --- bash pentestlab.sh list 
 --- bash pentestlab.sh start dvwa
+---- Para detener la aplicación web: bash pentestlab.sh stop dvwa
 --- Acceder a la url con las credenciales por defecto (admin/password)
 --- Clear / Reset All (en la interfaz web)
+
+++ Uso general de SQLMAP
+--- sqlmap --help
+
 
