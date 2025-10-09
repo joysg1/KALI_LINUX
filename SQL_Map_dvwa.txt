@@ -92,6 +92,7 @@ table_schema = 'dvwa';
 first_name;
 ---- SELECT column_name, data_type FROM information_schema.columns
 WHERE table_name = 'users';
+--- x ---> Permite salir del shell sql
 
 
 
