@@ -1,3 +1,3 @@
 ++ URL: testphp.vulnweb.com/artists.php?artist=1
 --- Colocar un ' al final, si el sitio web da acceso con un mensaje de error significa que es vulnerable
---- 
+--- Intento de ubicar el número de columnas: testphp.vulnweb.com/artists.php?artist=1 order by 5--
