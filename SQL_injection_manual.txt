@@ -1,4 +1,10 @@
 ++ URL: testphp.vulnweb.com/artists.php?artist=1
+
+++ Ejercicio_1 Verificar si el sitio es vulnerable
 --- Colocar un ' al final, si el sitio web da acceso con un mensaje de error significa que es vulnerable
+
+++ Ejercicio_2 Obtener el número de columnas de la base de datos
 --- Intento de ubicar el número de columnas: testphp.vulnweb.com/artists.php?artist=1 order by 3--
 ---- Nota: Debe intertarse cambiar el número hasta visualizar cambios en la página, al presentarse uno significa que hemos encontrado el número total de columnas
+
+++ Ejercicio_3 Obtener el nombre de las tablas de la base de datos
