@@ -1,0 +1,6 @@
+++ Esta técnica permite crear hashes para identificar datos con similitudes
+
+++ Instalar el programa ssdeep
+--- sudo apt-get install ssdeep
+--- ssdeep <nombre_archivo>
+--- Aperecerá el hash asociado, el mismo puede buscarse en herramientas como virustotal
