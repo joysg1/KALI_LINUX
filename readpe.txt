@@ -1,2 +1,3 @@
 ++ Herramienta que permite leer los headers de un .exe
+--- sudo apt-get install readpe
 --- readpe <nombre_archivo>
