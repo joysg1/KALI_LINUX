@@ -3,4 +3,5 @@
 ++ Instalar el programa ssdeep
 --- sudo apt-get install ssdeep
 --- ssdeep <nombre_archivo>
+--- ssdeep -l -r -d * (Permite comparar dos archivos similares, ambos deben estar en la misma ruta)
 --- Aperecerá el hash asociado, el mismo puede buscarse en herramientas como virustotal
