@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Antivirus 2025</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-inactive {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        #plotDiv {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 30px;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-proteccion {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-color: #ef4444;
+        }
+
+        .card-rendimiento {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-color: #3b82f6;
+        }
+
+        .card-caracteristicas {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-color: #10b981;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-icon {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .card-description {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .note {
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border: 2px solid #818cf8;
+        }
+
+        .note-title {
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .note-text {
+            color: #3730a3;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            #plotDiv {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Comparación de Antivirus 2025</h1>
+        <p class="subtitle">Análisis comparativo basado en protección, rendimiento y características adicionales</p>
+
+        <div class="controls">
+            <button class="btn btn-active" id="btnStacked" onclick="changeView('stack')">
+                📊 Vista Apilada
+            </button>
+            <button class="btn btn-inactive" id="btnGrouped" onclick="changeView('group')">
+                📈 Vista Agrupada
+            </button>
+        </div>
+
+        <div id="plotDiv"></div>
+
+        <div class="info-cards">
+            <div class="card card-proteccion">
+                <div class="card-title">
+                    <div class="card-icon" style="background-color: #ef4444;"></div>
+                    Protección
+                </div>
+                <p class="card-description">
+                    Capacidad para detectar y eliminar malware, virus, ransomware y amenazas en tiempo real. 
+                    Incluye pruebas de detección de amenazas conocidas y desconocidas (zero-day).
+                </p>
+            </div>
+
+            <div class="card card-rendimiento">
+                <div class="card-title">
+                    <div class="card-icon" style="background-color: #3b82f6;"></div>
+                    Rendimiento
+                </div>
+                <p class="card-description">
+                    Impacto en la velocidad del sistema, uso de CPU y memoria durante escaneos. 
+                    Un buen antivirus debe proteger sin ralentizar el equipo.
+                </p>
+            </div>
+
+            <div class="card card-caracteristicas">
+                <div class="card-title">
+                    <div class="card-icon" style="background-color: #10b981;"></div>
+                    Características
+                </div>
+                <p class="card-description">
+                    Funciones adicionales como VPN integrada, control parental, firewall avanzado, 
+                    gestión de contraseñas y protección de identidad.
+                </p>
+            </div>
+        </div>
+
+        <div class="note">
+            <div class="note-title">ℹ️ Información del Gráfico</div>
+            <p class="note-text">
+                <strong>Vista Apilada:</strong> Muestra la puntuación total acumulada de cada antivirus (suma de las tres categorías). 
+                Permite identificar rápidamente cuál tiene la mejor puntuación global.
+                <br><br>
+                <strong>Vista Agrupada:</strong> Permite comparar el desempeño individual en cada categoría lado a lado. 
+                Ideal para identificar fortalezas específicas de cada solución.
+                <br><br>
+                Los datos están basados en evaluaciones de laboratorios especializados en seguridad informática como AV-TEST e ICSA Labs. 
+                Las puntuaciones reflejan pruebas realizadas en 2025 sobre detección de malware, impacto en el rendimiento y 
+                el conjunto de herramientas adicionales que ofrece cada solución.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Datos de antivirus
+        const antivirus = ['Bitdefender', 'Norton 360', 'Kaspersky', 'McAfee', 'ESET', 'Trend Micro', 'Avira', 'AVG'];
+        const proteccion = [98, 97, 99, 94, 96, 97, 95, 93];
+        const rendimiento = [95, 93, 94, 88, 96, 90, 92, 89];
+        const caracteristicas = [92, 95, 90, 87, 85, 88, 86, 84];
+
+        // Configuración de las trazas
+        const trace1 = {
+            x: antivirus,
+            y: proteccion,
+            name: 'Protección',
+            type: 'bar',
+            marker: {
+                color: '#ef4444',
+                line: {
+                    width: 2,
+                    color: '#dc2626'
+                }
+            },
+            hovertemplate: '<b>%{x}</b><br>Protección: %{y}%<extra></extra>'
+        };
+
+        const trace2 = {
+            x: antivirus,
+            y: rendimiento,
+            name: 'Rendimiento',
+            type: 'bar',
+            marker: {
+                color: '#3b82f6',
+                line: {
+                    width: 2,
+                    color: '#2563eb'
+                }
+            },
+            hovertemplate: '<b>%{x}</b><br>Rendimiento: %{y}%<extra></extra>'
+        };
+
+        const trace3 = {
+            x: antivirus,
+            y: caracteristicas,
+            name: 'Características',
+            type: 'bar',
+            marker: {
+                color: '#10b981',
+                line: {
+                    width: 2,
+                    color: '#059669'
+                }
+            },
+            hovertemplate: '<b>%{x}</b><br>Características: %{y}%<extra></extra>'
+        };
+
+        const data = [trace1, trace2, trace3];
+
+        // Función para crear el layout
+        function getLayout(barmode) {
+            return {
+                title: {
+                    text: '',
+                    font: {
+                        size: 24,
+                        color: '#1f2937',
+                        family: 'Segoe UI, sans-serif'
+                    }
+                },
+                barmode: barmode,
+                xaxis: {
+                    title: {
+                        text: 'Antivirus',
+                        font: {
+                            size: 16,
+                            color: '#4b5563',
+                            weight: 600
+                        }
+                    },
+                    tickangle: -45,
+                    tickfont: {
+                        size: 13,
+                        color: '#374151'
+                    },
+                    gridcolor: '#e5e7eb'
+                },
+                yaxis: {
+                    title: {
+                        text: 'Puntuación (%)',
+                        font: {
+                            size: 16,
+                            color: '#4b5563',
+                            weight: 600
+                        }
+                    },
+                    tickfont: {
+                        size: 12,
+                        color: '#374151'
+                    },
+                    gridcolor: '#e5e7eb',
+                    range: barmode === 'stack' ? [0, 310] : [0, 105]
+                },
+                plot_bgcolor: '#ffffff',
+                paper_bgcolor: '#ffffff',
+                margin: {
+                    l: 70,
+                    r: 40,
+                    t: 40,
+                    b: 120
+                },
+                legend: {
+                    orientation: 'h',
+                    yanchor: 'bottom',
+                    y: -0.45,
+                    xanchor: 'center',
+                    x: 0.5,
+                    font: {
+                        size: 14,
+                        color: '#374151'
+                    },
+                    bgcolor: 'rgba(255, 255, 255, 0.9)',
+                    bordercolor: '#d1d5db',
+                    borderwidth: 2
+                },
+                hovermode: 'closest',
+                hoverlabel: {
+                    bgcolor: 'white',
+                    bordercolor: '#9ca3af',
+                    font: {
+                        size: 13,
+                        family: 'Segoe UI, sans-serif'
+                    }
+                }
+            };
+        }
+
+        const config = {
+            responsive: true,
+            displayModeBar: true,
+            displaylogo: false,
+            modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
+            toImageButtonOptions: {
+                format: 'png',
+                filename: 'comparacion_antivirus_2025',
+                height: 800,
+                width: 1400,
+                scale: 2
+            }
+        };
+
+        // Renderizar gráfico inicial
+        Plotly.newPlot('plotDiv', data, getLayout('stack'), config);
+
+        // Función para cambiar vista
+        function changeView(mode) {
+            Plotly.react('plotDiv', data, getLayout(mode), config);
+            
+            // Actualizar botones
+            if (mode === 'stack') {
+                document.getElementById('btnStacked').className = 'btn btn-active';
+                document.getElementById('btnGrouped').className = 'btn btn-inactive';
+            } else {
+                document.getElementById('btnStacked').className = 'btn btn-inactive';
+                document.getElementById('btnGrouped').className = 'btn btn-active';
+            }
+        }
+    </script>
+</body>
+</html>
