@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa: Escaneo por Firmas vs Heurística</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        #root {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        function App() {
+            const [activeTab, setActiveTab] = useState('comparison');
+            const [simulationStep, setSimulationStep] = useState(0);
+
+            const comparisonData = [
+                {
+                    category: "Método de Detección",
+                    signature: "Compara archivos con una base de datos de firmas conocidas de malware",
+                    heuristic: "Analiza el comportamiento y características del código para detectar amenazas desconocidas"
+                },
+                {
+                    category: "Velocidad",
+                    signature: "Muy rápido - búsqueda directa en base de datos",
+                    heuristic: "Más lento - requiere análisis profundo del código"
+                },
+                {
+                    category: "Precisión",
+                    signature: "100% preciso para amenazas conocidas",
+                    heuristic: "Mayor tasa de falsos positivos"
+                },
+                {
+                    category: "Amenazas Zero-Day",
+                    signature: "No detecta amenazas nuevas o modificadas",
+                    heuristic: "Puede detectar variantes y amenazas desconocidas"
+                },
+                {
+                    category: "Recursos del Sistema",
+                    signature: "Bajo consumo de CPU y memoria",
+                    heuristic: "Mayor consumo de recursos"
+                },
+                {
+                    category: "Actualizaciones",
+                    signature: "Requiere actualizaciones constantes de la base de datos",
+                    heuristic: "Menos dependiente de actualizaciones"
+                }
+            ];
+
+            const advantages = {
+                signature: [
+                    "Alta velocidad de escaneo",
+                    "Muy preciso para amenazas conocidas",
+                    "Bajo consumo de recursos",
+                    "Sin falsos positivos en detecciones conocidas",
+                    "Fácil de implementar y mantener"
+                ],
+                heuristic: [
+                    "Detecta malware desconocido (Zero-Day)",
+                    "Identifica variantes de amenazas existentes",
+                    "Protección proactiva",
+                    "Menos dependiente de actualizaciones",
+                    "Detecta comportamientos sospechosos"
+                ]
+            };
+
+            const disadvantages = {
+                signature: [
+                    "Ineficaz contra amenazas nuevas",
+                    "Vulnerable a técnicas de ofuscación",
+                    "Requiere actualizaciones frecuentes",
+                    "Base de datos puede crecer significativamente",
+                    "Retraso entre descubrimiento y protección"
+                ],
+                heuristic: [
+                    "Mayor tasa de falsos positivos",
+                    "Consumo elevado de recursos",
+                    "Tiempo de escaneo más largo",
+                    "Puede generar alertas innecesarias",
+                    "Requiere configuración más compleja"
+                ]
+            };
+
+            const simulationSteps = [
+                {
+                    title: "Archivo Sospechoso Detectado",
+                    signature: "Calculando hash SHA-256...",
+                    heuristic: "Iniciando análisis de comportamiento..."
+                },
+                {
+                    title: "Proceso de Análisis",
+                    signature: "Buscando en base de datos: 2,500,000 firmas",
+                    heuristic: "Analizando: llamadas al sistema, modificaciones de registro, acceso a archivos..."
+                },
+                {
+                    title: "Resultado",
+                    signature: "✓ Coincidencia encontrada: Trojan.Generic.12345",
+                    heuristic: "⚠ Comportamiento sospechoso detectado: Intento de modificar archivos del sistema"
+                }
+            ];
+
+            const startSimulation = () => {
+                setSimulationStep(0);
+                const interval = setInterval(() => {
+                    setSimulationStep(prev => {
+                        if (prev >= simulationSteps.length - 1) {
+                            clearInterval(interval);
+                            return prev;
+                        }
+                        return prev + 1;
+                    });
+                }, 2000);
+            };
+
+            return (
+                <div style={{minHeight: '100vh'}}>
+                    <header style={{
+                        background: 'rgba(255, 255, 255, 0.95)',
+                        padding: '30px',
+                        borderRadius: '15px',
+                        marginBottom: '30px',
+                        boxShadow: '0 10px 40px rgba(0,0,0,0.2)'
+                    }}>
+                        <h1 style={{
+                            fontSize: '2.5rem',
+                            color: '#667eea',
+                            textAlign: 'center',
+                            marginBottom: '10px'
+                        }}>
+                            🛡️ Análisis de Antivirus
+                        </h1>
+                        <p style={{
+                            textAlign: 'center',
+                            color: '#666',
+                            fontSize: '1.1rem'
+                        }}>
+                            Comparativa entre Escaneo Basado en Firmas y Análisis Heurístico
+                        </p>
+                    </header>
+
+                    <div style={{
+                        background: 'rgba(255, 255, 255, 0.95)',
+                        borderRadius: '15px',
+                        overflow: 'hidden',
+                        boxShadow: '0 10px 40px rgba(0,0,0,0.2)'
+                    }}>
+                        <div style={{
+                            display: 'flex',
+                            borderBottom: '2px solid #e0e0e0'
+                        }}>
+                            <button
+                                onClick={() => setActiveTab('comparison')}
+                                style={{
+                                    flex: 1,
+                                    padding: '20px',
+                                    border: 'none',
+                                    background: activeTab === 'comparison' ? '#667eea' : 'transparent',
+                                    color: activeTab === 'comparison' ? 'white' : '#666',
+                                    fontSize: '1.1rem',
+                                    fontWeight: 'bold',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s'
+                                }}
+                            >
+                                📊 Comparación
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('advantages')}
+                                style={{
+                                    flex: 1,
+                                    padding: '20px',
+                                    border: 'none',
+                                    background: activeTab === 'advantages' ? '#667eea' : 'transparent',
+                                    color: activeTab === 'advantages' ? 'white' : '#666',
+                                    fontSize: '1.1rem',
+                                    fontWeight: 'bold',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s'
+                                }}
+                            >
+                                ✅ Ventajas y Desventajas
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('simulation')}
+                                style={{
+                                    flex: 1,
+                                    padding: '20px',
+                                    border: 'none',
+                                    background: activeTab === 'simulation' ? '#667eea' : 'transparent',
+                                    color: activeTab === 'simulation' ? 'white' : '#666',
+                                    fontSize: '1.1rem',
+                                    fontWeight: 'bold',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s'
+                                }}
+                            >
+                                🔬 Simulación
+                            </button>
+                        </div>
+
+                        <div style={{ padding: '30px' }}>
+                            {activeTab === 'comparison' && (
+                                <div>
+                                    <h2 style={{ color: '#667eea', marginBottom: '25px', fontSize: '1.8rem' }}>
+                                        Tabla Comparativa
+                                    </h2>
+                                    <div style={{ overflowX: 'auto' }}>
+                                        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                            <thead>
+                                                <tr style={{ background: '#f5f5f5' }}>
+                                                    <th style={{ padding: '15px', textAlign: 'left', borderBottom: '2px solid #667eea' }}>
+                                                        Característica
+                                                    </th>
+                                                    <th style={{ padding: '15px', textAlign: 'left', borderBottom: '2px solid #667eea', color: '#e74c3c' }}>
+                                                        🔍 Escaneo por Firmas
+                                                    </th>
+                                                    <th style={{ padding: '15px', textAlign: 'left', borderBottom: '2px solid #667eea', color: '#27ae60' }}>
+                                                        🧠 Análisis Heurístico
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {comparisonData.map((row, index) => (
+                                                    <tr key={index} style={{
+                                                        background: index % 2 === 0 ? 'white' : '#f9f9f9',
+                                                        transition: 'background 0.3s'
+                                                    }}>
+                                                        <td style={{ padding: '15px', fontWeight: 'bold', borderBottom: '1px solid #e0e0e0' }}>
+                                                            {row.category}
+                                                        </td>
+                                                        <td style={{ padding: '15px', borderBottom: '1px solid #e0e0e0' }}>
+                                                            {row.signature}
+                                                        </td>
+                                                        <td style={{ padding: '15px', borderBottom: '1px solid #e0e0e0' }}>
+                                                            {row.heuristic}
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'advantages' && (
+                                <div>
+                                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
+                                        <div>
+                                            <h3 style={{ color: '#e74c3c', marginBottom: '20px', fontSize: '1.5rem' }}>
+                                                🔍 Escaneo por Firmas
+                                            </h3>
+                                            <div style={{
+                                                background: '#fff5f5',
+                                                padding: '20px',
+                                                borderRadius: '10px',
+                                                marginBottom: '20px'
+                                            }}>
+                                                <h4 style={{ color: '#27ae60', marginBottom: '15px' }}>✅ Ventajas</h4>
+                                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                                    {advantages.signature.map((adv, i) => (
+                                                        <li key={i} style={{
+                                                            padding: '10px 0',
+                                                            borderBottom: i < advantages.signature.length - 1 ? '1px solid #ffe0e0' : 'none'
+                                                        }}>
+                                                            ✓ {adv}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            <div style={{
+                                                background: '#fff5f5',
+                                                padding: '20px',
+                                                borderRadius: '10px'
+                                            }}>
+                                                <h4 style={{ color: '#e74c3c', marginBottom: '15px' }}>❌ Desventajas</h4>
+                                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                                    {disadvantages.signature.map((dis, i) => (
+                                                        <li key={i} style={{
+                                                            padding: '10px 0',
+                                                            borderBottom: i < disadvantages.signature.length - 1 ? '1px solid #ffe0e0' : 'none'
+                                                        }}>
+                                                            ✗ {dis}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3 style={{ color: '#27ae60', marginBottom: '20px', fontSize: '1.5rem' }}>
+                                                🧠 Análisis Heurístico
+                                            </h3>
+                                            <div style={{
+                                                background: '#f0fff4',
+                                                padding: '20px',
+                                                borderRadius: '10px',
+                                                marginBottom: '20px'
+                                            }}>
+                                                <h4 style={{ color: '#27ae60', marginBottom: '15px' }}>✅ Ventajas</h4>
+                                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                                    {advantages.heuristic.map((adv, i) => (
+                                                        <li key={i} style={{
+                                                            padding: '10px 0',
+                                                            borderBottom: i < advantages.heuristic.length - 1 ? '1px solid #d4edda' : 'none'
+                                                        }}>
+                                                            ✓ {adv}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            <div style={{
+                                                background: '#f0fff4',
+                                                padding: '20px',
+                                                borderRadius: '10px'
+                                            }}>
+                                                <h4 style={{ color: '#e74c3c', marginBottom: '15px' }}>❌ Desventajas</h4>
+                                                <ul style={{ listStyle: 'none', padding: 0 }}>
+                                                    {disadvantages.heuristic.map((dis, i) => (
+                                                        <li key={i} style={{
+                                                            padding: '10px 0',
+                                                            borderBottom: i < disadvantages.heuristic.length - 1 ? '1px solid #d4edda' : 'none'
+                                                        }}>
+                                                            ✗ {dis}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'simulation' && (
+                                <div>
+                                    <h2 style={{ color: '#667eea', marginBottom: '25px', fontSize: '1.8rem' }}>
+                                        Simulación de Detección
+                                    </h2>
+                                    <button
+                                        onClick={startSimulation}
+                                        style={{
+                                            background: '#667eea',
+                                            color: 'white',
+                                            padding: '15px 30px',
+                                            border: 'none',
+                                            borderRadius: '8px',
+                                            fontSize: '1.1rem',
+                                            cursor: 'pointer',
+                                            marginBottom: '30px',
+                                            fontWeight: 'bold',
+                                            boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
+                                        }}
+                                    >
+                                        🚀 Iniciar Simulación
+                                    </button>
+
+                                    {simulationStep > 0 && (
+                                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
+                                            <div style={{
+                                                background: '#fff5f5',
+                                                padding: '25px',
+                                                borderRadius: '10px',
+                                                border: '2px solid #e74c3c'
+                                            }}>
+                                                <h3 style={{ color: '#e74c3c', marginBottom: '20px' }}>
+                                                    🔍 Escaneo por Firmas
+                                                </h3>
+                                                {simulationSteps.slice(0, simulationStep + 1).map((step, i) => (
+                                                    <div key={i} style={{
+                                                        marginBottom: '15px',
+                                                        padding: '15px',
+                                                        background: 'white',
+                                                        borderRadius: '8px',
+                                                        animation: 'fadeIn 0.5s'
+                                                    }}>
+                                                        <strong>{step.title}</strong>
+                                                        <p style={{ marginTop: '8px', color: '#666' }}>{step.signature}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+
+                                            <div style={{
+                                                background: '#f0fff4',
+                                                padding: '25px',
+                                                borderRadius: '10px',
+                                                border: '2px solid #27ae60'
+                                            }}>
+                                                <h3 style={{ color: '#27ae60', marginBottom: '20px' }}>
+                                                    🧠 Análisis Heurístico
+                                                </h3>
+                                                {simulationSteps.slice(0, simulationStep + 1).map((step, i) => (
+                                                    <div key={i} style={{
+                                                        marginBottom: '15px',
+                                                        padding: '15px',
+                                                        background: 'white',
+                                                        borderRadius: '8px',
+                                                        animation: 'fadeIn 0.5s'
+                                                    }}>
+                                                        <strong>{step.title}</strong>
+                                                        <p style={{ marginTop: '8px', color: '#666' }}>{step.heuristic}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    <footer style={{
+                        textAlign: 'center',
+                        marginTop: '30px',
+                        color: 'white',
+                        fontSize: '0.9rem'
+                    }}>
+                        <p>💡 Consejo: Los antivirus modernos utilizan ambas técnicas para una protección óptima</p>
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
