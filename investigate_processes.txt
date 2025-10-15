@@ -1,0 +1,11 @@
+++ ps -A ---> Muestra todos los procesos en ejecución
+
+++ ps aux ---> Muestra información adicional como uso de memoria y cpu
+
+++ ps aux | grep root ---> Muestra los procesos que se están ejecutando como root
+
+++ top ---> Muestra el uso de memoria y cpu por parte de los procesos en ejecución
+
+++ kill <nombre_proceso> ---> Permite detener un proceso
+
+++ pkill -9 -f <id_proceso> ---> Permite detener un proceso
