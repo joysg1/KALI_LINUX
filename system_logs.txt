@@ -1,0 +1,7 @@
+++ journalctl 
+--- journalctl --since "1 hour ago"
+--- journalctl --since "2025-01-01" --until "2025-03-01" 
+--- journalctl -u ssh 
+--- journalctl -u ssh --since "1 hour ago"
+--- journalctl -u ssh --since "1 hour ago" | grep "Failed"
+--- journalctl -f ---> Muestra los logs en tiempo real
