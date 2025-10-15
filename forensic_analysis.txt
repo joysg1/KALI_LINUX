@@ -1,0 +1,8 @@
+++ stat /etc/passwd  ---> Permite ver información vinculada a la integridad del archivo passwd (cuando se modificó y/o alteró
+por última vez)
+
+++ stat /etc/shadow  ---> Permite ver información vinculada a la integridad del archivo shadow (cuando se modificó y/o alteró
+por última vez)
+
+++ find / -type f -mtime -1 ---> Permite mostrar todos los archivos que han sido modificados en las últimas 24 horas
+
