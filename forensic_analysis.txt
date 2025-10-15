@@ -8,9 +8,11 @@ por última vez)
 
 ++ find / -user <usuario> -type f ---> Permite ver los archivos modificados por un usuario en particular
 
-++ crontab -l ---> Permite mostrar las tareas programadas 
+++ crontab -l ---> Permite mostrar las tareas programadas asociadas al usuario actual
 
 ++ sudo cat /etc/crontab ---> Permite ver el archivo asociado a las tareas programadas
+
+
 
 
 
