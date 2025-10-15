@@ -12,3 +12,5 @@ por última vez)
 
 ++ sudo cat /etc/crontab ---> Permite ver el archivo asociado a las tareas programadas
 
+
+
