@@ -1,0 +1,7 @@
+++ sudo ufw status
+
+++ sudo ufw enable
+
+++ sudo ufw deny from <dirección_ip_a_bloquear> ---> Bloquear dirección ip
+
+++ sudo ufw allow 22 ---> Habilitar puerto 22 relacionado a ssh
