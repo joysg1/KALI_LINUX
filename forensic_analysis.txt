@@ -6,3 +6,5 @@ por última vez)
 
 ++ find / -type f -mtime -1 ---> Permite mostrar todos los archivos que han sido modificados en las últimas 24 horas
 
+++ find / -user <usuario> -type f ---> Permite ver los archivos modificados por un usuario en particular
+
