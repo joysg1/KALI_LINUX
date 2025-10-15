@@ -10,3 +10,5 @@ por última vez)
 
 ++ crontab -l ---> Permite mostrar las tareas programadas 
 
+++ sudo cat /etc/crontab ---> Permite ver el archivo asociado a las tareas programadas
+
