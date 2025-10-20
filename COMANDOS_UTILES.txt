@@ -9,6 +9,8 @@
 --- date (Permite mostrar la fecha del sistema)
 --- whereis <nombre_programa> (Muestra todas las ubicaciones donde se encuentra un programa
 ---- Ejemplo: whereis java
+--- whatis <comando> (Permite describir el comando)
+---- Ejemplo: whatis <clear> 
 --- wc <archivo> (Permite conecer la longitud en un archivo>
 ---- Ejemplo wc <sample.txt>
 ----- Salida 24 (Número de líneas) - 37 (palabras) - 117 (Caracteres)
