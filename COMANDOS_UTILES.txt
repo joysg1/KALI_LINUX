@@ -5,6 +5,7 @@
 ----- ll (Permite realizar el mismo objetivo)
 --- ls -hs (Listar los directorios en conjunto con su tamaño en disco)
 --- ls -a (Listar archivos dentro de directorios)
+--- find . -name "*txt" (Permite buscar todos los archivos con extensión .txt)
 --- date (Permite mostrar la fecha del sistema)
 --- whereis <nombre_programa> (Muestra todas las ubicaciones donde se encuentra un programa
 ---- Ejemplo: whereis java
