@@ -98,6 +98,7 @@ hexadecimal)
 --- mv <nombre_archivo> <nuevo_nombre_archivo> (Permite cambiar el nombre de un archivo)
 --- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
 --- chmod <cod_permisos> <archivo> (Cambiar los permisos de un archivo)
+---- Ejemplo chmod u=rw, g=r, o=w <example.txt> (El usuario tiene permiso de lectura y escritura, el grupo tiene permiso de lectura y otros tienen permiso de escritura)
 --- zip <archivo.zip> <archivo_original> (Permite comprimir a .zip)
 ---- Ejemplo: zip sample2.zip sample2.txt
 --- gzip <archivo> (Permite comprimir un archivo a la extensión .gz)
