@@ -1,6 +1,6 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
---- ls (Listar directorios)
+--- ls (Listar directorios) 
 --- ls -a (Listar archivos dentro de directorios)
 --- date (Permite mostrar la fecha del sistema)
 --- whereis <nombre_programa> (Muestra todas las ubicaciones donde se encuentra un programa
