@@ -45,6 +45,7 @@ con mayor detalle)
 --- dig <dominio> @<dns> (Permite consultar a un servidor dns cual es la ip asociada a un dominio)
 ----- Ejemplo: google.com @1.1.1.1 
 --- history (Permite ver el historial de los comandos)
+---- history 5 (Permite ver los 5 útlimos comandos ejecutados)
 --- cat <nombre_archivo> | wc -l (Muestra la cantidad de líneas de un archivo)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
 --- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
