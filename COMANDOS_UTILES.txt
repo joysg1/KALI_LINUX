@@ -58,6 +58,7 @@ con mayor detalle)
 --- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
 --- tac <nombre_archivo> (Permite ver el contenido de un archivo)
 --- vi <nombre_archivo> (Permite ver el contenido de un archivo)
+---- i (Para entrar al modo de edición de vi)
 ---- :q (Para salir de vi)
 --- xxd <nombre_archivo> (Permite ver el contenido de un archivo, usando formato
 hexadecimal)
