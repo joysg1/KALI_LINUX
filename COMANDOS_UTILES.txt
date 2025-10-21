@@ -58,8 +58,20 @@ con mayor detalle)
 --- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
 --- tac <nombre_archivo> (Permite ver el contenido de un archivo)
 --- vi <nombre_archivo> (Permite ver el contenido de un archivo)
+---- sudo apt install vim (Permite instalar vim)
+---- sudo apt install vim-runtime -y (Permite instalar otras dependencias de vim)
+------ vimutor (Permite acceder al tutorial de vim)
+------ vimutor es (Permite acceder al tutorial de vim en español)
+----- vimuto <cod_idioma> (Permite acceder al tutorial de vim en el idioma correspondiente al código)
 ---- i (Para entrar al modo de edición de vi)
+---- ESC para salir de modo edición
+---- :w para guardar los cambios
 ---- :q (Para salir de vi)
+---- :wq (Para guardar los cambios y salir de vi)
+---- :q! (Para salir de vi sin guardar cambios)
+---- dd (Permite borrar el contenido de la línea en dónde se encuentra el cursor)
+---- /<cadena> (Permite buscar una cadena en particular)
+----- N para movernos entre las ocurrencias encontradas
 --- xxd <nombre_archivo> (Permite ver el contenido de un archivo, usando formato
 hexadecimal)
 --- whois <dominio> (Permite ver la información asociada a un dominio)
