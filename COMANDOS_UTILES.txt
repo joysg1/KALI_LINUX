@@ -5,7 +5,7 @@
 ----- ll (Permite realizar el mismo objetivo)
 --- ls -hs (Listar los directorios en conjunto con su tamaño en disco)
 --- ls -a (Listar archivos dentro de directorios)
---- more <num_lineas> <archivo.txt> (Permite ver el numero de lineas de un archivo)
+--- more -<num_lineas> <archivo.txt> (Permite ver el numero de lineas de un archivo)
 --- more +<num_linea> <archivo.txt> (Permite ver el archivo desde la línea después del más)
 --- find . -name "*txt" (Permite buscar todos los archivos con extensión .txt)
 --- tree (Permite ver la estructura de árbol de los archivos)
