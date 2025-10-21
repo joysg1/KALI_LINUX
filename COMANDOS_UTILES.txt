@@ -9,6 +9,7 @@
 --- more +<num_linea> <archivo.txt> (Permite ver el archivo desde la línea después del más)
 --- more +/<cadena> <archivo.txt> (Permite ubicar la cadena dentro del archivo)
 --- less -p "<cadena>" <archivo.txt> (Permite ubicar la cadena dentro del archivo)
+--- less -NIp "<cadena>" <archivo.txt> (Permite ubicar la cadena dentro del archivo y enumerar las líneas)
 --- find . -name "*txt" (Permite buscar todos los archivos con extensión .txt)
 --- tree (Permite ver la estructura de árbol de los archivos)
 --- apropos <inicio_comando> (Permite buscar los comandos asociados a una cadena)
