@@ -1,5 +1,11 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
+--- users (Permite ver el usuario activo actualmente)
+--- w  (Permite ver el usuario activo actualmente)
+--- who (Permite ver el usuario activo actualmente)
+--- su <nombre_usuario> (Permite cambiar a un usuario)
+---- exit (Permite salir de ese usuario)
+--- sudo su (Permite cambiarnos a root)
 --- df -hT (Muestra todos los sistemas de archivos vistos por el S.O.)
 --- df -hT -i (Muestra todos los sistemas de archivos vistos por el S.O. como también la cuota de creación de archivos)
 --- ls (Listar directorios) 
