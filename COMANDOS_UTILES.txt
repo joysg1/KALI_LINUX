@@ -57,6 +57,8 @@ con mayor detalle)
 --- cat .bash_history (Permite abrir el archivo del historial de los comandos ejecutados)
 --- cat /etc/os-release (Permite conocer la versión de la distribución GNU/Linux)
 --- tac <nombre_archivo> (Permite ver el contenido de un archivo)
+--- vi <nombre_archivo> (Permite ver el contenido de un archivo)
+---- :q (Para salir de vi)
 --- xxd <nombre_archivo> (Permite ver el contenido de un archivo, usando formato
 hexadecimal)
 --- whois <dominio> (Permite ver la información asociada a un dominio)
