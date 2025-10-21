@@ -6,6 +6,7 @@
 --- ls -hs (Listar los directorios en conjunto con su tamaño en disco)
 --- ls -a (Listar archivos dentro de directorios)
 --- find . -name "*txt" (Permite buscar todos los archivos con extensión .txt)
+--- tree (Permite ver la estructura de árbol de los archivos)
 --- apropos <inicio_comando> (Permite buscar los comandos asociados a una cadena)
 ---- Ejemplo: apropos his (Busca aquellos comandos donde his sea parte)
 --- date (Permite mostrar la fecha del sistema)
