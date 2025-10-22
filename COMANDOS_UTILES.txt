@@ -1,5 +1,7 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
+--- ln <archivo> <link_archivo> (Permite crear un enlace duro a un archivo)
+--- ln -s <archivo> <link_archivo> (Permite crear un enlace suave a un archivo)
 --- sudo chown <usuario> <nombre_archivo> (Permite cambiar de dueño un archivo)
 --- sudo chown <usuario>:<grupo> <nombre_archivo> (Permite cambiar de propietario y grupo un archivo)
 --- sudo chown :<grupo> * (Permite cambiar todos los archivos de grupo)
