@@ -1,5 +1,6 @@
 ++ Comandos básicos:
 --- pwd (Muestra el directorio en dónde estamos)
+--- sudo chown <usuario> <nombre_archivo> (Permite cambiar de dueño un archivo)
 --- sudo useradd <nombre_usuario> (Permite crear un usuario nuevo)
 ---- sudo useradd <nombre_usuario> -m (Permite crear un usuario nuevo en conjunto con su directorio home)
 --- sudo adduser <nombre_usuario> (Permite crear un usuario nuevo, tiene la diferencia con useradd al requerir información adicional para la creación del usuario)
