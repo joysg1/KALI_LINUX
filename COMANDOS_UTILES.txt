@@ -3,6 +3,8 @@
 --- sudo chown <usuario> <nombre_archivo> (Permite cambiar de dueño un archivo)
 --- sudo chown <usuario>:<grupo> <nombre_archivo> (Permite cambiar de propietario y grupo un archivo)
 --- sudo chown :<grupo> * (Permite cambiar todos los archivos de grupo)
+--- sudo chgrp <grupo> <nombre_archivo> (Permite cambiar de grupo un archivo)
+--- sudo chgrp <grupo> -R . (Permite cambiar de grupo al directorio actual y a todos los archivos y subdirectorios vinculados)
 --- sudo useradd <nombre_usuario> (Permite crear un usuario nuevo)
 ---- sudo useradd <nombre_usuario> -m (Permite crear un usuario nuevo en conjunto con su directorio home)
 --- sudo adduser <nombre_usuario> (Permite crear un usuario nuevo, tiene la diferencia con useradd al requerir información adicional para la creación del usuario)
