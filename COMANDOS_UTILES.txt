@@ -145,6 +145,7 @@ hexadecimal)
 ---- Ejemplo: grep "linux" *.txt
 ---- Ejemplo: grep one sample.txt (Muestra todas las coincidencias de la cadena one dentro del archivo sample.txt)
 --- rm <nombre_archivo> (Permite borrar un archivo)
+--- rm * (Permite borrar todos los archivos de un directorio)
 --- rm -r <nombre_directorio> (Permite borrar un directorio con archivos)
 --- rm f* -r (Permite borrar todos los directorios que inicien con la letra f)
 --- rmdir <nombre_directorio> (Permite borrar un directorio vacío)
