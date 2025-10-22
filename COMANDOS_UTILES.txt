@@ -131,6 +131,13 @@ hexadecimal)
 ---- wget -b <enlace> (Descargar archivo sin mostrar el progreso)
 --- sudo adduser (Agregar usuario al sistema)
 --- cat /etc/passwd (Permite ver los usuarios registrados en el sistema)
+--- cat r* (Permite mostar todos los archivos que empiezan con la letra r)
+--- cat > <nombre_archivo.txt> (Permite crear un archivo de texto y agregarle lineas hasta presionar Crtl +D)
+----- Ingresar texto
+----- Salir con Crtl +D 
+--- cat >> <nombre_archivo.txt> (Permite crear un archivo de texto y agregarle lineas hasta presionar Crtl +D, hace el proceso siguiendo la secuencia)
+----- Ingresar texto
+----- Salir con Crtl +D 
 --- sudo halt (Permite apagar el equipo)
 --- sudo shutdown -h now (Permite apagar el equipo)
 --- sudo reboot (Permite reiniciar el equipo)
