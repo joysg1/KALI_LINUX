@@ -1,4 +1,5 @@
 ++ Comandos básicos:
+--- lsb_release -a (Permite mostar el nombre en clave de la distribución)
 --- sudo apt install snap (Permite instalar snap)
 --- snap find <nombre_paquete> (Permite buscar un paquete)
 --- sudo snap remove <nombre_paquete> (Permite eliminar un paquete)
@@ -7,6 +8,7 @@
 --- dpkg -l | wc -l (Permite contar los paquetes instalados)
 --- dpkg -l <nombre_paquete> (Permite mostar información referente al paquete)
 --- sudo dpkg -i <nombre_archivo_paquete> (Permite instalar un paquete disponible en local)
+--- sudo dpkg -r <nombre_paquete> (Permite remover un paquete)
 --- sudo apt show <nombre_paquete> (Permite mostar información referente al paquete)
 --- sudo apt list --installed (Permite ver todos los paquetes instalados)
 --- sudo apt list --installed | wc -l (Permite contar los paquetes instalados)
