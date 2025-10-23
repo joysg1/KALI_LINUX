@@ -1,4 +1,6 @@
 ++ Comandos básicos:
+--- sudo apt install software-properties-common (Permite instalar el gestor para agregar repositorios)
+--- sudo add-apt-repository <url_repositorio> (Permite agregar un url de un repositorio, lo que facilita la actualización del software vinculado)
 --- lsb_release -a (Permite mostar el nombre en clave de la distribución)
 --- sudo apt install snap (Permite instalar snap)
 --- snap find <nombre_paquete> (Permite buscar un paquete)
