@@ -1,4 +1,19 @@
 ++ Comandos básicos:
+--- systemctl (Permite mostrar los servicios vinculados al equipo)
+----- systemctl status (Permite mostar los servicios que están corriendo vinculados al equipo)
+----- systemctl | wc -l (Permite contar los servicios que están vinculados al equipo)
+----- systemctl <nombre_servicio> (Permite el estado de un servicio en particular)
+----- systemctl is-active <nombre_servicio> (Permite conocer si un servicio está activo o no) 
+----- sudo systemctl stop <nombre_servicio> (Permite detener un servicio)
+------ Ejemplo sudo systemctl stop ssh
+---- sudo systemctl start <nombre_servicio> (Permite iniciar un servicio)
+---- sudo systemctl restart <nombre_servicio> (Permite reiniciar un servicio)
+---- sudo systemctl reload <nombre_servicio> (Permite recargar un servicio)
+---- sudo systemctl enable <nombre_servicio> (Permite poner un servicio en la lista de inicio del sistema)
+---- sudo systemctl is-enabled <nombre_servicio> (Permite determinar si un servicio está en la lista de inicio del sistema)
+---- sudo systemctl disable <nombre_servicio> (Permite quitar un servicio de la lista de inicio del sistema) 
+---- sudo systemctl list-unit-files --type=service (Permite mostar todos los servicios vinculados al sistema independientemente de su estado)
+---- sudo systemctl list-unit-files --type=service "ssh*" (Permite mostar todos los servicios mediante un filtrado, en este caso aquellos que sean ssh)
 --- top -o PID (Permite mostrar los procesos en función del más reciente por PID)
 --- top -u <nombre_usuario> (Permite mostar los procesos vinculados a un usuario)
 ---- Al presionar M podemos ver el uso de memoria de forma gráfica
@@ -73,13 +88,16 @@
 --- less <nombre_archivo> (Permite ver un archivo grande como uno de logs línea por línea
 ---- Presionar /<cadena> (Permite ubicar las coincidencias de una cadena dentro del archivo
 ---- Presionar q (Permite salir del archivo)
+--- ps <id_proceso> (Permite mostar el proceso asociado a un id)
 --- ps -e (Muestra los procesos que se están ejecutando actualmente)
 --- ps -ef (Muestra los procesos que se están ejecutando actualmente en formato ampliado)
 --- ps -ef | grep <nombre_usuario> (Muestra los procesos que están bajo cierto usuario)
+--- pidof <nombre_proceso> (Permite mostar los pids asociados a un proceso, ejemplo firefox)
 --- top (Muestra la información de los procesos corriendo y su consumo)
 --- htop (Muestra la información de los procesos corriendo y su consumo
 con mayor detalle)
 ---- Instalar con: sudo apt-get install htop
+---- Para cerrar un proceso procedemos a ubicar el cursor sobre el mismo y presionar la letra K
 --- man <comando> (Muestra información referente a un comando)
 ---- Ejemplo: man -f mkdir 
 --- kill -9 <id_proceso> (Permite detener un proceso)
