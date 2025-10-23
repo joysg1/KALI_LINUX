@@ -1,4 +1,13 @@
 ++ Comandos básicos:
+--- top -o PID (Permite mostrar los procesos en función del más reciente por PID)
+--- top -u <nombre_usuario> (Permite mostar los procesos vinculados a un usuario)
+---- Al presionar M podemos ver el uso de memoria de forma gráfica
+---- Al presionar Z podemos ver los colores en formato invertido
+---- Al presionar 0 activamos el filtrado, COMMAND = <nombre_proceso> ---> presionar k para parar el proceso e ingresamos el PID del mismo, ingresamos el número 15 (referente a la señal) y por último = para reiniciar el filtrado
+---- Shift + M permite ordenar los procesos por uso de memoria de forma descendente
+---- Shift + P permite ordenar los procesos por uso de procesador de forma descendente
+----- Shift + N permite ordenar los procesos por PID de forma descendente
+----- Shift + T permite ordenar los procesos por cantidad de tiempo de ejecución de forma descendente
 --- pwd (Muestra el directorio en dónde estamos)
 --- ln <archivo> <link_archivo> (Permite crear un enlace duro a un archivo)
 --- ln -s <archivo> <link_archivo> (Permite crear un enlace suave a un archivo)
