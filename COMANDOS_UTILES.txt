@@ -1,4 +1,11 @@
 ++ Comandos básicos:
+--- sudo apt-get update (Actualiza la información de los repositorios)
+--- sudo apt-get upgrade (Actualiza los paquetes del sistema)
+--- sudo apt-get reinstall <nombre_paquete> (Reinstala un paquete)
+--- sudo apt-get remove <nombre_paquete> (Remueve un paquete)
+--- sudo apt-get purge <nombre_paquete> (Remueve un paquete y los archivos de configuración)
+--- sudo apt-get autoremove (Remueve los paquetes que no están en uso)
+--- sudo apt-get dist-upgrade (Permite actualizar la districución)
 --- systemctl (Permite mostrar los servicios vinculados al equipo)
 ----- systemctl status (Permite mostar los servicios que están corriendo vinculados al equipo)
 ----- systemctl | wc -l (Permite contar los servicios que están vinculados al equipo)
