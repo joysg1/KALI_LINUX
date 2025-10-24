@@ -1,4 +1,5 @@
 ++ Comandos básicos:
+--- sudo apt install iptables
 --- sudo iptables -L (Permite mostar las listas de reglas del firewall)
 --- sudo iptables -L --line-numbers (Permite mostar las listas de reglas del firewall añadiendo numeración)
 --- sudo iptables -L --line-numbers -nv (Permite ver las reglas agreando un coneo de los paquetes por regla)
