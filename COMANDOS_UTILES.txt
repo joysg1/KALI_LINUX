@@ -1,4 +1,16 @@
 ++ Comandos básicos:
+--- crontab -l (Permite ver las tareas vinculadas al usuario actual)
+--- crontab -e (Permite programar tareas)
+---- Esquema para programar tareas: ***** <comando> (Los 5 * indican que se acepta cualquier valor de tiempo
+----- Explicación del esquema de los *
+------ Primer *: Cada minuto (0-59)
+------ Segundo *: Cada hora (0-23)
+------ Tercer *: Cada día del mes (1-31)
+------ Cuarto *: Cada mes (1-12)
+------ Quinto *: Cada día de la semana (0-7 - Domingo = 0)
+--- crontab -r (Permite eliminar todas las tareas vinculadas al usuario actual)
+--- sudo crontab -u <nombre_usuario> -l (Permite ver las tareas relacionadas a otro usuario)
+------ Página web para prácticar y generar el formato: https://crontab.guru/
 --- sudo apt install software-properties-common (Permite instalar el gestor para agregar repositorios)
 --- sudo add-apt-repository <url_repositorio> (Permite agregar un url de un repositorio, lo que facilita la actualización del software vinculado)
 --- lsb_release -a (Permite mostar el nombre en clave de la distribución)
@@ -29,6 +41,8 @@
 --- sudo apt download (Permite guardar el archivo a un .deb para facilitar la mobilización del mismo)
 --- systemctl (Permite mostrar los servicios vinculados al equipo)
 ----- systemctl status (Permite mostar los servicios que están corriendo vinculados al equipo)
+----- systemctl status cron (Permite ver el estado del servicio cron)
+----- sudo systemctl start cron (Permite iniciar el servicio cron)
 ----- systemctl | wc -l (Permite contar los servicios que están vinculados al equipo)
 ----- systemctl <nombre_servicio> (Permite el estado de un servicio en particular)
 ----- systemctl is-active <nombre_servicio> (Permite conocer si un servicio está activo o no) 
