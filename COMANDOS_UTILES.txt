@@ -1,4 +1,15 @@
 ++ Comandos básicos:
+--- sudo iptables -L (Permite mostar las listas de reglas del firewall)
+--- sudo iptables -L --line-numbers (Permite mostar las listas de reglas del firewall añadiendo numeración)
+--- sudo iptables -D INPUT <num_regla> (Permite borrar una regla por número)
+--- sudo iptables -f (Permite borrar las reglas del firewall)
+--- sudo iptables -f <INPUT> (Permite borrar las reglas de entrada del firewall)
+--- sudo iptables -A <INPUT> -s <ip> -j DROP (Permite bloquear las solicitudes de entrada de una ip)
+--- sudo iptables -A INPUT -s <ip> -j REJECT (Permite rechazar las solicitudes de entrada de una ip)
+--- sudo iptables -f <OUTPUT> (Permite borrar las reglas de salida del firewall)
+--- sudo iptables -f <FORWARD> (Permite borrar las reglas de progreso del firewall)
+--- sudo iptables -A INPUT -j LOG (Permite agregar una regla de registro de logs de conexiones de entrada al firewall)
+--- tail /var/log/syslog -f (Permite ver los logs del equipo)
 --- crontab -l (Permite ver las tareas vinculadas al usuario actual)
 --- crontab -e (Permite programar tareas)
 ---- Esquema para programar tareas: ***** <comando> (Los 5 * indican que se acepta cualquier valor de tiempo
