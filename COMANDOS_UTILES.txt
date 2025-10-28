@@ -309,6 +309,9 @@ sudo apt-get install seclists
 ++ gpg -c <file> ---> Cifrar archivos 
 
 
+++ figlet
+--- fidlet <cadena> ---> Permite mostrar la cadena en la terminal
+
 ++ finger
 --- sudo apt-get install finger
 --- finger <usuario> ----> Se mostrará la información vinculada al usuario
