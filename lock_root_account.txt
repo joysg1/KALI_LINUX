@@ -1,0 +1,5 @@
+++ sudo passwd -l root
+
+++ sudo getent shadow root
+--- Tendremos la siguiente sintaxis ---> root:!<caracteres> (El ! indica que la cuenta está bloqueda, 
+lo que quiere decir que aún poniendo la contraseña correcta, la misma será rechazada)
