@@ -1,0 +1,19 @@
+++ Un workspace nos permite tener ordenados los proyectos para así tener mejor disposición
+
+++ msfconsole 
+
+++ workspace (Lista los espacios de trabajo disponibles)
+
+++ workspace <nombre_workspace> (Pemite cambiar de espacio de trabajo)
+
+++ workspace -a <nombre_workspace> (Permite agregar un espacio de trabajo)
+
+++ workspace -d <nombre_workspace> (Permite borrar un espacio de trabajo)
+
+++ workspace -r <nombre_workspace> <nuevo_nombre_workspace> (Permite cambiar el nombre de un workspace)
+
+++ hosts (Permite mostrar los hosts disponibles en el workspace)
+
+++ db_nmap <ip_maquina> -sV (Permite agregar un host)
+
+++ vulns (Permite listar las vulnerabilidades asociadas a dicha máquina)
