@@ -1,0 +1,6 @@
+++ Decoder section
+
+++ Pegar url
+
+++ Decode as
+--- Seleccionar la opción (URL, HTML, Base64, etc)
