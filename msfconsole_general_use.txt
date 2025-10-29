@@ -1,0 +1,49 @@
+++ msfconsole
+
+++ banner (Permite cambiar el banner)
+
+++ search portscan (Permite listar los módulos referentes a portscan)
+
+++ search type:auxiliary (Permite listar los módulos que tienen auxiliary, los cuales
+permiten el escaneo y obtención de información)
+
+++ search type:auxiliary name:port (Permite listar los módulos que contienen auxiliary y port)
+
+++ search cve:2018 (Permite listar las vulnerabilidades del año 2018)
+
+++ use <numero> (Permite seleccionar un módulo según la lista desplegada)
+
+++ use <nombre> (Permite seleccionar un módulo según la lista desplegada)
+
+++ info (Permite ver la información referente a un módulo)
+
+++ show options (Permite mostrar las opciones vinculadas al módulo)
+
+++ set <opción> (Permite setear las opciones)
+--- Ejemplo: set RHOSTS <ip_maquina_destino> 
+
+++ setg <opcion> (Permite setear las opciones de forma global)
+--- Ejemplo: setg RHOSTS <ip_maquina_destino> 
+
+++ unsetg <opcion> (Permite quitar las opciones de forma global)
+--- Ejemplo: unsetg RHOSTS <ip_maquina_destino> 
+
+++ getg <opcion> (Permite verificar el estado)
+--- Ejemplo: getg RHOSTS
+
+++ show payloads (Permite listar payloads)
+
+++ search type:payload platform:linux (Permite buscar payloads para linux)
+
+++ search type:payload name:ssh (Permite buscar payloads ssh)
+
+++ set payloads <numero> (Permite usar el payload seleccionado)
+
+++ sessions (Permite listar las sesiones activas)
+
+++ save (Permite salvar la configuración actual)
+
+
+
+
+
