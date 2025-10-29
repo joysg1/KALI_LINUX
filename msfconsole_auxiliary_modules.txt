@@ -1,0 +1,25 @@
+++ workspace -a enum 
+
+++ search portscan 
+
+++ use 6
+
+++ show options
+
+++ set RHOSTS <ip>
+
+++ run 
+--- Se procederán a escanear todos los puertos abiertos bajo esa ip
+
+++ search ftp_version
+--- use 0
+--- show options
+--- run 
+
+++ search ftp_login 
+--- use 0
+--- show options
+--- set STOP_ON_SUCCESS true
+--- set USERPASS_FILE /home/kali/user_pass.txt
+--- run
+
