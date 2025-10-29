@@ -1,4 +1,8 @@
 ++ Comandos básicos:
+--- ncdu (Analiza el disco de forma visual)
+--- lsoft (Muestra archivos abiertos por cualquier proceso)
+--- curl ifconfig.me (Muestra la ip pública)
+--- dstat (Muestra estadísticas en tiempo real de CPU, RAM, disco y red)
 --- sudo apt install iptables
 --- sudo iptables -L (Permite mostar las listas de reglas del firewall)
 --- sudo iptables -L --line-numbers (Permite mostar las listas de reglas del firewall añadiendo numeración)
