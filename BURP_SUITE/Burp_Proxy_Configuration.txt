@@ -1,0 +1,39 @@
+++ Firefox addon: foxy proxy standard
+--- Options
+--- Proxies
+--- Add
+--- Title: Burpsuite
+
+++ Burp Suite
+--- Proxy
+--- Options
+
+++ Firefox addon: foxy proxy standard
+--- hostname 127.0.0.1:8080
+--- save
+--- El icono de Burpsuite aparecerá al hacer clic en el botón del addon
+
+++ Burp Suite
+--- Import/Export Certificate
+--- Certificate in DER format ---> Next ---> Nombrar seleccionar ruta y guardar
+
+
+++ Firefox 
+--- Settings
+--- Certificate
+--- View Certificates
+--- Import
+--- Seleccionar el archivo
+--- Activar ambas opciones
+--- OK
+
+++ Burp Suite
+--- Intercept ---> Intercept on
+--- Forward
+
+++ Firefox 
+--- Ir a cualquier web
+
+++ Burp Suite
+--- La información de la web será visible
+
