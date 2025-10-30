@@ -1,0 +1,9 @@
+++ Se trata de scripts automatizados que permiten verificar vulnerabilidades usando nmap
+
+++ cd /usr/share/nmap/scripts
+--- ls
+--- aparecerá un listado de los scripts 
+--- nmap --script=whois-domain.nse <url>
+--- Nos aparecerá un listado de la información vinculada al dominio
+--- nmap --script=http-title,http-enum.nse -p 80,443 testphp.vulnweb.com (Permite escanear los títulos HTTP y enumera
+los posibles directorios ocultos)
