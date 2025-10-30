@@ -4,8 +4,6 @@
 --- Usar credenciales admin/admin
 
 
-
-
 ++ Burp Suite
 --- HTTP History
 --- POST
