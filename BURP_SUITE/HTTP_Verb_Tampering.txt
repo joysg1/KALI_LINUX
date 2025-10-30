@@ -1,1 +1,36 @@
+++ WEb browser:
+--- https://www.root-me.org/
+--- registrarse
+----- tempmail: https://temp-mail.org/
+--- Ir a la sección challenges
+--- Webserver
+--- HTTP Verb tampering
+--- Start challenge
+
+++ Burp Suite
+--- Intercept on
+
+++ Web browser
+--- Refrescar el navegador
+
+++ Burp Suite
+--- Cambiar donde dice GET por OPTIONS
+--- Forward
+
+++ Web Browser
+--- Copiar el password
+--- Ingresarlo en rootme
+
+++ Burp Suite
+--- Intercept off
+
+
+
+
+
+
+
+
+
+
 
