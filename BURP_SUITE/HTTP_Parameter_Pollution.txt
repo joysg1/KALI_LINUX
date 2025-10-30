@@ -1,0 +1,21 @@
+++ owaspbwa 
+--- owasp multillidae
+--- owasp 2013 ---> A1 Injection ---> HTTP Parameter Pollution ---> Poll Question
+--- Seleccionar alguna herramienta del listado
+
+
+++ Burp Suite
+--- Intercept on
+
+++ owaspbwa 
+--- submit
+
+++ Burp Suite
+--- Aparecerán las opción seleccionada 
+--- Agregar un nuevo parámetro como &choice=hacked&
+--- Forward
+
+++ owaspbwa
+--- Aparecerá el texto puesto como parámetro
+
+
