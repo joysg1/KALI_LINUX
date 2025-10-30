@@ -1,0 +1,64 @@
+
+++ Web Browser
+--- Ghost section (owasp bwa)
+--- Ingresar credenciales: test/password
+--- Login
+--- Clic derecho
+--- Inspect page
+--- Application
+--- Cookies
+--- Cambiar valor del Cookie user a admin
+--- Refrescar el navegador
+--- El texto del sitio web cambia mostrando un mensaje de bienvenida
+asociado a admin
+--- Inspect
+--- Application
+--- Cookies
+--- Vemos que el valor del cookie server esta codificado
+
+
+++ Burp Suite
+--- Intercept on
+
+
+++ Web Browser
+--- Refrescar el navegador
+
+
+++ Burp Suite
+--- Seleccionar el valor del cookie server 
+--- Clic derecho
+--- Send to decoder
+--- Decode as
+--- Base 64
+--- El texto en plano asociado será visible
+--- Proxy Tab
+--- Clic derecho
+--- Send to repeater
+--- Localizar el cookie username
+--- Cambiar el valor a test
+--- Send
+--- Response 
+--- Render
+--- Vemos el sitio web cargado mostrando el mensaje de texto asociado a pruebas
+--- Cambiar el valor del cookie user a admin
+--- Send
+--- Response
+--- Render
+--- Vemos el sitio web cargado mostrando el mensaje de texto asociado a admin
+--- Response
+--- Clic derecho
+--- Send to comparer
+--- Modificar el valor del cookie user a test
+--- Send
+--- Response
+--- Send to comparer
+--- Compare
+--- Words
+--- Sync views
+
+
+
+
+
+
