@@ -1,0 +1,41 @@
+++ Herramienta que permite modificar manualmente y reenviar solicitudes 
+HTTP
+
+++ Burp Suite
+--- Proxy
+--- Open Browser
+
+
+++ Web Browser
+--- http://testphp.vulnweb.com/login.php
+
+++ Burp Suite
+--- Intercept off
+
+++ Web Browser
+--- Ingresar con credenciales de prueba
+
+++ Burp Suite
+--- Clic derecho
+--- Send to repeater
+--- Repeater
+--- Modificar la sección del request cambiando el usuario y la contraseña
+--- Send
+--- Seguir cambiando las credenciales y dar clic en send hasta obtener diferentes 
+resultados en la sección de la derecha (response)
+--- De obtener el código 200 en la sección pretty confirmamos que tenemos
+las credenciales correctas
+--- En la sección de render tenemos la visualización de la página web 
+tal cual se vería en el navegador
+
+
+
+
+
+
+
+
+
+
+
+
