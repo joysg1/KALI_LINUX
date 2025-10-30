@@ -1,0 +1,57 @@
+++ Burp
+--- Open Browser
+
+++ Web Browser
+--- ip virtual machine owasp bwa 
+--- damn vulnerable web application
+
+++ Burp
+--- Click derecho en la url
+--- Add to scope
+--- Yes
+
+++ Web Browser
+--- Login con credenciales incorrectas
+
+++ Burp Suite
+--- Proxy Tab
+--- HTTP History
+--- POST request 
+--- Request
+--- Clic derecho
+--- Send to Repeater
+--- Repeater tab
+--- Cambiar el valor de la contraseña
+--- Send 
+--- Clic derecho
+--- Send to Intruder
+--- Seleccionar el campo de la contraseña
+--- Add
+--- Attack type: Sniper
+--- Payloads
+--- Load
+--- Cargar la lista de contraseñas
+--- O agregar manualmente y dar clic en add
+--- Start Attack
+--- Verificar todas las request de forma manual
+--- Ubicar aquella en la cual se haga el redireccionamiento a otro sitio web
+--- Settings
+--- Clear
+--- Add: location:login.php
+--- Quitar la opción exclude HTTP headers
+--- Start Attack
+--- Verificar los request de forma manual
+--- Ubicar aquel que no muestre el 1 en la columna location
+--- Probar las credenciales facilitadas
+--- Verificar el redireccionamiento
+
+
+
+
+
+
+
+
+
+
+
