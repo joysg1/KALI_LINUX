@@ -1,0 +1,35 @@
+++ Herramienta que permite analizar las cookies de sesiones en aplicaciones web
+
+++ Burp Suite
+--- Open Browser
+
+
+++ Web Browser
+--- https://ginandjuice.shop/
+--- Login
+--- Usar las credenciales dadas para iniciar sesion
+
+
+++ Burp Suite
+--- Intercept on
+
+
+++ Web Browser
+--- Inspect
+--- Application
+--- Cookies
+
+++ Burp Suite
+--- Send to sequencer
+--- Sequencer Tab
+--- Start Live Capture
+--- Se abrirá una nueva ventana
+--- Auto analyze seleccionado
+--- Analyze now
+--- Se mostrará un gráfico de entropía, que nos permitirá analizar el estado 
+de la seguridad de la sesión
+
+
+
+
+
