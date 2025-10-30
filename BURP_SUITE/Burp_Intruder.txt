@@ -1,1 +1,47 @@
 ++ Herramienta que permite automatizar ataques e instrucciones
+
+++ Burp Suite:
+--- Open Browser
+
+
+++ Web Browser:
+--- Ir a la web http://testphp.vulnweb.com/login.php e ingresar credenciales
+
+
+++ Burp Suite:
+--- Intercept
+
+
+++ Web Browser:
+--- Login
+
+
+++ Burp Suite:
+--- Clic derecho 
+--- Send to intruder
+--- Intruder
+--- Add $ (Realizarlo en la sección uname para que quede así: $admim$&pass=$test1$
+--- Attack type: cluster bomb
+--- Payloads
+--- Load
+--- Seleccionar la lista de usuarios (diccionario) o agregarlos manualmente en add
+--- Payload set 2
+--- Seleccionar la lista de contraseñas (diccionario) o agregarlos manualmente en add
+--- Start attack
+--- Se abrirá una nueva ventana
+--- Ubicar en la matriz es response received 200 
+--- Ubicar las credenciales encontradas
+--- Ir al tab proxy
+--- Intercept off
+
+
+++ Web Browser:
+--- Probar las credenciales obtenidas
+
+
+
+
+
+
+
+
