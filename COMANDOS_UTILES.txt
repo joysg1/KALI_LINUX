@@ -279,6 +279,7 @@ hexadecimal)
 --- passwd <usuario> <contraseña> (Cambiar la contraseña de un usuario)
 --- chmod <cod_permisos> <archivo> (Cambiar los permisos de un archivo)
 ---- Ejemplo chmod u=rw, g=r, o=w <example.txt> (El usuario tiene permiso de lectura y escritura, el grupo tiene permiso de lectura y otros tienen permiso de escritura)
+--- 7z x <archivo.7z> (Permite descomprimir un archivo 7z)
 --- zip <archivo.zip> <archivo_original> (Permite comprimir a .zip)
 ---- Ejemplo: zip sample2.zip sample2.txt
 ---- Ejemplo: zip compress_texts *.txt (Permite comprimir todos los archivos .txt)
