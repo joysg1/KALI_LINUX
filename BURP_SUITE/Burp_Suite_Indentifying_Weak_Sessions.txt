@@ -1,1 +1,36 @@
+++ Web Browser
+--- owaspbwa url
+--- dvwa
+--- Usar credenciales admin/admin
+
+
+
+
+++ Burp Suite
+--- HTTP History
+--- POST
+--- Request
+--- Clic derecho
+--- Send to repeater
+--- Send
+--- Response
+--- Request
+--- Remover el cookie
+--- Send
+--- Response
+--- Verificar la presencia del nuevo PHPSESSIONID
+--- Clic derecho
+--- Send to Sequencer
+--- Sequencer
+--- Cookie
+--- PHPSESSID
+--- Start Live capture
+--- Enable auto analyze
+--- Verificar los valores de entropía generados
+
+
+
+
+
+
 
