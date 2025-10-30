@@ -1,1 +1,12 @@
+++ Descargar el owasp broken web application project
+--- url: https://sourceforge.net/projects/owaspbwa/
+
+++ Importar la máquina el el hipervisor que más nos guste
+
+++ Enceder la máquina virtual
+
+++ Acceder con las credenciales root/owaspvw
+
+++ Ver la ip asociada y acceder mediante un navegador web
+
 
