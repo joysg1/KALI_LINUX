@@ -12,3 +12,7 @@ que están dentro de estos)
 ++ Terminal
 --- sqlmap -u <url> --crawl=2 --batch ---> Permite realizar un escaneo de nivel 2
 --- sqlmap -u <url> --dbs --batch ---> Permite mostrar todas las bases de datos asociadas
+--- sqlmap -u <url> -D <nombre_base_de_datos> --tables --batch ---> Permite mostrar las tablas asociadas a una base de datos
+--- sqlmap -u <url> -D <nombre_base_de_datos> -T <nombre_tabla> --columns --batch 
+---> Permite mostrar las columnas asocidas a la tabla
+--- sqlmap -u <url> -D <nombre_base_de_datos> -T <nombre_tabla> --dump-all --batch ---> Permite mostrar toda la información referente a la tabla correspondiente
