@@ -1,0 +1,2 @@
+++ hydra -l msfadmin -p <diccionario> -t 4 -f -V ssh://<ip> ---> Este comando realiza 
+intentos de fuerza bruta a un servidor ssh
