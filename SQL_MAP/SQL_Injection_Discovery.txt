@@ -4,6 +4,7 @@
 ++ bash pentestlab.sh start dvwa 
 --- De orcurrir problemas con el servicio ejecutar:
 ---- bash pentestlab.sh stop dvwa 
+---- bash pentestlab.sh start dvwa
 --- Copiar url generada y acceder con las credenciales: admin/password
 
 ++ Navegador
