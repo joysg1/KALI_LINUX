@@ -1,1 +1,53 @@
+++ Burp Suite
+--- Open Browser
+
+++ Terminal
+--- bash pentestlab.sh start dvwa 
+
+++ Web Browser
+--- Acceder al url generado. Credenciales: admin/password
+--- dvwa security tab ---> security level = high
+--- brute force tab 
+
+++ Burp Suite
+--- HTTP History tab
+--- Seleccionar todo
+--- Clic derecho ---> Delete selected items ---> yes
+--- Target tab
+--- Clic derecho ---> Delete host ---> yes
+
+++ Burp Suite
+--- Proxy tab ---> Intercep on
+
+++ Web Browser
+--- Reload web page
+
+++ Burp Suite
+--- Proxy settings ---> Sessions ---> Add ---> Rule 1 ---> Add ---> Run a macro
+---> Add ---> Seleccionar el request ---> Ok ---> Configure item ---> Add
+---> Fetch Response ---> Search=token ---> Copiar el valor (user_token) ---> Pegarlo en parameter name ---> Seleccionar el valor ---> OK ---> OK ---> Ok 
+---> Scope ---> Solo mantener seleccionado Intruder ---> Use suite scope 
+---> Ok ---> Cerrar ventana
+
+++ Web Browser
+--- Brute Force tab
+--- Colocar credenciales
+
+++ Burp Suite
+--- Seleccionar el request
+--- Clic derecho ---> add to scope ---> send to intruder 
+--- Intruder tab
+--- Attack type ---> cluster bomb
+--- Seleccionar user ---> add
+--- Seleccionar pass ---> add
+--- Payload tab
+--- Seleccionar la lista de usuarios 
+--- payload set = 2
+--- Seleccionar la lista de contraseñas
+--- Settings tab
+--- Quitar la selección de la casilla Make unmodified baseline request
+--- Grep - Match ---> Clear ---> Add=incorrect 
+--- Start attack
+--- Se nos mostrarán los intentos de obtención de las credenciales
+
 
