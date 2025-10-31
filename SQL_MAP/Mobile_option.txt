@@ -1,0 +1,4 @@
+++ Permite a sql map hacerse pasar como un dispositivo móvil
+
+++ Terminal
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --mobile
