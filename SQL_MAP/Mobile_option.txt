@@ -2,3 +2,5 @@
 
 ++ Terminal
 --- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --mobile
+--- Seleccionar el tipo de dispositivo móvil 
+
