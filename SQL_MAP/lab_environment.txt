@@ -1,0 +1,8 @@
+++ https://github.com/eystsen/pentestlab --- clonar el repositorio
+
+++ Luego ejecutar los siguientes comandos:
+--- sudo apt install docker.io
+--- bash pentestlab.sh ---> Permite ejecutar el script
+--- bash pentestlab.sh list ---> lista todas las aplicaciones web disponibles
+--- bash pentestlab.sh <nombre_web_app> ---> permite ejecutar una web app en concreto
+--- Copiar la ip y usar las credenciales brindadas
