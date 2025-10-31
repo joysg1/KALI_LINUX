@@ -1,0 +1,17 @@
+++ Terminal
+--- bash pentestlab.sh start dvwa 
+--- Copy url generated
+
+++ Web Browser
+--- Pegar url y acceder
+--- dvwa security tab ---> low
+--- brute force tab
+--- Colocar credenciales random y submit
+---- Si alguna información es vista en el url se está usando el método GET
+---- Si no se ve se está usando el método POST 
+---- Clic derecho en la página ----> inspect ----> storage 
+---- Copiar el PHPSESSID
+
+++ Terminal
+--- hydra -L <usuarios.txt> -P <contraseñas.txt> 
+
