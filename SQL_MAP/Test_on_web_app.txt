@@ -1,0 +1,14 @@
+++ Usaremos la opción crawl
+--- crawl=0 (Sólo se realiza un escaneo de la url actual)
+--- crawl=1 (Sólo realiza un escaneo de la url inicial)
+--- crawl=2 (Realiza un escaneo de la url inicial y los links siguientes)
+--- crawl=3 (Realiza un escaneo de la url inicial los links siguientes y los links 
+que están dentro de estos)
+
+
+++ Web Browser
+--- testphp
+
+++ Terminal
+--- sqlmap -u <url> --crawl=2 --batch ---> Permite realizar un escaneo de nivel 2
+--- sqlmap -u <url> --dbs --batch ---> Permite mostrar todas las bases de datos asociadas
