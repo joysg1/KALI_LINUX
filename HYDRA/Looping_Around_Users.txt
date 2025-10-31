@@ -1,0 +1,5 @@
+++ hydra -L <diccionario.txt> -p <password> -V -t 4 -f -u ssh:<ip> 
+--- Este comando itera sobre los usuarios y una única contraseña
+
+++ hydra -L <diccionario.txt> -P <password.txt> -V -t 4 -f -u ssh:<ip> 
+--- Este comando itera sobre cada usuario y cada contraseña 
