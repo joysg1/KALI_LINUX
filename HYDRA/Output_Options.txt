@@ -1,0 +1,10 @@
+-o results.txt ---> Permite guardar los resultados en un archivo .txt
+
+-b json ---> Permite guardar los resultados en un archivo json
+--- Otras opciones disponibles: text, jsonv1
+
+++ Ejemplo #1
+--- hydra -l <usuario> -P <diccionario> -t 4 -V -f ssh<ip> -o results.txt
+
+++ Ejemplo #2
+--- hydra -l <usuario> -P <diccionario> -t 4 -V -f ssh<ip> -b json results.json
