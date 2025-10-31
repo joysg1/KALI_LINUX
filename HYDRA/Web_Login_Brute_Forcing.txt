@@ -7,7 +7,7 @@
 
 ++ Web Browser
 --- Pegar url y acceder
---- dvwa security tab ---> low
+--- dvwa security tab, Security level = low
 --- brute force tab
 --- Colocar credenciales random y submit
 ---- Si alguna información es vista en el url se está usando el método GET
