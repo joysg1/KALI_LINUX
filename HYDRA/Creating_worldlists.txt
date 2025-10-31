@@ -1,0 +1,12 @@
+++ crunch <min> <max> <character_set> -o <output file>
+
+++ Ejemplo #1
+--- crunch 2 4 abc123 -o small.txt
+
+++ Ejemplo #2
+--- crunch 8 8 -t msfadm@@ worldlist.txt  ---> Permite ajustar el diccionario a realizar
+una variación de los dos últimos caracteres
+
+++ Uso de hydra para ataque de fuerza bruta a ssh
+--- hydra -l <usuario> -P <diccionario.txt> -t 4 -V ssh<ip> 
+
