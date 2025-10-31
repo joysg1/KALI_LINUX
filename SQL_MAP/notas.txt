@@ -1,0 +1,9 @@
+++ URL: http://testphp.vulnweb.com/
+--- username: admin' or '1' = '1'
+--- password: test
+--- Esta injección sql genera el siguiente query en el backend de la base de datos:
+----- select * from users where username = 'admin' OR '1'='1' and password = 'test';
+----- Como 1 siempre es igual a 1 el query pasa el check de autenticación
+
+++ El objetivo de sqlmap es de automatizar este tipo de queries y análisis de vulnerabilidades
+para no tener que hacerlas de forma manual
