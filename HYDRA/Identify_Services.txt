@@ -1,0 +1,1 @@
+++ nmap -sV <ip> ---> Permite identificar los puertos y los servicios asociados
