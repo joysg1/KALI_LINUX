@@ -1,0 +1,16 @@
+-l <usuario> -----> usa un solo usuario
+-L <usuarios.txt> ----> usa un archivo de texto con varios usuarios
+-p <password> ----> Usa una sola contraseña
+-P <archivo.txt> ----> usa un archivo de texto con varias contraseñas
+-C <archivo.txt> ----> usa un archivo con pares de usuarios y contraseñas 
+-t <num_1_al_4> ----> establece el número de tareas paralelas
+-V ----> Muestra cada intento en tiempo real
+-f ----> Permite la detención luego de haber encontrado el primer password válido
+
+
+++ Ejemplo ataque de fuerza bruta a ssh (ejemplo usando 1 solo usuario y 1 sola contraseña)
+--- hydra -l admin -p password123 ssh://192.168.1.100
+
+++ Ejemplo ataque de fuerza bruta a ssh (ejemplo usando 1 archivo de usuarios y 1 archivo de 
+contraseñas)
+--- hydra -L username.txt -p password.txt ssh://192.168.1.100
