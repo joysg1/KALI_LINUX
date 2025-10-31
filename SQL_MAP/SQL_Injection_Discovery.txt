@@ -1,1 +1,36 @@
+++ cd pentestlab
+
+++ Terminal
+++ bash pentestlab.sh start dvwa 
+--- De orcurrir problemas con el servicio ejecutar:
+---- bash pentestlab.sh stop dvwa 
+--- Copiar url generada y acceder con las credenciales: admin/password
+
+++ Navegador
+--- Seleccionar sección SQL Injection
+--- user id = 1 ---> submit
+--- Copiar el url
+
+++ Terminal
+--- sqlmap <url_copiada> --cookie='PHPSESSID='
+
+++ Navegador
+--- Clic derecho
+--- Inspeccionar página
+--- Storage
+--- Copiar el valor de PHPSESSID
+
+++ Terminal
+--- sqlmap <url_copiada> --cookie='PHPSESSID=<valor_copiado>; security=low'
+--- Enter
+--- Se mostrarán las vulnerabilidades asociadas
+
+
+
+
+
+
+
+
+
 
