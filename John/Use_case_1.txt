@@ -1,1 +1,14 @@
+++ Web Browser
+--- https://codebeautify.org/md5-hash-generator
+--- Copy hash generated
+
+++ Terminal
+--- nano hash.txt
+--- Paste the generated hash
+--- Save the file
+--- john hash.txt --format=RAW-MD5 (Since the md5 hash has been selected on the 
+webpage)
+--- The plain text associated with the hash will be shown
+
+
 
