@@ -1,1 +1,27 @@
+++ Installation
+--- apt install zaproxy
+
+++ Execution
+--- zaproxy
+
+++ Web Browser
+--- testphp
+
+++ Zaproxy GUI
+--- Automated Scan
+--- Enter the url of testphp or any other url
+--- Click on the plus sign
+--- Select Spider (This option is able to analyze all the website to see the structure)
+--- Click on the plus sign
+--- Active Scan (This option is able to send and attempt different attacks on each url)
+--- Click on the attack button
+---- The spider tab is going to show us the website structure captured in real time
+---- The active scan details is going to show us the related information linked to the scan progress
+---- Once the scan is completed select the alerts tab
+---- On the alerts tab the vulnerabilities are going to be visible grouped by colors
+---- To create a report go to the top menu and select the report section ---> Generate report ---> Select the settings 
+----> Generate report 
+---- The report will be generated and it will be ready to open and analyze
+
+
 
