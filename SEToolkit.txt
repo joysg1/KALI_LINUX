@@ -1,0 +1,17 @@
+++ Tool used for social engineering attacks
+
+++ How to use it:
+--- On the terminal type the following commands:
+---- setoolkit 
+---- Select the first option
+---- Select the second option (Website Attack Vectors)
+---- Select the third option (Credential Harvester Attack Method)
+---- Select the first option (Web Templates)
+---- Leave the following with the default values
+---- Select a template: Google
+---- Copy your ip (shown on the terminal)
+---- Paste the ip on the browser using the following sintaxis: <ip:port> (Port = 80)
+---- A login page will be shown, and if the user enters his/hers credentials the following will be presented on your terminal
+---- To stop the attack press Crtl +c in your terminal
+
+
