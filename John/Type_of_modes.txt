@@ -1,0 +1,16 @@
+++ Single mode
+--- john --single <hash.txt> --format=RAW-MD5
+
+
+++ Worldlist mode
+--- john --worldlist=wordlist.txt <hash.txt> --format=RAW-MD5
+
+
+++ Mask mode
+--- john --mask=?d?d?d?d?d?d <hash.txt> --format=RAW-MD5
+---- Mask modes:
+----- ?d ---> Only digits (0-9)
+----- ?l ---> Lowercase letters (a-z)
+----- ?u ---> Uppercase letters (A-Z)
+----- ?s ---> Special characters
+----- ?a ---> Any printable character
