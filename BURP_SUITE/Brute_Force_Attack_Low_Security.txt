@@ -1,0 +1,37 @@
+++ Pentestlab
+--- https://github.com/eystsen/pentestlab
+
+++ Web Browser (dvwa)
+--- Dvwa Security: low
+--- Brute Force section
+--- Colocar credenciales (cualquiera)
+--- Login
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Colocar credenciales (cualquiera)
+--- Login
+
+++ Burp Suite
+--- Send to intruder
+--- intruder tab
+--- positions
+--- Seleccionar el valor de username y password
+--- Add en ambos
+--- Tipo de ataque: cluster bomb
+--- Payloads tab ---> add ---> agregar nombres de usuario o agregar lista 
+--- Payload set = 2 ---> add ---> agregar contraseñas o agregar lista
+--- Start attack 
+--- Clic en la columna length 
+--- Ubicar aquella que tenga un número distinto, probablemente sea el par usuario 
+contraseña válido
+--- Intercept off
+
+++ Web browser
+--- Probar las credenciales obtenidas
+
+
+
+
