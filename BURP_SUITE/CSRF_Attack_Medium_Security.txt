@@ -1,0 +1,54 @@
+++ Web Browser
+--- dvwa securiy = medium
+--- CSRF
+
+
+++ Burp Suite
+--- Intercept on
+--- Copiar la línea line referer
+
+++ Text editor
+--- Pegar el texto vinculado (referer)
+--- Guardar .txt
+
+
+++ Burp Suite
+--- Clic derecho
+--- Engagement tools
+--- Generate CSRF PoC
+--- Copy HTML
+
+++ Text editor
+--- Crear otro .txt
+--- Pegar el contenido
+--- Guardar el .txt
+
+++ Burp Suite
+--- Drop
+--- Intercept off
+
+++ Web Browser
+--- Refrescar la página o abrir el dvwa en otra pestaña
+
+++ Text editor
+--- Abrir el archivo .txt usando firefox
+
+++ Web Browser
+--- Un botón de submit será visible, presionarlo
+
+++ Burp Suite
+--- Intercept on
+--- El request del botón será capturado
+
+++ Text editor
+--- Copiar el contenido del .txt original (referer)
+
+++ Burp Suite
+--- Pegarlo en la sección raw debajo de accept encoding
+--- Clic en forward
+--- Intercept off
+
+++ Web Browser
+--- Aparecerá un mensaje indicando que la contraseña ha sido cambiada
+--- Esto indica que el ataque CSRF ha sido exitoso
+--- Probar las credenciales admin/admin
