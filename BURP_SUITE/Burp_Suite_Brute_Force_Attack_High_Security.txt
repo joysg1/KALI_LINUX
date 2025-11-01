@@ -1,1 +1,56 @@
+++ Pentestlab
+--- https://github.com/eystsen/pentestlab
+
+++ Web Browser
+--- Security Tab ---> Security level = high
+--- Brute Force
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Reload
+
+++ Burp Suite
+--- Project options
+--- Sessions
+--- Add ---> rule name ---> rule actions ---> add ---> run a macro 
+---> add ---> click en el request ---> ok ---> configure item ---> add 
+---> fetch response ---> search = token ---> copiar el contenido ---> pegar 
+en la sección de parámetros ---> seleccionar value ---> ok ---> ok ---> 
+seleccionar la opción tolerate url mismatch ---> ok ---> scope tab ---> 
+solo mantener seleccionado la opción intruder ----> url scope ---> seleccionar
+use suite scope ----> ok 
+
+++ Web Browser
+--- Llenar los campos de nombre de usuario y contraseña
+--- login
+
+++ Burp Suite
+--- Proxy Tab
+--- HTTP History
+--- Clic derecho en el request ---> send to intruder ---> add to scope ---> no
+--- Intruder tab ---> positions ---> clear 
+--- Seleccionar el usuario y contraseña ---> add
+--- Attack type = cluster bomb
+--- Payloads tab
+--- Add ---> agregar usuarios o lista de usuarios
+--- Payload set 2 
+--- Add ---> agregar contraseñas o lista de contraseñas
+--- Options tab ---> number of threads = 1 ---> quitar la selección de la opción
+make unmodified baseline request 
+--- Grep Match ---> Clear ---> Yes
+--- Add = incorrect 
+--- Start attack 
+--- Se abrirá una ventana que mostrará los intentos correspondientes
+--- En la columna incorrect aquella línea donde la opción no esté seleccionada
+corresponde a las credenciales correctas
+--- Proxy tab
+--- Intercept off 
+
+++ Web browser 
+--- Probar las credenciales obtenidas
+
+
+
 
