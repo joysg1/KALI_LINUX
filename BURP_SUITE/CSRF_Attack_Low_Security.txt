@@ -1,0 +1,37 @@
+++ Web Browser
+--- Security = low
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- CSRF ---> ingresar credenciales ---> change
+--- Clic derecho ---> engagement tools ---> generate CSRF PoC 
+--- Clic en copy HTML
+
+++ Text editor
+--- Pegar el código 
+--- salvarlo como html
+
+++ Burp Suite
+--- Clic en drop
+--- Intercept off
+
+++ Web Browser
+--- Reload the page
+
+++ Text editor
+--- Abrilo usando firefox
+
+++ Web Browser
+--- Se abrirá el archivo y aparecerá un botón de submit
+--- Darle click al botón
+--- Aparecerá un mensaje de password changed lo que indica que la contraseña
+ha sido cambiada
+--- logout
+--- Usar credenciales: admin/password
+--- De poder ingresar esto significa que las credenciales han sido cambiadas
+de forma exitosa usando el ataque CSRF
+--- Para reiniciar el entorno de dvwa a default vamos a la sección setup/reset db
+--- clic en create/reset database 
+--- Las credenciales serán reiniciadas a username/password
