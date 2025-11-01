@@ -1,1 +1,29 @@
+++ Pentestlab
+--- https://github.com/eystsen/pentestlab
+
+++ Web Browser
+--- Security Tab ---> Security level = medium
+--- Brute Force
+
+++ BurpSuite
+--- Intercept on
+
+++ Web Browser
+--- Colocar credenciales ---> login
+
+++ BurpSuite
+--- Clic derecho ---> Send to intruder 
+--- Intruder tab ---> Positions ---> Clear ---> seleccionar user y password ---> Add
+--- Attack type ---> Cluster bomb 
+--- Payloads tab 
+--- Add ---> agregar usuarios o usar lista 
+--- Payload set = 2 ---> add ---> agregar contraseñas o usar lista
+--- Start attack
+--- Click en la columna length ---> ubicar aquella con una numeración diferente
+
+++ Burp Suite
+--- Intercept off
+
+++ Web Browser
+--- Probar el par usuario y contraseña correspondiente 
 
