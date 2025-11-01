@@ -1,0 +1,3 @@
+++ Utility that helps to find vulnerabilities on websites 
+--- Works as a middleman between your browser and the webpage
+--- It is able to view every request and response exchanged
