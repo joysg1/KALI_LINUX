@@ -1,0 +1,36 @@
+++ Web Browser
+--- dvwa security = medium
+--- file upload ---> subir imagen ---> el upload es permitido
+--- file upload ---> subir archivo php ---> el upload no es permitido 
+
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- file upload ---> subir archivo php
+
+++ Burp Suite
+--- Ubicar la sección content type y cambiarla por: image/jpeg 
+--- forward 
+--- Intercept off
+
+++ Web Browser
+--- Podemos ver el mensaje de que el archivo .php ha sido subido exitosamente
+
+++ Terminal
+--- nc nlvp 4444 
+
+++ Web Browser
+--- Copiar la ruta del archivo php subido
+--- Pegar dicha ruta en otra pestaña
+
+++ Terminal
+--- Se nos mostrará un mensaje de conexión establecida, lo que indica
+que el ataque mediante reverse-shell ha dado exito
+
+
+
+
+++ Nota, código del shell reverso (archivo php):
+
