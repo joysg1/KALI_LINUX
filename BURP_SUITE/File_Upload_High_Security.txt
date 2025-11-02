@@ -23,7 +23,7 @@ al final para ejecutar código php:
 ------- /uploads/1.php?cmd=ls
 
 
-++ Burp Suite
+
 
 
 
