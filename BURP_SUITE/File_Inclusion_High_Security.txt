@@ -1,0 +1,6 @@
+++ Web Browser
+--- dvwa security = high
+--- file inclusion
+--- cambiar el final del url:
+----- ?page=file:///etc/passwd
+----- Veremos a continuación que nos aparece el contenido del archivo passwd
