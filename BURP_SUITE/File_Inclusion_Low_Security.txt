@@ -1,0 +1,20 @@
+++ Tipos de inclusión
+--- LFI (Local file inclusion)
+--- RFI (Remote file inclusion)
+
+++ Web Browser
+--- dvwa security ---> low
+--- file inclusion tab
+--- Clic en file1.php
+--- Cambiar el url al final de la siguiente forma:
+----- page=/etc/passwd
+----- Enter
+----- Se nos mostrará en la parte superior el contenido del archivo passwd
+----- Este es un ejemplo de LFI
+----- A continuación procedemos a cambiar el url al final de la siguiente forma:
+----- page=../../../../../../../etc/passwd
+----- Se nos mostrará la misma salida ya que la navegación se detiene en el directorio /
+----- A continuación procederemos a probar un ejemplo de RFI, cambiando
+la url al final de la siguiente manera:
+------ page=http://google.com
+------ En la parte superior de la página nos aparecerá que google ha sido cargado
