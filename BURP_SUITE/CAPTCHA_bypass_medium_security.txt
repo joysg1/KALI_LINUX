@@ -1,1 +1,20 @@
+++ Web Browser
+--- dvwa security = medium
+--- Insecure Captcha
+--- New password ---> confirm new password
 
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Change 
+--- Ubicar en el request la sección step=1
+--- Cambiarla por step=2
+--- Al final de la línea Change, agregar siguiendo la siguiente sintaxis:
+----- &passed_captcha=true
+--- Forward
+--- Intercept off
+
+++ Web Browser
+--- Aparecerá el mensaje de password changed
+--- Esto nos indica que el captcha ha sido bypasiado
