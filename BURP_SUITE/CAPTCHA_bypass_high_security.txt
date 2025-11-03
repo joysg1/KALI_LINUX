@@ -1,0 +1,24 @@
+++ Web Browser
+--- dvwa security = high
+--- insecure captcha 
+--- new password ---> confirm password 
+
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- change
+
+++ Burp Suite
+--- Cambiar la línea que dice user agent siguiendo la sintaxis:
+----- reCAPTCHA
+--- Cambiar la línea (última) dónde dice response siguiendo la sintaxis:
+----- response=hidd3n_valu3
+--- Forward
+--- Intercept off
+
+++ Web Browser
+--- Aparecerá el mensaje de password changed
+--- Esto nos indica que el captcha ha sido bypasiado
+
