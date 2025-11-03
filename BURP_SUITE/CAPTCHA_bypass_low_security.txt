@@ -1,1 +1,24 @@
+++ Web Browser
+--- dvwa security = low
+--- Insecure Captcha
+--- new password ---> confirm password 
 
+
+++ Burp Suite
+--- Intercept on
+
+
+++ Web Browser
+--- Change Button
+
+
+++ Burp Suite
+--- Ubicar la sección step=1
+--- Cambiar a step=2
+--- Forward
+--- Intercept off
+
+
+++ Web Browser
+--- Aparecerá el mensaje: password is changed
+--- Esto nos indica que el captcha ha sido bypasiado
