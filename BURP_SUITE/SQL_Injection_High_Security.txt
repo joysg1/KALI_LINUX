@@ -1,0 +1,11 @@
+++ Web Browser
+--- dvwa security = high
+--- SQL Injection
+--- Click here to change your id ---> se abre una nueva ventana ---> 1 ---> submit
+----- En la ventana principal se muestra el resultado asociado a la búsqueda
+--- Click here to change your id ---> se abre una nueva ventana ---> 'union select user,
+password from dvwa.users# ---> submit
+----- En la ventana principal nos aparecen los resultados asociados al query
+
+
+
