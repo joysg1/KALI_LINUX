@@ -13,14 +13,17 @@
 --- Select user id = 1 ---> submit
 ---- Se mostrarán los resultados asociados a la consulta
 
+
 ++ Burp Suite
 --- Ubicar la sección submit donde está id seguir la siguiente sintaxis:
 ---- id=1 union select user, password from dvwa.users limit 0,2#Submit=Submit
 --- Forward
 --- Intercept off
 
+
 ++ Web Browser
 --- Nos aparecerán los resultados asociados a la consulta, incluyendo el hash del 
 password.
 ---- El hash del password puede ser comprometido usando una plataforma como:
------- 
+----- https://10015.io/tools/md5-encrypt-decrypt
+----- https://crackstation.net/
