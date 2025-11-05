@@ -1,0 +1,34 @@
+++ Web Browser
+--- dvwa security = medium
+--- sql injection (blind) 
+--- Seleccionar del drop down el id 1 ---> submit ---> nos aparece el mensaje de que
+el usuario 1 existe en la base de datos
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Presionar submit nuevamente
+
+++ Burp Suite
+--- Ubicar la sección id=1&Submit=Submit
+----- Cambiar esta sección siguiendo esta sintaxis:
+------ id=1 and sleep(6)&Submit=Submit
+--- Forward
+--- Intercept off
+
+++ Web Browser
+--- Podemos apreciar que la página toma alrededor de 6 segundos en responder, 
+indicando que la misma es vulnerable a ataques sql blind con tiempo definido
+--- Seleccionar user id:1 ---> submit
+
+++ SQLMap
+--- sqlmap -u 
+
+
+
+
+
+
+
+
