@@ -1,0 +1,36 @@
+++ Web Browser
+--- dvwa security = high
+--- Weak Session ID 
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Generate 
+
+++ Burp Suite
+--- Ubicar el valor de la cookie dvwaSession (hash md5)
+--- Copiar dicho valor
+--- Intercept off
+
+++ Web Browser
+--- Utilizar una herramienta como: https://10015.io/tools/md5-encrypt-decrypt
+--- Pegar el hash y descifrarlo
+--- Se nos muestra el valor de 1
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Generate
+
+++ Burp Suite
+--- Copiar el valor del cookie (dvwa)
+--- Intercept off
+
+++ Web Browser
+--- Utilizar una herramienta como: https://10015.io/tools/md5-encrypt-decrypt
+--- Pegar el hash y descifrarlo
+--- Se nos muestra el valor de 2
+--- Esto nos indica que el valor del cookie (dvwa) es incremental, fácil
+de intuir 
