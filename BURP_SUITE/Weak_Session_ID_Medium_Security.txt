@@ -1,0 +1,18 @@
+++ Web Browser
+--- dvwa security = medium
+--- Weak session id 
+
+++ Burp Suite
+--- Intercept on
+
+++ Web Browser
+--- Generate
+
+++ Burp Suite
+--- Ubicar la sección dvwaSession, esta hace referencia al unix time
+--- Copiar dicho valor
+
+++ Web Browser
+--- Acceder a la url: https://www.epochconverter.com/
+--- Pegar el valor unix time allí ---> timestamp to human date
+--- Se nos mostrará el tiempo exacto en el cual se generó la sesión
