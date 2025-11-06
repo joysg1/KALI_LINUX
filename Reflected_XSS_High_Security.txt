@@ -1,0 +1,11 @@
+++ Web Browser
+--- dvwa security = high
+--- XSS (Reflected)
+--- Probamos el siguiente payload:
+---- <script>alert('xss')</script> ---> submit 
+--- Nos aparece en la misma página el siguiente mensaje: Hello >
+----- Esto nos indica que el payload no se ejecutó, fue filtrado
+--- Ahora probamos el siguiente payload:
+---- <body onload=alert('xss')> ---> submit
+---- Nos aparece en una ventana emergente (payload) el mensaje xss
+---- Esto nos indica que la página es vulnerable aún en seguridad alta
