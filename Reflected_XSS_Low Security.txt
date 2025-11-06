@@ -1,0 +1,7 @@
+++ Web Browser
+--- dvwa security = low
+--- xss reflected ---> ingresar nombre ---> submit ---> el nombre ingresado aparece directamente en la página
+--- Ahora procederemos a ingresar un script:
+---- <script>alert('xss')</script> ---> submit 
+---- Al recargar la página vemos que la misma muestra una ventana
+lo que nos confirma que la misma es vulnerable a inserción de payloads
