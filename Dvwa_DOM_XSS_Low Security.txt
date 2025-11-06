@@ -1,0 +1,11 @@
+DOM XSS (Low Security)
+++ Web Browser
+--- dvwa security = low
+--- xss (dom) 
+--- Seleccionar idoma ---> English ---> Select
+--- Vemos que la url cambia al final, siguiendo la sintaxis:
+----- default=English 
+---- Cambiamos dicho final por la siguiente sintaxis:
+----- default=<script>alert('xss')</script>
+----- Al presionar enter vemos que aparece una ventana de advertencia, esto nos indica que la página es vulnerable a accesos 
+DOM, dado que nuestra entrada fue tomada desde el url y ejecutada por el navegador utilizando javascript.
