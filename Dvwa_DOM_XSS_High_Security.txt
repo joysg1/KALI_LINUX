@@ -1,0 +1,14 @@
+++ Web Browser
+--- dvwa security = high
+--- XSS (DOM) ---> Seleccionar English del comboBox ---> Select 
+--- Vemos que el final de la url cambia siguiendo la sintaxis:
+---- default=English
+--- Procedemos a cambiar el final de la url siguiendo la sintaxis:
+---- <script>alert('xss')</script>
+---- Al presionar enter somos redirigidos de forma automática a la url por defecto (terminada en default=English). Esto nos indica que el 
+payload está siendo bloqueado. 
+--- A continuación procedemos a cambiar el final de la url siguiendo
+la sintaxis:
+---- default=English#<script>alert('xss')</script>
+---- Al presionar enter vemos que nos aparece una ventana, lo que
+nos indica que del lado del navegador si se ha realizado la consulta 
