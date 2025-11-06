@@ -1,0 +1,15 @@
+++ Web Browser
+--- dvwa security = medium 
+--- XSS DOM
+--- Seleccionar la opción english del comboBox ---> select
+--- El url cambia al final siguiendo la sintaxis a continuación:
+----- default=English
+--- Reemplazar dicho final por la sintaxis a continuación:
+----- default=<script>alert('xss')</script>
+----- Notamos que nada pasa, lo que significa que el payload ha sido
+bloqueado
+----- Ahora probamos con otro payload, cambiando la sintaxis al final 
+del siguiente modo:
+------ default=</select><body onload =alert('xss')>
+------ Al cargar la página vemos que a continuación nos aparece
+la ventana emergente, lo que nos indica que la página es vulnerable
