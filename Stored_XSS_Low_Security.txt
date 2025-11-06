@@ -1,0 +1,9 @@
+++ Web Browser
+--- dvwa security = low 
+--- XSS (Stored) ---> llenar el campo name con cualquier valor
+---> llenar el campo message con el siguiente payload ---> <script>alert('xss')</script> ---> sign guestbook ---> nos aparece un pop up con el mensaje xss 
+---> Esto nos indica que la página es vulnerable a accesos almacenados 
+---> En la ventana principal nos aparece el nombre asociado insertado anteriormente, no aparece contenido asociado a message. 
+Esto se debe a que tal contenido (payload) fue ejecutado por el servidor 
+---> En este momento podemos indicar que el contenido fue salvado en la base de datos, y tras cada carga de la página web este se ejecuta 
+---> A cualquiera que visite la página se le mostrará dicho contenido, esto quiere decir que es persistente y debe ser removido por el backend de forma manual
