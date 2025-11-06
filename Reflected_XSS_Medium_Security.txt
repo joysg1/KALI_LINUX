@@ -1,0 +1,8 @@
+++ Web Browser
+--- dvwa security = medium
+--- XSS (Reflected)
+--- Probamos ingresando el siguiente payload:
+---- <script>alert('xss')</script> ---> submit ---> Nos aparece el  mensaje asociado en la misma ventana 
+sin abrirse un pop up. Esto nos indica que el código no fue ejecutado, fue filtrado
+--- Modificamos el payload cambiando la primera t por T, quedando del siguiente modo: <scripT>alert('xss')</script> 
+---> submit ---> Nos aparece una ventana (pop up) lo que indica que el payload fue cargado de forma exitosa
