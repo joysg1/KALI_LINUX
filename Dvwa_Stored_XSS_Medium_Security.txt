@@ -1,0 +1,13 @@
+++ Web Browser
+--- dvwa security = medium
+--- XSS (Stored) ---> name ---> ingresar cualquier nombre
+---> message ---> <script>alert('xss')</script> ---> sign guestbook 
+---> los valores asociados son mostrados en la misma ventana
+---> esto nos indica que el mensaje a sido filtrado ya que el script
+no ha sido ejecutado ---> clic derecho en el campo name ---> inspect 
+---> cambiar el maxlength a 100 ---> llenar el campo name con el script 
+---> <Script>alert('xss')</script> 
+---> llenar el campo message con: hello 
+---> sign guestbook 
+---> nos aparece un pop up con el mensaje xss 
+---> esto nos indica que la página sigue siendo vulnerable a través del campo name
