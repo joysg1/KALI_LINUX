@@ -1,0 +1,4 @@
+++ Web Browser
+--- dvwa security = medium
+--- CSP Bypass ---> view source ---> copiar el script ---> pegarlo en 
+el inputbox ---> include ---> nos aparece un pop up cuyo contenido es 1 ---> ok ---> Esto nos indica que la página es vulnerable 
