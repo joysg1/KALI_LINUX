@@ -1,0 +1,10 @@
+++ Web Browser
+--- dvwa security = high
+--- XSS (Stored)
+--- name ---> ingresar la cadena ts 
+--- message ---> <script>alert('xss')</script>
+--- sign in guestbook ---> nos aparece el contenido asociado en la misma ventana, lo que indica que el contenido ha sido filtrado
+--- name ---> click derecho ---> inspect ---> cambiar el maxlength a 100 
+--- name ---> <body onload=alert('xss')>
+--- message ---> hello ---> sign guestbook ---> nos aparece un pop up
+con el mensaje xss, esto nos indica que la página ha sido vulnerada
