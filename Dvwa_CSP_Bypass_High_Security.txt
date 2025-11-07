@@ -1,0 +1,21 @@
+++ Web Browser
+---> dvwa security = high
+---> CSP Bypass ---> se nos muestra una operación matemática (suma) 
+---> solve the sum 
+---> se muestra el resultado de la suma en la misma ventana 
+---> clic en el boton view source 
+---> al ver el código podemos observar que el código sólo permite la ejecución de scripts interno mas no externos 
+
+++ Burp Suite
+---> Intercept on
+
+++ Web Browser
+---> Clic en el botón solve sum
+
+++ Burp Suite
+---> Cambiar la sección GET siguiendo la sintáxis a continuación:
+----> callback=alert('xss')
+---> Forward
+
+++ Web Browser
+---> Veremos un pop up que dice: xss ---> Esto nos indica que el payload ha sido ejecutado de forma exitosa, aún con csp estricto
