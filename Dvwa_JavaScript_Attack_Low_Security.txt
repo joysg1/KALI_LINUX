@@ -1,1 +1,43 @@
+++ Web Browser
+---> dvwa security = low
+---> Javacript 
+---> Dejar el valor por defecto del inputBox = ChangeMe
+---> Dar clic en el botón submit
+---> En la misma ventana nos aparece el mensaje: yoy got the phrase wrong
+---> Cambiamos el contenido del inputbox por = success 
+---> Dar clic en el botón submit
+---> En la misma ventana nos aparece el mensaje: invalid token
+---> Clic en el boton view source
+---> Vemos la presencia de una creación de un hash md5, este
+comportamiento lo replicaremos en la terminal
 
+++ Terminal
+---> echo 'ChangeMe' | tr 'A-Za-z' 'N-ZA-Mn-za-m' ---> Enter
+---> Obtenemos como salida: PunatrZr ---> Enter
+---> echo -n "PunatrZr" | md5sum ---> Enter
+---> Obtenemos como salida: el hash md5 (token)
+
+++ BurpSuite 
+---> Intercept on
+
+++ Web Browser
+---> Submit
+
+++ BurpSuite 
+---> Ubicamos la sección del token
+
+++ Terminal
+---> echo 'submit' | tr 'A-Za-z' 'N-ZA-Mn-za-m' ---> Enter
+---> Obtenemos como salida: fhpprff
+---> echo -n "fhpprff" | md5sum ---> Enter
+---> Obtenemos como salida: el hash md5 (token)
+---> Copiamos dicho hash md5
+
+++ BurpSuite 
+---> Ubicar la sección de token y pegar el hash anterior allí (reemplazar el valor)
+---> Cambiar el valor de phrase = success 
+---> Forward 
+
+++ Web Browser
+---> En la ventana principal del navegador nos aparece el mensaje:
+Well done!
