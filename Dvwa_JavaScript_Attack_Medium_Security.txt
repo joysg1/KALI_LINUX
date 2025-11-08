@@ -1,0 +1,12 @@
+++ Web Browser
+---> dvwa security = medium
+---> Javacript ----> clic en el boton sumbit sin cambair el contenido del inputField ---> Obtenemos el mensaje = you got he phrase wrong, en la misma ventana 
+---> Ingresamos la cadena success ---> clic en submit --->  Obtenemos el mensaje = invalid token en la misma ventana
+---> Hacemos clic en view source --> copiamos el código javascript ---> pegamos dicho código en el url: https://deobfuscate.io/ 
+---> clic en deofuscate ---> ahora el código nos aparece ordenado e identado
+---> Volvemos a la pestaña del dvwa ---> clic derecho ---> inspect 
+---> ubicamos la sección value (2 instancias) 
+---> cambiarlo a value= success ---> clic en el tab console 
+---> escribir do_elsesomething("XX") 
+---> Enter ---> clic en el boton submit 
+---> en la misma ventana nos aparece el mensaje well done ---> a este punto la cadena y el token hacen match
