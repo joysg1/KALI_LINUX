@@ -1,0 +1,39 @@
+++ Web Browser
+---> dvwa security = high
+---> Javacript ----> en el input box rellenarlo con la cadena = success 
+---> submit 
+---> en la misma ventana nos aparece el mensaje = invalid token 
+---> clic en el boton view source ---> copiamos el código
+javascript ofuscado 
+---> lo pegamos en https://deobfuscate.io/ 
+---> deofuscate 
+---> el código nos aparece ordenado 
+---> Volvemos a la pestaña de dvwa 
+---> clic derecho en el inputbox
+---> inspect 
+---> cambiamos solo la primera y segunda coincidencia de value por value = success 
+---> en el inputbox también colocamos la cadena success 
+---> volvemos al área de inspector y hacemos clic derecho al tag <script>src =<link.js></script> 
+---> use in console 
+---> Enter 
+---> escribimos: token_part_1("ABCD", 44) 
+---> Enter 
+---> escribimos: token_part_2("XX") 
+---> Enter 
+---> escribimos: token_part_3(null, "ZZ") 
+---> copiamos el valor del token final
+
+++ Burp Suite
+---> Intercept on 
+
+++ Web Browser
+---> Submit
+
+
+++ Burp Suite
+---> Pegamos el valor del token en la sección correspondiente (donde
+esté la cadena)
+---> Forward
+
+++ Web Browser
+---> En la pestaña del dvwa nos aparecerá el mensaje de well done, indicando que el ejercicio ha sido resuelto
