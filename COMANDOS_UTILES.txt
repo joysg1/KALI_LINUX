@@ -296,7 +296,7 @@ hexadecimal)
 usr/share/worldlists
 
 ++ Worldlists adicionales
-sudo apt-get install seclists
+--- sudo apt-get install seclists
 --- Se instalan en la siguiente ruta: usr/share/seclists
 
 
@@ -312,6 +312,13 @@ sudo apt-get install seclists
 ++ nmap -A <dirección> ---> Realiza un escaneo agresivo, detectando servicios, versiones y sistema operativo 
 
 ++ gpg -c <file> ---> Cifrar archivos 
+
+
+++ Foremost (Herramienta para recuperar archivos)
+--- sudo apt install foremost
+--- fdisk -l 
+--- foremost -v -t jpeg,jpg -i <ruta_unidad> -o /root/recover1 (Permite salvar todos los archivos jpeg, jpg en la ruta /root/recover1
+--- foremost -v -t all -i <ruta_unidad> -o /root/recover1 (Permite salvar todo tipo de archivos en la ruta /root/recover1
 
 
 ++ figlet
