@@ -1,0 +1,2 @@
+++ Tool description: online tool used to explain terminal codes
+--- URL: https://explainshell.com/#
