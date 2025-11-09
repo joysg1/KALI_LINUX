@@ -257,6 +257,7 @@ hexadecimal)
 --- mkdir <nombre_directorio> (Permite crear directorios)
 ---- mkdir <directorio_1>/<diretorio_2>/<directorio_3> (Permite crear árbol de directorios, una carpeta dentro de otra y así sucesivamente)
 --- nano <nombre_archivo> (Permite crear un archivo)
+--- touch abcd{1..9}-xyz (Permite crear 9 archivos abcd1-xyz al abcd9-xyz)
 --- leafpad <nombre_archivo> (Permite abrir el archivo usando leafpad)
 --- grep <cadena_filtro> <archivo> (Permite filtrar el contenido de un archivo)
 ---- Ejemplo: grep "linux" *.txt
