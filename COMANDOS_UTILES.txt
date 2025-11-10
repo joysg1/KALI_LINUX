@@ -3,6 +3,7 @@
 ---- i (Permite entrar al modo de edición)
 ----- d (Permite eliminar una línea)
 ----- x (Permite eliminar un caracter)
+----- O (Al posicionarnos al final de una línea permite agregar un salto de línea)
 ----- Las flechas permiten movernos hacia los lados, arriba o abajo
 ---- esc (Permite salir)
 ---- crtl +zz (Permite salir)
