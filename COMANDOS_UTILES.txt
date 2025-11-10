@@ -1,5 +1,5 @@
 ++ Comandos básicos:
---- vi <nombre_archivo> (Permite crear un archivo)
+--- vi <nombre_archivo> (Permite crear o abrir un archivo)
 ---- i (Permite entrar al modo de edición)
 ---- d (Permite eliminar una línea)
 ---- r (Permite reemplazar un caracter)
