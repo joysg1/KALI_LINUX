@@ -1,6 +1,7 @@
 ++ Comandos básicos:
 --- sort <nombre_archivo> (Permite ordenar alfabéticamente el contenido de un archivo)
 ---- sort -r <nombre_archivo> (Permite ordenar alfabéticamente el contenido de un archivo, Z-A)
+---- sort | unique <nombre_archivo> (Permite mostar las cadenas únicas en un archivo)
 --- awk '{print $1}' <nombre_archivo> (Permite obtener la primera columna de un archivo)
 --- cut -c1 <nombre_archivo> (Permite obtener el primer caracter de cada línea de un archivo)
 ---- cut -c1-2 <nombre_archivo> (Permite obtener los dos primeros caracteres de cada línea de un archivo)
