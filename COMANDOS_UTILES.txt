@@ -1,5 +1,6 @@
 ++ Comandos básicos:
 --- cut -c1 <nombre_archivo> (Permite obtener el primer caracter de cada línea de un archivo)
+---- cut -c1-2 <nombre_archivo> (Permite obtener los dos primeros caracteres de cada línea de un archivo)
 --- ncdu (Analiza el disco de forma visual)
 --- lsoft (Muestra archivos abiertos por cualquier proceso)
 --- curl ifconfig.me (Muestra la ip pública)
