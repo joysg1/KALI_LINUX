@@ -6,6 +6,7 @@
 ---- r (Permite reemplazar un caracter)
 ---- x (Permite eliminar un caracter)
 ---- O (Al posicionarnos al final de una línea permite agregar un salto de línea)
+---- /<cadena> + Enter (Permite buscar una cadena dentro del archivo)
 ---- Las flechas permiten movernos hacia los lados, arriba o abajo
 ---- esc (Permite salir del modo edición)
 ---- crtl +zz (Permite salir del modo edición)
