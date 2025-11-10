@@ -1,4 +1,5 @@
 ++ Comandos básicos:
+--- tar cvf <nombre_archivo.tar> . (Permite comprimir todo el contenido de la ruta actual en un archivo tar)
 --- diff <archivo_1> <archivo_2> (Permite comparar los archivos línea a línea)
 --- cmp <archivo_1> <archivo_2> (Permite comparar los archivos byte a byte)
 --- sort <nombre_archivo> (Permite ordenar alfabéticamente el contenido de un archivo)
