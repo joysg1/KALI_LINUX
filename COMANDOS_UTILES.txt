@@ -1,10 +1,10 @@
 ++ Comandos básicos:
 --- vi <nombre_archivo> (Permite crear un archivo)
 ---- i (Permite entrar al modo de edición)
------ d (Permite eliminar una línea)
------ x (Permite eliminar un caracter)
------ O (Al posicionarnos al final de una línea permite agregar un salto de línea)
------ Las flechas permiten movernos hacia los lados, arriba o abajo
+---- d (Permite eliminar una línea)
+---- x (Permite eliminar un caracter)
+---- O (Al posicionarnos al final de una línea permite agregar un salto de línea)
+---- Las flechas permiten movernos hacia los lados, arriba o abajo
 ---- esc (Permite salir)
 ---- crtl +zz (Permite salir)
 --- tar cvf <nombre_archivo.tar> . (Permite comprimir todo el contenido de la ruta actual en un archivo tar)
