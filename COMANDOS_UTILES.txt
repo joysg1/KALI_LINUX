@@ -1,4 +1,6 @@
 ++ Comandos básicos:
+--- diff <archivo_1> <archivo_2> (Permite comparar los archivos línea a línea)
+--- cmp <archivo_1> <archivo_2> (Permite comparar los archivos byte a byte)
 --- sort <nombre_archivo> (Permite ordenar alfabéticamente el contenido de un archivo)
 ---- sort -r <nombre_archivo> (Permite ordenar alfabéticamente el contenido de un archivo, Z-A)
 ---- sort | unique <nombre_archivo> (Permite mostar las cadenas únicas en un archivo)
