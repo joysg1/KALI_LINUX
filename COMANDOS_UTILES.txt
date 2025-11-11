@@ -1,5 +1,5 @@
 ++ Comandos básicos:
---- su -<nombre_usuaio> (Permite cambiar de usuario)
+--- su <nombre_usuaio> (Permite cambiar de usuario)
 --- vi <nombre_archivo> (Permite crear o abrir un archivo)
 ---- i (Permite entrar al modo de edición)
 ---- dd (Permite eliminar una línea, tras posicionarnos en ella)
