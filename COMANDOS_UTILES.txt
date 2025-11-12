@@ -1,4 +1,6 @@
 ++ Comandos básicos:
+--- ifconfig (Muestra los adaptadores de red)
+----- ethtool <nombre adaptador> (Muestra la información en específico sobre un adaptador de red)
 --- su <nombre_usuaio> (Permite cambiar de usuario)
 --- vi <nombre_archivo> (Permite crear o abrir un archivo)
 ---- i (Permite entrar al modo de edición)
