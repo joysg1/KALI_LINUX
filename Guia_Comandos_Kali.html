@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Comandos Kali Linux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', 'Fira Code', monospace;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(30, 30, 46, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(137, 80, 252, 0.3);
+            overflow: hidden;
+            border: 1px solid #8950fc;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #8950fc 0%, #6a11cb 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        
+        .kali-dragon {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #a8e6cf;
+        }
+        
+        nav {
+            background: rgba(42, 42, 62, 0.95);
+            padding: 15px 0;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #8950fc;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .nav-item {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: rgba(137, 80, 252, 0.1);
+            border: 1px solid rgba(137, 80, 252, 0.3);
+            font-weight: 500;
+        }
+        
+        .nav-item:hover {
+            background: rgba(137, 80, 252, 0.3);
+            border-color: #8950fc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(137, 80, 252, 0.4);
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 280px;
+            background: rgba(42, 42, 62, 0.8);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(137, 80, 252, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .content {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        h2 {
+            color: #8950fc;
+            border-bottom: 2px solid #ff6b6b;
+            padding-bottom: 12px;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #4fc3f7;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .category {
+            margin-bottom: 40px;
+            background: rgba(42, 42, 62, 0.6);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #ff6b6b;
+            transition: transform 0.3s ease;
+        }
+        
+        .category:hover {
+            transform: translateX(5px);
+        }
+        
+        .command {
+            background: linear-gradient(135deg, rgba(42, 42, 62, 0.8) 0%, rgba(30, 30, 46, 0.8) 100%);
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4fc3f7;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .command:hover {
+            border-color: #4fc3f7;
+            box-shadow: 0 5px 15px rgba(79, 195, 247, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .command code {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            color: #ff6b6b;
+            font-weight: bold;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        
+        .command-desc {
+            margin-top: 10px;
+            color: #a8e6cf;
+            line-height: 1.5;
+        }
+        
+        .sub-command {
+            margin-left: 25px;
+            background: rgba(30, 30, 46, 0.6);
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            border-left: 3px solid #a8e6cf;
+        }
+        
+        .sub-command code {
+            color: #ffd93d;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(42, 42, 62, 0.95);
+            color: #a8e6cf;
+            margin-top: 40px;
+            border-top: 1px solid rgba(137, 80, 252, 0.3);
+        }
+        
+        .search-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        #search {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px 20px;
+            background: rgba(30, 30, 46, 0.8);
+            border: 2px solid rgba(137, 80, 252, 0.5);
+            border-radius: 25px;
+            font-size: 16px;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s ease;
+        }
+        
+        #search:focus {
+            outline: none;
+            border-color: #8950fc;
+            box-shadow: 0 0 20px rgba(137, 80, 252, 0.5);
+        }
+        
+        #search::placeholder {
+            color: #888;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+            color: #000;
+            font-weight: bold;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .kali-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                margin-right: 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Efectos de terminal */
+        .terminal-effect {
+            position: relative;
+        }
+        
+        .terminal-effect::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: #4fc3f7;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        /* Scrollbar personalizado */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(30, 30, 46, 0.8);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #8950fc, #ff6b6b);
+            border-radius: 6px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #9b6dff, #ff8a8a);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kali Linux <span class="kali-dragon">龍</span> Commands</h1>
+            <p class="subtitle">Manual completo de comandos y herramientas de seguridad ofensiva</p>
+        </header>
+        
+        <nav>
+            <div class="nav-container">
+                <a href="#basicos" class="nav-item">Comandos Básicos</a>
+                <a href="#redes" class="nav-item">Redes</a>
+                <a href="#seguridad" class="nav-item">Seguridad</a>
+                <a href="#herramientas" class="nav-item">Herramientas</a>
+                <a href="#pentesting" class="nav-item">Pentesting</a>
+            </div>
+        </nav>
+        
+        <div class="search-container">
+            <input type="text" id="search" placeholder="root@kali:~# Buscar comandos...">
+        </div>
+        
+        <main>
+            <div class="sidebar">
+                <h2>Terminal Index</h2>
+                <ul id="index-list" style="list-style: none; padding-left: 0;">
+                    <!-- El índice se generará automáticamente con JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="content" id="content">
+                <!-- Comandos básicos -->
+                <div class="category" id="basicos">
+                    <h2>Comandos del Sistema <span class="kali-badge">BASIC</span></h2>
+                    
+                    <div class="command">
+                        <code>ifconfig</code>
+                        <div class="command-desc">Muestra los adaptadores de red</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>su &lt;nombre_usuario&gt;</code>
+                        <div class="command-desc">Permite cambiar de usuario</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>pwd</code>
+                        <div class="command-desc">Muestra el directorio actual</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>ls</code>
+                        <div class="command-desc">Listar directorios</div>
+                        <div class="sub-command">
+                            <code>ls -l</code> - Listar con formato ampliado
+                        </div>
+                        <div class="sub-command">
+                            <code>ls -la</code> - Mostrar archivos ocultos
+                        </div>
+                        <div class="sub-command">
+                            <code>ls -lh</code> - Mostrar tamaños legibles
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>cd &lt;directorio&gt;</code>
+                        <div class="command-desc">Cambiar de directorio</div>
+                        <div class="sub-command">
+                            <code>cd ..</code> - Directorio anterior
+                        </div>
+                        <div class="sub-command">
+                            <code>cd ~</code> - Directorio home
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>find</code>
+                        <div class="command-desc">Buscar archivos y directorios</div>
+                        <div class="sub-command">
+                            <code>find / -name "*.txt"</code> - Buscar archivos txt
+                        </div>
+                        <div class="sub-command">
+                            <code>find . -type f -size +10M</code> - Archivos mayores a 10MB
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>grep</code>
+                        <div class="command-desc">Buscar patrones en archivos</div>
+                        <div class="sub-command">
+                            <code>grep -r "password" /etc/</code> - Buscar recursivamente
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comandos de red -->
+                <div class="category" id="redes">
+                    <h2>Comandos de Red <span class="kali-badge">NETWORK</span></h2>
+                    
+                    <div class="command">
+                        <code>ip a</code>
+                        <div class="command-desc">Mostrar interfaces de red</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>netstat -tulpn</code>
+                        <div class="command-desc">Mostrar puertos abiertos</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>ss -tulpn</code>
+                        <div class="command-desc">Alternativa moderna a netstat</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>arp-scan -l</code>
+                        <div class="command-desc">Escanear dispositivos en la red local</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>tcpdump -i eth0</code>
+                        <div class="command-desc">Sniffing de paquetes</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>wireshark</code>
+                        <div class="command-desc">Analizador de protocolos GUI</div>
+                    </div>
+                </div>
+                
+                <!-- Comandos de seguridad -->
+                <div class="category" id="seguridad">
+                    <h2>Seguridad y Permisos <span class="kali-badge">SECURITY</span></h2>
+                    
+                    <div class="command">
+                        <code>chmod</code>
+                        <div class="command-desc">Cambiar permisos de archivos</div>
+                        <div class="sub-command">
+                            <code>chmod 755 archivo</code> - Permisos estándar
+                        </div>
+                        <div class="sub-command">
+                            <code>chmod +x script.sh</code> - Hacer ejecutable
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>chown</code>
+                        <div class="command-desc">Cambiar propietario</div>
+                        <div class="sub-command">
+                            <code>chown usuario:grupo archivo</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>passwd</code>
+                        <div class="command-desc">Cambiar contraseña</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>sudo</code>
+                        <div class="command-desc">Ejecutar como superusuario</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>adduser</code>
+                        <div class="command-desc">Agregar usuario</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>deluser</code>
+                        <div class="command-desc">Eliminar usuario</div>
+                    </div>
+                </div>
+                
+                <!-- Herramientas de seguridad -->
+                <div class="category" id="herramientas">
+                    <h2>Herramientas de Seguridad <span class="kali-badge">TOOLS</span></h2>
+                    
+                    <div class="command">
+                        <code>nmap</code>
+                        <div class="command-desc">Escáner de puertos y servicios</div>
+                        <div class="sub-command">
+                            <code>nmap -sS -sV 192.168.1.1</code> - Escaneo sigiloso
+                        </div>
+                        <div class="sub-command">
+                            <code>nmap -A -T4 target</code> - Escaneo agresivo
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>metasploit</code>
+                        <div class="command-desc">Framework de penetration testing</div>
+                        <div class="sub-command">
+                            <code>msfconsole</code> - Iniciar Metasploit
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>sqlmap</code>
+                        <div class="command-desc">Automation de SQL injection</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>burpsuite</code>
+                        <div class="command-desc">Testing de aplicaciones web</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>john</code>
+                        <div class="command-desc">Password cracking</div>
+                        <div class="sub-command">
+                            <code>john --wordlist=passwords.txt hashfile</code>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pentesting -->
+                <div class="category" id="pentesting">
+                    <h2>Comandos de Pentesting <span class="kali-badge">PENTEST</span></h2>
+                    
+                    <div class="command">
+                        <code>airmon-ng</code>
+                        <div class="command-desc">Monitor mode para WiFi</div>
+                        <div class="sub-command">
+                            <code>airmon-ng start wlan0</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>airodump-ng</code>
+                        <div class="command-desc">Captura de paquetes WiFi</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>msfvenom</code>
+                        <div class="command-desc">Generar payloads</div>
+                        <div class="sub-command">
+                            <code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=IP LPORT=PORT -f exe > payload.exe</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>hydra</code>
+                        <div class="command-desc">Ataques de fuerza bruta</div>
+                        <div class="sub-command">
+                            <code>hydra -l user -P passlist.txt ssh://192.168.1.1</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>nikto</code>
+                        <div class="command-desc">Escáner de vulnerabilidades web</div>
+                    </div>
+                    
+                    <div class="command">
+                        <code>wpscan</code>
+                        <div class="command-desc">Escáner de seguridad WordPress</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Kali Linux Offensive Security Manual &copy; 2024 - Use sus poderes con responsabilidad</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #ff6b6b;"># Stay Legal - Stay Ethical</p>
+        </footer>
+    </div>
+
+    <script>
+        // Generar índice automáticamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const categories = document.querySelectorAll('.category');
+            const indexList = document.getElementById('index-list');
+            
+            categories.forEach(category => {
+                const categoryId = category.id;
+                const categoryTitle = category.querySelector('h2').textContent;
+                
+                const listItem = document.createElement('li');
+                listItem.style.marginBottom = '12px';
+                
+                const link = document.createElement('a');
+                link.href = `#${categoryId}`;
+                link.textContent = `➜ ${categoryTitle.replace('BASIC', '').replace('NETWORK', '').replace('SECURITY', '').replace('TOOLS', '').replace('PENTEST', '').trim()}`;
+                link.classList.add('nav-item');
+                link.style.display = 'block';
+                link.style.padding = '10px 15px';
+                
+                listItem.appendChild(link);
+                indexList.appendChild(listItem);
+            });
+            
+            // Funcionalidad de búsqueda
+            const searchInput = document.getElementById('search');
+            const commands = document.querySelectorAll('.command');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                commands.forEach(command => {
+                    const commandText = command.textContent.toLowerCase();
+                    const commandCode = command.querySelector('code');
+                    
+                    // Remover resaltado anterior
+                    if (commandCode) {
+                        commandCode.innerHTML = commandCode.textContent;
+                    }
+                    
+                    if (searchTerm === '') {
+                        command.style.display = 'block';
+                    } else if (commandText.includes(searchTerm)) {
+                        command.style.display = 'block';
+                        
+                        // Resaltar término de búsqueda
+                        if (commandCode) {
+                            const regex = new RegExp(searchTerm, 'gi');
+                            commandCode.innerHTML = commandCode.textContent.replace(regex, match => 
+                                `<span class="highlight">${match}</span>`
+                            );
+                        }
+                    } else {
+                        command.style.display = 'none';
+                    }
+                });
+            });
+
+            // Efecto de terminal en la búsqueda
+            searchInput.placeholder = "root@kali:~# Buscar comandos...";
+        });
+
+        // Efecto de escritura en el título
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.querySelector('h1');
+            title.classList.add('terminal-effect');
+        });
+    </script>
+</body>
+</html>
